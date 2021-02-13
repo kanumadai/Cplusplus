@@ -1,0 +1,440 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\DynShow.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\DynShow.ico"
+IDI_ICON1               ICON    DISCARDABLE     "res\\zhizi.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 61
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 DynShow"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "DynShow 3.2_ 2003.03.13 版",IDC_STATIC,40,10,119,8,
+                    SS_NOPREFIX
+    LTEXT           "北京质子科技 前端电子学项目组",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+    LTEXT           "Author:  akangquan",IDC_STATIC,42,38,103,8
+END
+
+IDD_DYNSHOW_DIALOG DIALOGEX 0, 0, 633, 447
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION 
+"前端电子学——模拟板/探测器测试程序(DynShow)  设计:kang   Ver: 3.33_2006.05.12"
+
+FONT 9, "宋体"
+BEGIN
+    PUSHBUTTON      "退出",IDOK,584,428,31,16
+    PUSHBUTTON      "小图刷新",IDC_ENERGE_CHART_REDRAW,554,273,44,21
+    EDITTEXT        IDC_ENERGE_LEFT_LIMIT,477,206,28,12,ES_AUTOHSCROLL,
+                    WS_EX_RIGHT
+    EDITTEXT        IDC_3D_SHOW_THREVALUE,562,319,37,14,ES_AUTOHSCROLL
+    LTEXT           "阈值",IDC_STATIC,542,322,17,8
+    EDITTEXT        IDC_ENERGE_RIGHT_LIMIT,477,219,28,12,ES_AUTOHSCROLL,
+                    WS_EX_RIGHT
+    LTEXT           "左边界",IDC_STATIC,445,208,25,8
+    LTEXT           "右边界",IDC_STATIC,445,222,25,8
+    GROUPBOX        "3D 选项",IDC_STATIC,438,306,168,54
+    DEFPUSHBUTTON   "大图刷新",IDC_REDRAW,555,335,43,22
+    PUSHBUTTON      "读文件",IDC_OPEN_FILE,441,340,43,16
+    PUSHBUTTON      "保存数据",IDC_SAVE_FILE,490,340,46,16
+    GROUPBOX        "散点直方图",IDC_STATIC_3DSHOW,16,18,395,392,BS_FLAT
+    GROUPBOX        "能谱显示区",IDC_SMALL_MAP_TITILE,419,19,207,174,BS_FLAT
+    LTEXT           "Rec Cnt :   ",IDC_STATIC_CONTER,404,427,106,11
+    GROUPBOX        "采集/程控",IDC_STATIC,438,363,167,59
+    PUSHBUTTON      "开始采集",IDC_START_SAMPLE,526,397,36,22
+    PUSHBUTTON      "停 止",IDC_STOP_SAMPLE,566,397,35,22
+    EDITTEXT        IDC_SYN_ENERSPECT_VALUE,477,233,28,12,ES_AUTOHSCROLL
+    LTEXT           "晶体条号",IDC_STATIC_2DSHOW,444,235,32,8
+    LTEXT           "Static",IDC_STATIC_STATUS,21,430,158,10
+    LTEXT           "操作文件名：",IDC_STATIC_FILE_NAME,191,414,179,28
+    PUSHBUTTON      "参数下载",IDC_PROG_CONTROL,557,372,44,18
+    EDITTEXT        IDC_SAMPING_TIME,478,399,42,14,ES_AUTOHSCROLL
+    LTEXT           "时间(s):",IDC_STATIC_SAMPLE_MODE,444,401,31,10,
+                    SS_CENTERIMAGE
+    CONTROL         "时间/计数 选择",IDC_SAMPLE_MODE_SEL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,443,379,73,10
+    GROUPBOX        "2D选项区",IDC_STATIC,437,195,169,102
+    PUSHBUTTON      "＋",IDC_ADDSYN_NO,506,233,13,12
+    PUSHBUTTON      "Reset",IDC_ETH_RESET,510,205,27,15
+    CONTROL         "整条线平移",IDC_EN_LIMIT_POSITION_WHOLE_MOVE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,444,249,52,13
+    PUSHBUTTON      "效率统计",IDC_LIMIT_STAT,499,254,39,15
+    PUSHBUTTON      "峰谷比统计",IDC_PEAK_VALE_STAT,497,277,44,15
+    EDITTEXT        IDC_PEAKVALE_ETH,463,277,30,12,ES_AUTOHSCROLL
+    LTEXT           "阈值",IDC_STATIC,443,279,18,8
+    PUSHBUTTON      "显示64能谱",IDC_ENERSPECT_64ETH,490,319,45,16
+    CONTROL         "垂直/水平",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,444,264,52,10
+    CONTROL         "中值滤波",IDC_CHECK_MIDFILTER,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,442,321,45,10
+    PUSHBUTTON      "清除数据",IDC_CLEAR_DATA,518,425,43,20
+    GROUPBOX        "",IDC_STATIC,545,198,60,73
+    CONTROL         "总能谱图",IDC_ENERGER_SPECTRUM_SEL,"Button",
+                    BS_AUTORADIOBUTTON,547,208,48,10
+    CONTROL         "X方向投影",IDC_Y_DIRECTION_SEL,"Button",
+                    BS_AUTORADIOBUTTON,547,217,52,10
+    CONTROL         "Y方向投影",IDC_X_DIRECTION_SEL,"Button",
+                    BS_AUTORADIOBUTTON,547,227,52,10
+    CONTROL         "时间直方图",IDC_TIME_SPECTRUM_SEL,"Button",
+                    BS_AUTORADIOBUTTON,547,237,56,10
+    CONTROL         "晶体条谱线",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON,547,
+                    247,56,10
+    CONTROL         "时间符合",IDC_TIME_FUHE,"Button",BS_AUTORADIOBUTTON,547,
+                    258,48,10
+    LTEXT           "阈值",IDC_STATIC_ETH_VALUE,21,415,140,11
+END
+
+IDD_SELCOM DIALOGEX 0, 0, 124, 62
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "登陆选择"
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,24,44,29,12
+    PUSHBUTTON      "Cancel",IDCANCEL,70,44,30,12
+    COMBOBOX        IDC_COMSEL,37,22,52,40,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Port",IDC_STATIC,15,23,16,9
+    LTEXT           "User",IDC_STATIC,15,8,19,9
+    LTEXT           "PET_Designer",IDC_STATIC,37,6,51,12,SS_CENTERIMAGE,
+                    WS_EX_CLIENTEDGE
+    ICON            IDI_ICON1,IDC_STATIC,97,5,20,20
+END
+
+IDD_ENERGESPECT_SHOW DIALOG DISCARDABLE  0, 0, 525, 373
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "退出",IDOK,468,135,50,14
+    GROUPBOX        "能谱显示",IDC_STATIC,17,7,443,343
+    LTEXT           "能谱选项显示",IDC_SHOWENERGE_OPTION,28,356,146,8
+    LTEXT           "能谱阈值显示",IDC_SHOWENTERGE_ETHLIMIT,197,356,200,10
+END
+
+IDD_PROGCONTRL DIALOG DISCARDABLE  0, 0, 173, 96
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "模拟参数配置"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "下载参数",IDC_SETPARA,39,77,42,14
+    GROUPBOX        "模拟参数",IDC_STATIC,58,3,107,66
+    LTEXT           "A 路:",IDC_STATIC,63,16,17,8
+    EDITTEXT        IDC_EDIT_PARA_A,82,15,21,12,ES_AUTOHSCROLL
+    LTEXT           "B 路:",IDC_STATIC,63,29,18,8
+    EDITTEXT        IDC_EDIT_PARA_B,82,28,21,12,ES_AUTOHSCROLL
+    LTEXT           "C 路:",IDC_STATIC,63,42,18,8
+    EDITTEXT        IDC_EDIT_PARA_C,82,41,21,12,ES_AUTOHSCROLL
+    LTEXT           "D 路:",IDC_STATIC,63,55,18,8
+    EDITTEXT        IDC_EDIT_PARA_D,82,54,21,12,ES_AUTOHSCROLL
+    LTEXT           "X偏置:",IDC_STATIC,110,17,24,8
+    EDITTEXT        IDC_EDIT_PARA_XOFFSET,138,15,21,12,ES_AUTOHSCROLL
+    LTEXT           "Y偏置:",IDC_STATIC,110,30,24,8
+    EDITTEXT        IDC_EDIT_PARA_YOFFSET,138,28,21,12,ES_AUTOHSCROLL
+    LTEXT           "E 偏置:",IDC_STATIC,109,42,26,8
+    EDITTEXT        IDC_EDIT_PARA_EOFFSET,138,41,21,12,ES_AUTOHSCROLL
+    LTEXT           "Eth阈值:",IDC_STATIC,108,55,30,8
+    EDITTEXT        IDC_EDIT_PARA_ETH,138,54,21,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "取消",IDC_CANCEL,105,78,39,13
+    GROUPBOX        "模式选项",IDC_STATIC,8,3,49,66
+    CONTROL         "A  通道",IDC_SEL_CHANNEL_A,"Button",BS_AUTORADIOBUTTON,
+                    10,16,39,10
+    CONTROL         "B  通道",IDC_SEL_CHANNEL_B,"Button",BS_AUTORADIOBUTTON,
+                    10,28,41,10
+    CONTROL         "AB时间谱",IDC_AB_TIMEFH,"Button",BS_AUTORADIOBUTTON,10,
+                    45,43,10
+    CONTROL         "Bkt 符合",IDC_BKT_FUHE,"Button",BS_AUTORADIOBUTTON,10,
+                    56,45,10
+END
+
+IDD_FILE_SAVE DIALOG DISCARDABLE  0, 0, 145, 67
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "文件"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,21,49,38,14
+    PUSHBUTTON      "Cancel",IDCANCEL,82,49,40,14
+    GROUPBOX        "文件选项",IDC_STATIC,14,2,61,40
+    LTEXT           "BLOCK",IDC_STATIC,84,11,32,9
+    COMBOBOX        IDC_BLOCK_SEL,84,21,46,95,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "新建文件包",IDC_NEW_FILEPACK,"Button",
+                    BS_AUTORADIOBUTTON,18,14,51,8
+    CONTROL         "修改文件包",IDC_EDIT_FILEPACK,"Button",
+                    BS_AUTORADIOBUTTON,18,26,50,12
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "DynShow Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "DynShow\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2002\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "DynShow.EXE\0"
+            VALUE "ProductName", "DynShow 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 54
+    END
+
+    IDD_DYNSHOW_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 626
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 445
+    END
+
+    IDD_SELCOM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 117
+        BOTTOMMARGIN, 56
+    END
+
+    IDD_ENERGESPECT_SHOW, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 518
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 366
+    END
+
+    IDD_PROGCONTRL, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 166
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_FILE_SAVE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 138
+        BOTTOMMARGIN, 63
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_SELCOM DLGINIT
+BEGIN
+    IDC_COMSEL, 0x403, 6, 0
+0x4f43, 0x204d, 0x0031, 
+    IDC_COMSEL, 0x403, 6, 0
+0x4f43, 0x204d, 0x0032, 
+    IDC_COMSEL, 0x403, 8, 0
+0x5355, 0xb642, 0xbfcb, 0x00da, 
+    0
+END
+
+IDD_FILE_SAVE DLGINIT
+BEGIN
+    IDC_BLOCK_SEL, 0x403, 8, 0
+0x4c42, 0x434f, 0x204b, 0x0030, 
+    IDC_BLOCK_SEL, 0x403, 8, 0
+0x4c42, 0x434f, 0x204b, 0x0031, 
+    IDC_BLOCK_SEL, 0x403, 8, 0
+0x4c42, 0x434f, 0x204b, 0x0032, 
+    IDC_BLOCK_SEL, 0x403, 8, 0
+0x4c42, 0x434f, 0x204b, 0x0033, 
+    IDC_BLOCK_SEL, 0x403, 8, 0
+0x4c42, 0x434f, 0x204b, 0x0034, 
+    IDC_BLOCK_SEL, 0x403, 8, 0
+0x4c42, 0x434f, 0x204b, 0x0035, 
+    IDC_BLOCK_SEL, 0x403, 8, 0
+0x4c42, 0x434f, 0x204b, 0x0036, 
+    IDC_BLOCK_SEL, 0x403, 8, 0
+0x4c42, 0x434f, 0x204b, 0x0037, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDB_BITMAP_ZHIZI        BITMAP  DISCARDABLE     "res\\bitmap1.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 DynShow(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// English (U.S.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+#ifdef _WIN32
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+#endif //_WIN32
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Cursor
+//
+
+IDC_MOUSE_CURSOR        CURSOR  DISCARDABLE     "nodrop.cur"
+#endif    // English (U.S.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\DynShow.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

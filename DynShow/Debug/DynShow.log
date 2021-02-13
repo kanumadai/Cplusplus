@@ -1,0 +1,261 @@
+﻿生成启动时间为 2018/11/25 21:58:16。
+     1>项目“E:\PET\VC\DynShow\DynShow.vcxproj”在节点 2 上(build 个目标)。
+     1>InitializeBuildStatus:
+         正在创建“.\Debug\DynShow.unsuccessfulbuild”，因为已指定“AlwaysCreate”。
+       ClCompile:
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _VC80_UPGRADE=0x0600 /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Yc"stdafx.h" /Fp".\Debug\DynShow.pch" /Fo".\Debug\\" /Fd".\Debug\vc100.pdb" /FR".\Debug\\" /Gd /TP /analyze- /errorReport:prompt StdAfx.cpp
+         StdAfx.cpp
+         _WIN32_WINNT not defined. Defaulting to _WIN32_WINNT_MAXVER (see WinSDKVer.h)
+         D:\Program Files (x86)\Microsoft Visual Studio 10.0\VC\bin\CL.exe /c /ZI /nologo /W3 /WX- /Od /Oy- /D WIN32 /D _DEBUG /D _WINDOWS /D _VC80_UPGRADE=0x0600 /D _MBCS /Gm /EHsc /RTC1 /MTd /GS /Gy- /fp:precise /Zc:wchar_t /Zc:forScope /Yu"stdafx.h" /Fp".\Debug\DynShow.pch" /Fo".\Debug\\" /Fd".\Debug\vc100.pdb" /FR".\Debug\\" /Gd /TP /analyze- /errorReport:prompt ComSel.cpp DynShow.cpp DynShowDlg.cpp EnergeSpectEth.cpp EzusbApi.cpp FileSave.cpp PeakVale.cpp ProgContrl.cpp
+         ProgContrl.cpp
+     1>e:\pet\vc\dynshow\progcontrl.cpp(52): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : 参见“sprintf”的声明
+     1>e:\pet\vc\dynshow\progcontrl.cpp(54): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : 参见“sprintf”的声明
+     1>e:\pet\vc\dynshow\progcontrl.cpp(56): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : 参见“sprintf”的声明
+     1>e:\pet\vc\dynshow\progcontrl.cpp(58): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : 参见“sprintf”的声明
+     1>e:\pet\vc\dynshow\progcontrl.cpp(61): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : 参见“sprintf”的声明
+     1>e:\pet\vc\dynshow\progcontrl.cpp(63): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : 参见“sprintf”的声明
+     1>e:\pet\vc\dynshow\progcontrl.cpp(65): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : 参见“sprintf”的声明
+     1>e:\pet\vc\dynshow\progcontrl.cpp(67): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : 参见“sprintf”的声明
+         PeakVale.cpp
+     1>e:\pet\vc\dynshow\peakvale.cpp(90): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+     1>e:\pet\vc\dynshow\peakvale.cpp(96): warning C4244: “=”: 从“float”转换到“int”，可能丢失数据
+     1>e:\pet\vc\dynshow\peakvale.cpp(121): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\peakvale.cpp(121): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\peakvale.cpp(121): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\peakvale.cpp(124): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\peakvale.cpp(124): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\peakvale.cpp(126): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\peakvale.cpp(126): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\peakvale.cpp(126): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\peakvale.cpp(126): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\peakvale.cpp(128): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\peakvale.cpp(128): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\peakvale.cpp(128): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\peakvale.cpp(132): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\peakvale.cpp(132): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\peakvale.cpp(134): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\peakvale.cpp(134): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\peakvale.cpp(134): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\peakvale.cpp(134): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\peakvale.cpp(136): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\peakvale.cpp(136): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\peakvale.cpp(136): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\peakvale.cpp(139): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\peakvale.cpp(139): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\peakvale.cpp(141): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\peakvale.cpp(141): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\peakvale.cpp(141): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\peakvale.cpp(141): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\peakvale.cpp(143): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\peakvale.cpp(143): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\peakvale.cpp(143): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\peakvale.cpp(147): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\peakvale.cpp(149): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\peakvale.cpp(149): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\peakvale.cpp(149): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\peakvale.cpp(149): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\peakvale.cpp(151): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\peakvale.cpp(151): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\peakvale.cpp(151): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\peakvale.cpp(155): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\peakvale.cpp(155): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\peakvale.cpp(157): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\peakvale.cpp(157): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\peakvale.cpp(157): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\peakvale.cpp(157): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\peakvale.cpp(159): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\peakvale.cpp(159): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\peakvale.cpp(159): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\peakvale.cpp(163): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\peakvale.cpp(163): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\peakvale.cpp(165): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\peakvale.cpp(165): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\peakvale.cpp(165): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\peakvale.cpp(165): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\peakvale.cpp(167): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\peakvale.cpp(167): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\peakvale.cpp(167): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\peakvale.cpp(171): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\peakvale.cpp(171): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\peakvale.cpp(173): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\peakvale.cpp(173): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\peakvale.cpp(173): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\peakvale.cpp(173): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\peakvale.cpp(175): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\peakvale.cpp(175): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\peakvale.cpp(175): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\peakvale.cpp(179): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\peakvale.cpp(181): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\peakvale.cpp(181): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\peakvale.cpp(181): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\peakvale.cpp(181): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\peakvale.cpp(183): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\peakvale.cpp(183): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\peakvale.cpp(183): error C2065: “i”: 未声明的标识符
+         FileSave.cpp
+         EzusbApi.cpp
+         EnergeSpectEth.cpp
+     1>e:\pet\vc\dynshow\energespecteth.cpp(114): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : 参见“sprintf”的声明
+     1>e:\pet\vc\dynshow\energespecteth.cpp(117): warning C4996: 'sprintf': This function or variable may be unsafe. Consider using sprintf_s instead. To disable deprecation, use _CRT_SECURE_NO_WARNINGS. See online help for details.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\include\stdio.h(371) : 参见“sprintf”的声明
+     1>e:\pet\vc\dynshow\energespecteth.cpp(181): warning C4002: “RGB”宏的实参太多
+     1>e:\pet\vc\dynshow\energespecteth.cpp(181): error C2059: 语法错误:“)”
+     1>e:\pet\vc\dynshow\energespecteth.cpp(183): error C2065: “pShow2”: 未声明的标识符
+     1>e:\pet\vc\dynshow\energespecteth.cpp(369): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\energespecteth.cpp(369): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\energespecteth.cpp(369): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\energespecteth.cpp(370): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\energespecteth.cpp(370): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\energespecteth.cpp(373): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\energespecteth.cpp(373): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\energespecteth.cpp(373): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\energespecteth.cpp(374): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\energespecteth.cpp(374): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\energespecteth.cpp(375): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\energespecteth.cpp(375): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\energespecteth.cpp(385): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\energespecteth.cpp(385): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\energespecteth.cpp(385): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\energespecteth.cpp(386): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\energespecteth.cpp(386): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\energespecteth.cpp(387): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\energespecteth.cpp(387): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\energespecteth.cpp(495): warning C4002: “RGB”宏的实参太多
+     1>e:\pet\vc\dynshow\energespecteth.cpp(495): error C2059: 语法错误:“)”
+     1>e:\pet\vc\dynshow\energespecteth.cpp(496): error C2065: “pShow3”: 未声明的标识符
+     1>e:\pet\vc\dynshow\energespecteth.cpp(534): warning C4244: “初始化”: 从“ULONGLONG”转换到“int”，可能丢失数据
+     1>e:\pet\vc\dynshow\energespecteth.cpp(601): warning C4244: “初始化”: 从“ULONGLONG”转换到“int”，可能丢失数据
+     1>e:\pet\vc\dynshow\energespecteth.cpp(738): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\energespecteth.cpp(742): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\energespecteth.cpp(744): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\energespecteth.cpp(744): fatal error C1903: 无法从以前的错误中恢复；正在停止编译
+         DynShowDlg.cpp
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(276): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(276): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(276): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(277): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(280): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(280): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(280): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(281): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(282): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(300): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(300): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(300): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(302): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(303): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(303): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(304): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(305): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(305): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(552): warning C4244: “=”: 从“ULONGLONG”转换到“int”，可能丢失数据
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(612): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(806): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(806): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(806): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(809): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(809): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(815): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(815): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(815): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(818): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(818): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(943): warning C4002: “RGB”宏的实参太多
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(943): error C2059: 语法错误:“)”
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(944): error C2065: “pShow2”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(949): error C2065: “pShow2”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(949): error C2228: “.DeleteObject”的左边必须有类/结构/联合
+                 类型是“'unknown-type'”
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(1134): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(1134): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(1134): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(1136): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(1137): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(1138): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(1139): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(1148): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(1148): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(1148): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(1150): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(1151): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(1152): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(1153): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(1169): warning C4244: “初始化”: 从“ULONGLONG”转换到“int”，可能丢失数据
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(1174): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(1174): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(1174): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(1175): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(1176): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(1194): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(1262): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(1262): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(1262): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(1264): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(1265): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(1266): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(1267): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(1409): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(1409): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(1409): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(1411): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(1412): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(1413): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(1415): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(1417): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(1417): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(1417): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(1418): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(1630): warning C4002: “RGB”宏的实参太多
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(1630): error C2059: 语法错误:“)”
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(1632): error C2065: “pShow2”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(2070): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(2070): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(2070): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(2072): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(2072): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(2073): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(2073): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(2074): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(2074): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(2074): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(2074): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(2080): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(2083): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(2083): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(2084): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(2084): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(2084): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(2085): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(2085): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(2086): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(2087): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(2087): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(2088): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(2504): warning C4244: “=”: 从“ULONGLONG”转换到“DWORD”，可能丢失数据
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(2520): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(2520): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(2520): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(2523): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(2524): error C2065: “i”: 未声明的标识符
+     1>e:\pet\vc\dynshow\dynshowdlg.cpp(2524): fatal error C1003: 错误计数超过 100；正在停止编译
+         DynShow.cpp
+     1>e:\pet\vc\dynshow\dynshow.cpp(61): warning C4996: 'CWinApp::Enable3dControlsStatic': CWinApp::Enable3dControlsStatic is no longer needed. You should remove this call.
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\atlmfc\include\afxwin.h(5347) : 参见“CWinApp::Enable3dControlsStatic”的声明
+     1>e:\pet\vc\dynshow\dynshow.cpp(64): warning C4996: 'CWinApp::SetDialogBkColor': CWinApp::SetDialogBkColor is no longer supported. Instead, handle WM_CTLCOLORDLG in your dialog
+                 d:\program files (x86)\microsoft visual studio 10.0\vc\atlmfc\include\afxwin.h(5329) : 参见“CWinApp::SetDialogBkColor”的声明
+         ComSel.cpp
+         正在生成代码...
+     1>已完成生成项目“E:\PET\VC\DynShow\DynShow.vcxproj”(build 个目标)的操作 - 失败。
+
+生成失败。
+
+已用时间 00:00:04.13

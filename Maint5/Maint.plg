@@ -1,0 +1,194 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: Maint - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"Debug/Maint.res" /d "_DEBUG" "F:\VC Test\Maint5\Maint.rc"" 
+Creating temporary file "C:\Temp\RSP55.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Debug/" /Fp"Debug/Maint.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"F:\VC Test\Maint5\About.cpp"
+"F:\VC Test\Maint5\Anol.cpp"
+"F:\VC Test\Maint5\AutoSampleOption.cpp"
+"F:\VC Test\Maint5\BoardEnerge.cpp"
+"F:\VC Test\Maint5\BoardLocal.cpp"
+"F:\VC Test\Maint5\CommSet.cpp"
+"F:\VC Test\Maint5\CysNum.cpp"
+"F:\VC Test\Maint5\DataSample.cpp"
+"F:\VC Test\Maint5\EffectStat.cpp"
+"F:\VC Test\Maint5\EnvirmentLimit.cpp"
+"F:\VC Test\Maint5\EnvirmentParam.cpp"
+"F:\VC Test\Maint5\font.cpp"
+"F:\VC Test\Maint5\FpgaCounter.cpp"
+"F:\VC Test\Maint5\FpgaCountMap.cpp"
+"F:\VC Test\Maint5\LogIn.cpp"
+"F:\VC Test\Maint5\MainFrm.cpp"
+"F:\VC Test\Maint5\Maint.cpp"
+"F:\VC Test\Maint5\MaintDoc.cpp"
+"F:\VC Test\Maint5\MaintView.cpp"
+"F:\VC Test\Maint5\ManulModifyAnolPara.cpp"
+"F:\VC Test\Maint5\mscomm.cpp"
+"F:\VC Test\Maint5\msflexgrid.cpp"
+"F:\VC Test\Maint5\mshflexgrid.cpp"
+"F:\VC Test\Maint5\NModeless.cpp"
+"F:\VC Test\Maint5\PeakVale.cpp"
+"F:\VC Test\Maint5\picture.cpp"
+"F:\VC Test\Maint5\recordset.cpp"
+"F:\VC Test\Maint5\rowcursor.cpp"
+"F:\VC Test\Maint5\Set64EnergeLimit.cpp"
+"F:\VC Test\Maint5\SFlash.cpp"
+"F:\VC Test\Maint5\TimeModfy.cpp"
+"F:\VC Test\Maint5\Tseries.cpp"
+"F:\VC Test\Maint5\FileSave.cpp"
+]
+Creating command line "cl.exe @C:\Temp\RSP55.tmp" 
+Creating temporary file "C:\Temp\RSP56.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Debug/" /Fp"Debug/Maint.pch" /Yc"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"F:\VC Test\Maint5\StdAfx.cpp"
+]
+Creating command line "cl.exe @C:\Temp\RSP56.tmp" 
+Creating temporary file "C:\Temp\RSP57.tmp" with contents
+[
+MaintDLL.lib twdpet.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/Maint.pdb" /debug /machine:I386 /out:"Debug/Maint.exe" /pdbtype:sept 
+".\Debug\About.obj"
+".\Debug\Anol.obj"
+".\Debug\AutoSampleOption.obj"
+".\Debug\BoardEnerge.obj"
+".\Debug\BoardLocal.obj"
+".\Debug\CommSet.obj"
+".\Debug\CysNum.obj"
+".\Debug\DataSample.obj"
+".\Debug\EffectStat.obj"
+".\Debug\EnvirmentLimit.obj"
+".\Debug\EnvirmentParam.obj"
+".\Debug\font.obj"
+".\Debug\FpgaCounter.obj"
+".\Debug\FpgaCountMap.obj"
+".\Debug\LogIn.obj"
+".\Debug\MainFrm.obj"
+".\Debug\Maint.obj"
+".\Debug\MaintDoc.obj"
+".\Debug\MaintView.obj"
+".\Debug\ManulModifyAnolPara.obj"
+".\Debug\mscomm.obj"
+".\Debug\msflexgrid.obj"
+".\Debug\mshflexgrid.obj"
+".\Debug\NModeless.obj"
+".\Debug\PeakVale.obj"
+".\Debug\picture.obj"
+".\Debug\recordset.obj"
+".\Debug\rowcursor.obj"
+".\Debug\Set64EnergeLimit.obj"
+".\Debug\SFlash.obj"
+".\Debug\StdAfx.obj"
+".\Debug\TimeModfy.obj"
+".\Debug\Tseries.obj"
+".\Debug\FileSave.obj"
+".\Debug\Maint.res"
+]
+Creating command line "link.exe @C:\Temp\RSP57.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Compiling...
+StdAfx.cpp
+Compiling...
+About.cpp
+Anol.cpp
+AutoSampleOption.cpp
+F:\VC Test\Maint5\AutoSampleOption.cpp(138) : warning C4244: '=' : conversion from '__int64' to 'int', possible loss of data
+F:\VC Test\Maint5\AutoSampleOption.cpp(139) : warning C4244: '=' : conversion from '__int64' to 'int', possible loss of data
+BoardEnerge.cpp
+BoardLocal.cpp
+CommSet.cpp
+CysNum.cpp
+DataSample.cpp
+F:\VC Test\Maint5\DataSample.cpp(377) : warning C4244: '=' : conversion from '__int64' to 'int', possible loss of data
+EffectStat.cpp
+F:\VC Test\Maint5\EffectStat.cpp(153) : warning C4244: '=' : conversion from '__int64' to 'int', possible loss of data
+F:\VC Test\Maint5\EffectStat.cpp(165) : warning C4244: '=' : conversion from '__int64' to 'int', possible loss of data
+F:\VC Test\Maint5\EffectStat.cpp(189) : warning C4244: '=' : conversion from '__int64' to 'int', possible loss of data
+EnvirmentLimit.cpp
+EnvirmentParam.cpp
+F:\VC Test\Maint5\EnvirmentParam.cpp(578) : warning C4018: '<' : signed/unsigned mismatch
+F:\VC Test\Maint5\EnvirmentParam.cpp(800) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+F:\VC Test\Maint5\EnvirmentParam.cpp(811) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+font.cpp
+FpgaCounter.cpp
+FpgaCountMap.cpp
+F:\VC Test\Maint5\FpgaCountMap.cpp(169) : warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+F:\VC Test\Maint5\FpgaCountMap.cpp(173) : warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+F:\VC Test\Maint5\FpgaCountMap.cpp(185) : warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+F:\VC Test\Maint5\FpgaCountMap.cpp(189) : warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+F:\VC Test\Maint5\FpgaCountMap.cpp(292) : warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+F:\VC Test\Maint5\FpgaCountMap.cpp(298) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+F:\VC Test\Maint5\FpgaCountMap.cpp(303) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+LogIn.cpp
+MainFrm.cpp
+Maint.cpp
+f:\vc test\maint5\nmodeless.h(43) : warning C4091: 'typedef ' : ignored on left of 'struct OP32BK_STR' when no variable is declared
+MaintDoc.cpp
+f:\vc test\maint5\nmodeless.h(43) : warning C4091: 'typedef ' : ignored on left of 'struct OP32BK_STR' when no variable is declared
+MaintView.cpp
+f:\vc test\maint5\nmodeless.h(43) : warning C4091: 'typedef ' : ignored on left of 'struct OP32BK_STR' when no variable is declared
+F:\VC Test\Maint5\MaintView.cpp(2360) : warning C4305: 'initializing' : truncation from 'const double' to 'float'
+F:\VC Test\Maint5\MaintView.cpp(2419) : warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+F:\VC Test\Maint5\MaintView.cpp(2513) : warning C4305: 'initializing' : truncation from 'const double' to 'float'
+F:\VC Test\Maint5\MaintView.cpp(2573) : warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+F:\VC Test\Maint5\MaintView.cpp(3640) : warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+F:\VC Test\Maint5\MaintView.cpp(4093) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+F:\VC Test\Maint5\MaintView.cpp(4098) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+F:\VC Test\Maint5\MaintView.cpp(4102) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+F:\VC Test\Maint5\MaintView.cpp(4103) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+F:\VC Test\Maint5\MaintView.cpp(4322) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+F:\VC Test\Maint5\MaintView.cpp(4679) : warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+F:\VC Test\Maint5\MaintView.cpp(5009) : warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+F:\VC Test\Maint5\MaintView.cpp(5016) : warning C4101: 'i' : unreferenced local variable
+F:\VC Test\Maint5\MaintView.cpp(5140) : warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+F:\VC Test\Maint5\MaintView.cpp(5152) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+F:\VC Test\Maint5\MaintView.cpp(5249) : warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+F:\VC Test\Maint5\MaintView.cpp(5428) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+ManulModifyAnolPara.cpp
+F:\VC Test\Maint5\ManulModifyAnolPara.cpp(71) : warning C4244: '=' : conversion from '__int64' to 'int', possible loss of data
+F:\VC Test\Maint5\ManulModifyAnolPara.cpp(83) : warning C4244: '=' : conversion from '__int64' to 'int', possible loss of data
+F:\VC Test\Maint5\ManulModifyAnolPara.cpp(493) : warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+F:\VC Test\Maint5\ManulModifyAnolPara.cpp(499) : warning C4101: 'i' : unreferenced local variable
+F:\VC Test\Maint5\ManulModifyAnolPara.cpp(537) : warning C4244: '=' : conversion from '__int64' to 'int', possible loss of data
+Generating Code...
+Compiling...
+mscomm.cpp
+msflexgrid.cpp
+mshflexgrid.cpp
+NModeless.cpp
+f:\vc test\maint5\nmodeless.h(43) : warning C4091: 'typedef ' : ignored on left of 'struct OP32BK_STR' when no variable is declared
+F:\VC Test\Maint5\NModeless.cpp(284) : warning C4244: '=' : conversion from '__int64' to 'int', possible loss of data
+F:\VC Test\Maint5\NModeless.cpp(295) : warning C4244: 'initializing' : conversion from '__int64' to 'int', possible loss of data
+F:\VC Test\Maint5\NModeless.cpp(1028) : warning C4244: '=' : conversion from '__int64' to 'int', possible loss of data
+F:\VC Test\Maint5\NModeless.cpp(1039) : warning C4244: 'initializing' : conversion from '__int64' to 'int', possible loss of data
+PeakVale.cpp
+F:\VC Test\Maint5\PeakVale.cpp(90) : warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+F:\VC Test\Maint5\PeakVale.cpp(96) : warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+picture.cpp
+recordset.cpp
+rowcursor.cpp
+Set64EnergeLimit.cpp
+SFlash.cpp
+TimeModfy.cpp
+F:\VC Test\Maint5\TimeModfy.cpp(415) : warning C4101: 'nBuindex' : unreferenced local variable
+Tseries.cpp
+F:\VC Test\Maint5\Tseries.cpp(428) : warning C4805: '==' : unsafe mix of type 'int' and type 'const bool' in operation
+F:\VC Test\Maint5\Tseries.cpp(434) : warning C4805: '==' : unsafe mix of type 'int' and type 'const bool' in operation
+FileSave.cpp
+Generating Code...
+Linking...
+
+
+
+<h3>Results</h3>
+Maint.exe - 0 error(s), 51 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: ACQCenter - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\PET\AppData\Local\Temp\RSPEC6B.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"..\Bin\AcqCenter\Debug/ACQCenter.pdb" /debug /machine:I386 /out:"..\Bin\AcqCenter\Debug/ACQCenter.exe" /pdbtype:sept 
+"\LJW\Bin\AcqCenter\Debug\ACQCenter.obj"
+"\LJW\Bin\AcqCenter\Debug\ACQCenterDlg.obj"
+"\LJW\Bin\AcqCenter\Debug\DbgPrt.obj"
+"\LJW\Bin\AcqCenter\Debug\ExecProtocol.obj"
+"\LJW\Bin\AcqCenter\Debug\FH.OBJ"
+"\LJW\Bin\AcqCenter\Debug\FHSim.obj"
+"\LJW\Bin\AcqCenter\Debug\MySocket.obj"
+"\LJW\Bin\AcqCenter\Debug\OWS.OBJ"
+"\LJW\Bin\AcqCenter\Debug\PrintSocket.obj"
+"\LJW\Bin\AcqCenter\Debug\SIO.obj"
+"\LJW\Bin\AcqCenter\Debug\StdAfx.obj"
+"\LJW\Bin\AcqCenter\Debug\SysInitDlg.obj"
+"\LJW\Bin\AcqCenter\Debug\ACQCenter.res"
+]
+Creating command line "link.exe @C:\Users\PET\AppData\Local\Temp\RSPEC6B.tmp"
+<h3>Output Window</h3>
+Linking...
+Creating temporary file "C:\Users\PET\AppData\Local\Temp\RSPF42A.tmp" with contents
+[
+/nologo /o"..\Bin\AcqCenter\Debug/ACQCenter.bsc" 
+"\LJW\Bin\AcqCenter\Debug\StdAfx.sbr"
+"\LJW\Bin\AcqCenter\Debug\ACQCenter.sbr"
+"\LJW\Bin\AcqCenter\Debug\ACQCenterDlg.sbr"
+"\LJW\Bin\AcqCenter\Debug\DbgPrt.sbr"
+"\LJW\Bin\AcqCenter\Debug\ExecProtocol.sbr"
+"\LJW\Bin\AcqCenter\Debug\FH.SBR"
+"\LJW\Bin\AcqCenter\Debug\FHSim.sbr"
+"\LJW\Bin\AcqCenter\Debug\MySocket.sbr"
+"\LJW\Bin\AcqCenter\Debug\OWS.SBR"
+"\LJW\Bin\AcqCenter\Debug\PrintSocket.sbr"
+"\LJW\Bin\AcqCenter\Debug\SIO.sbr"
+"\LJW\Bin\AcqCenter\Debug\SysInitDlg.sbr"]
+Creating command line "bscmake.exe @C:\Users\PET\AppData\Local\Temp\RSPF42A.tmp"
+Creating browse info file...
+<h3>Output Window</h3>
+
+
+
+<h3>Results</h3>
+ACQCenter.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

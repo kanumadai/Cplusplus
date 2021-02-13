@@ -1,0 +1,38 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: robot - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\Users\lee\AppData\Local\Temp\RSPFAB3.tmp" with contents
+[
+ws2_32.lib ole32.lib oleaut32.lib dxguid.lib dxerr8.lib dinput8.lib kernel32.lib user32.lib gdi32.lib winspool.lib comdlg32.lib advapi32.lib shell32.lib uuid.lib /nologo /subsystem:windows /incremental:yes /pdb:"Debug/robot.pdb" /debug /machine:I386 /out:"Debug/robot.exe" /pdbtype:sept 
+".\Debug\CHORoad.obj"
+".\Debug\ChosRoad1.obj"
+".\Debug\ControlData.obj"
+".\Debug\GlobalDefines.obj"
+".\Debug\JoyStick.obj"
+".\Debug\robot.obj"
+".\Debug\robotDlg.obj"
+".\Debug\RunStateDlg.obj"
+".\Debug\RVSetting.obj"
+".\Debug\SensorData.obj"
+".\Debug\SerialPort.obj"
+".\Debug\Setting.obj"
+".\Debug\SonorSetting.obj"
+".\Debug\StdAfx.obj"
+".\Debug\robot.res"
+]
+Creating command line "link.exe @C:\Users\lee\AppData\Local\Temp\RSPFAB3.tmp"
+<h3>Output Window</h3>
+Linking...
+
+
+
+<h3>Results</h3>
+robot.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

@@ -1,0 +1,2459 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\Maint.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#include ""l.chs\\afxprint.rc""        // printing/print preview resources\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\Maint.ico"
+IDR_MAINTTYPE           ICON    DISCARDABLE     "res\\MaintDoc.ico"
+IDI_ZHIZI               ICON    DISCARDABLE     "res\\zhizi.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "res\\Toolbar.bmp"
+IDB_BITMAP2             BITMAP  DISCARDABLE     "res\\Toolbars-New.bmp"
+IDB_SFLASH              BITMAP  DISCARDABLE     "res\\pet.bmp"
+IDB_IMAGE1              BITMAP  DISCARDABLE     "res\\image.bmp"
+IDB_BACKGROUND          BITMAP  DISCARDABLE     "res\\backgroud.bmp"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Toolbar
+//
+
+IDR_MAINFRAME TOOLBAR DISCARDABLE  16, 15
+BEGIN
+    BUTTON      IDC_FILE_OPEN
+    BUTTON      ID_FILE_SAVE_AS
+    SEPARATOR
+    BUTTON      ID_MENU_ANLOG
+    BUTTON      ID_MENU_DATA_SAMPLE
+    SEPARATOR
+    BUTTON      ID_MENU_ENVIRMENTPARAM
+    SEPARATOR
+    BUTTON      ID_MENU_BOARDENERG
+    BUTTON      ID_MENU_BOARDLOCAL
+    BUTTON      ID_MENU_CYSNUM
+    SEPARATOR
+    BUTTON      ID_MENU_TIMEMODFY
+    BUTTON      ID_MENU_TSERIES
+    SEPARATOR
+    BUTTON      ID_MENU_COMMSET
+    SEPARATOR
+    BUTTON      ID_MENU_FASTOPEN
+    BUTTON      IDC_MENU_ABOUTME
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENUEX PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "文件(&F)",                       65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        MENUITEM "快速打开文件",                32787,MFT_STRING,MFS_ENABLED
+        MENUITEM "打开(&O)...\tCtrl+O",         57601,MFT_STRING,MFS_ENABLED
+        MENUITEM "保存位置边界",                32812,MFT_STRING,MFS_ENABLED
+        MENUITEM "另存为(&A)...",               57604,MFT_STRING,MFS_ENABLED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "打开32文件",                  32804,MFT_STRING,MFS_ENABLED
+        MENUITEM "打开下一文件",                32806,MFT_STRING,MFS_ENABLED
+        MENUITEM "打开上一文件",                32807,MFT_STRING,MFS_ENABLED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "最近文件",                    57616,MFT_STRING,MFS_GRAYED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "退出(&X)",                    57665,MFT_STRING,MFS_ENABLED
+    END
+    POPUP "端口设置",                       65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        MENUITEM "通信口",                      32774,
+        MFT_STRING | MFT_RIGHTORDER | MFT_RIGHTJUSTIFY,MFS_ENABLED
+    END
+    POPUP "数据采样",                       65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        MENUITEM "数据采样",                    32775,MFT_STRING,MFS_ENABLED
+        MENUITEM "数据传输 / 自动采集",         32797,MFT_STRING,MFS_ENABLED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "前端模拟",                    32784,MFT_STRING,MFS_ENABLED
+    END
+    POPUP "数据处理",                       65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        MENUITEM "2套文件 效率变化评估",        32800,MFT_STRING,MFS_ENABLED
+        MENUITEM "2套文件  峰位统计",           32801,MFT_STRING,MFS_ENABLED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "32Buckets模拟参数手动调整",   32803,MFT_STRING,MFS_ENABLED
+        MENUITEM MFT_SEPARATOR
+        MENUITEM MFT_SEPARATOR
+        MENUITEM "输出32bucket效率统计结果",    32813,MFT_STRING,MFS_ENABLED
+    END
+    POPUP "工作参数",                       65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        POPUP "FPGA参数",                       65535,MFT_STRING,MFS_ENABLED
+        BEGIN
+            MENUITEM "位置边界",                    32779,MFT_STRING,
+            MFS_ENABLED
+            MENUITEM MFT_SEPARATOR
+            MENUITEM "能量边界",                    32780,MFT_STRING,
+            MFS_ENABLED
+            MENUITEM "时间修正",                    32781,MFT_STRING,
+            MFS_ENABLED
+            MENUITEM "晶体编号",                    32782,MFT_STRING,
+            MFS_ENABLED
+            MENUITEM MFT_SEPARATOR
+            MENUITEM "时序",                        32783,MFT_STRING,
+            MFS_ENABLED
+            MENUITEM "FPGA 计数器",                 32796,MFT_STRING,
+            MFS_ENABLED
+        END
+        MENUITEM "环境参数",                    32778,MFT_STRING,MFS_ENABLED
+        MENUITEM "程序下载/参数查询",           32815,MFT_STRING,MFS_ENABLED
+    END
+    POPUP "查看(&V)",                       65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        MENUITEM "工具栏(&T)",                  59392,MFT_STRING,MFS_ENABLED
+        MENUITEM "状态栏(&S)",                  59393,MFT_STRING,MFS_ENABLED
+    END
+    POPUP "帮助(&H)",                       65535,MFT_STRING,MFS_ENABLED
+    BEGIN
+        MENUITEM "关于 Maint",                  32805,MFT_STRING,MFS_ENABLED
+    END
+END
+
+IDR_MENU_SHOWENERGE MENU DISCARDABLE 
+BEGIN
+    MENUITEM "显示64能谱",                  IDC_MENU_SHOW64ENERGESPECT
+    MENUITEM "正常 显示",                   65535
+    MENUITEM "保存能谱边界",                65535
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "C",            ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    "N",            ID_FILE_NEW,            VIRTKEY, CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY, CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY, CONTROL, NOINVERT
+    "S",            IDC_FILE_SAVE_ENERGE_LIMIT, VIRTKEY, CONTROL, NOINVERT
+    "V",            ID_EDIT_PASTE,          VIRTKEY, CONTROL, NOINVERT
+    VK_BACK,        ID_EDIT_UNDO,           VIRTKEY, ALT, NOINVERT
+    VK_DELETE,      ID_EDIT_CUT,            VIRTKEY, SHIFT, NOINVERT
+    VK_F6,          ID_NEXT_PANE,           VIRTKEY, NOINVERT
+    VK_F6,          ID_PREV_PANE,           VIRTKEY, SHIFT, NOINVERT
+    VK_INSERT,      ID_EDIT_COPY,           VIRTKEY, CONTROL, NOINVERT
+    VK_INSERT,      ID_EDIT_PASTE,          VIRTKEY, SHIFT, NOINVERT
+    VK_LEFT,        ID_FASTOPEN32FILE_LAST, VIRTKEY, NOINVERT
+    VK_RIGHT,       ID_FASTOPEN32FILE_NEXT, VIRTKEY, NOINVERT
+    "X",            ID_EDIT_CUT,            VIRTKEY, CONTROL, NOINVERT
+    "Z",            ID_EDIT_UNDO,           VIRTKEY, CONTROL, NOINVERT
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOGEX 0, 0, 212, 137
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 Maint"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,12,21,21
+    CONTROL         "Revision：Maint 3.6_2003.09.15",IDC_STATIC,"Static",
+                    SS_SIMPLE,51,52,127,8
+    LTEXT           "版权所有(C) 2002 - 2003  ",IDC_STATIC,51,16,117,8
+    DEFPUSHBUTTON   "确定",IDOK,74,117,50,14,WS_GROUP
+    LTEXT           "北京质子科技前端电子学项目组",IDC_STATIC,51,28,118,10
+    LTEXT           "Author: akang",IDC_STATIC,51,42,101,8
+    LTEXT           "前端电子学维护软件",IDC_STATIC,51,4,109,9
+    EDITTEXT        IDC_COMMENT,22,65,169,48,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_READONLY | WS_VSCROLL,WS_EX_ACCEPTFILES | 
+                    WS_EX_TRANSPARENT | WS_EX_CLIENTEDGE
+END
+
+IDD_SHOWBAR DIALOG DISCARDABLE  0, 0, 78, 438
+STYLE WS_CHILD
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "刷 新",IDC_REDRAW,19,182,39,22
+    GROUPBOX        "3D/2D",IDC_STATIC,14,30,53,33
+    CONTROL         "3D显示",IDC_SHOWBAR_3D_RADIO,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,22,38,39,13
+    CONTROL         "2D显示",IDC_SHOWBAR_2D_RADIO,"Button",
+                    BS_AUTORADIOBUTTON,22,51,35,8
+    GROUPBOX        "横/纵轴",IDC_STATIC,12,67,55,83
+    CONTROL         "X 方向",IDC_2D_SHOW_X,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,22,77,38,8
+    CONTROL         "Y 方向",IDC_2D_SHOW_Y,"Button",BS_AUTORADIOBUTTON,22,88,
+                    36,8
+    LTEXT           "Offset1",IDC_STATIC,16,98,27,8
+    EDITTEXT        IDC_2D_SHOW_OFFSET1,20,107,25,14,ES_AUTOHSCROLL
+    LTEXT           "3D阈值",IDC_STATIC,15,154,32,8
+    EDITTEXT        IDC_3D_SHOW_THREVALUE,20,164,38,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,5,0,1,438
+    EDITTEXT        IDC_2D_SHOW_OFFSET2,21,132,30,14,ES_AUTOHSCROLL
+    LTEXT           "Offset2",IDC_STATIC,16,123,29,8
+    COMBOBOX        IDC_SHOW_BLOCK_SEL,14,13,53,193,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "Block",IDC_STATIC,13,3,21,8
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,7,209,68,1
+    PUSHBUTTON      "保存位置边界",IDC_SAVE_CUR_LIMIT,14,345,56,17
+    PUSHBUTTON      "计算位置边界",IDC_CALCULATE_LIMIT,23,228,53,15
+    PUSHBUTTON      "刷新边界",IDC_REDRAW_LIMIT,14,365,55,23
+    PUSHBUTTON      "效率统计",IDC_LIMIT_STAT,13,287,52,16
+    PUSHBUTTON      "导入位置边界",IDC_OPEN_LIMITTAB,14,327,55,16
+    PUSHBUTTON      "+",IDC_OFFSET1_ADD,47,106,10,8
+    PUSHBUTTON      "-",IDC_OFFSET1_DEC,47,114,10,8
+    CONTROL         "整条线平移",IDC_EN_MOVEWHOLELINE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,11,228,56,11
+    LTEXT           "峰谷阈值",IDC_STATIC,11,257,32,10
+    EDITTEXT        IDC_PEAKVALE_ETH,46,255,24,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "峰谷比统计",IDC_PEAK_VALE_STAT,13,270,52,16
+    CONTROL         "垂直/水平",IDC_CHECK_VER_HOR,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,12,243,57,10
+    CONTROL         "中值滤波",IDC_CHECK_MIDFILTER,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,11,214,52,11
+    PUSHBUTTON      "偏移刷新",IDC_EFFECENT_EVALUAT,13,305,52,16
+END
+
+IDD_COMMSET DIALOG DISCARDABLE  0, 0, 101, 195
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_CAPTION | WS_SYSMENU
+CAPTION "串口设置&系统自检"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "设置",IDOKe,6,177,37,13
+    GROUPBOX        "Comm Set",IDC_STATIC,9,3,76,83
+    LTEXT           "串口号",IDC_STATIC,12,16,26,9
+    LTEXT           "波特率",IDC_STATIC,13,30,25,9
+    COMBOBOX        IDC_COMBO_BAUDSEL,41,28,38,65,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO_DATABIT,41,42,38,30,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_COMBO_STOPBIT,41,56,38,33,CBS_DROPDOWN | CBS_SORT | 
+                    WS_VSCROLL | WS_TABSTOP
+    LTEXT           "数据位",IDC_STATIC,13,44,25,8
+    LTEXT           "停止位",IDC_STATIC,13,58,25,8
+    COMBOBOX        IDC_COMBO_PORTSET,41,14,38,39,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "退出",IDC_CANCEL,52,177,37,13
+    CONTROL         "",IDC_MSCOMM,"{648A5600-2C6E-101B-82B6-000000000014}",
+                    WS_TABSTOP,3,150,19,19
+    PUSHBUTTON      "上电自检",IDC_POWERON_CHECK,29,155,41,13
+    COMBOBOX        IDC_BUCKET_SEL,25,125,48,122,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "手动选择Bucket",IDC_COMSET_MANUL_CHECK,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,112,68,11
+    LTEXT           "",IDC_STATIC_POWERCHECK,8,142,85,10
+    LTEXT           "对象:",IDC_STATIC,15,71,22,9
+    COMBOBOX        IDC_COMBO_SELOBJECT,41,70,38,29,CBS_DROPDOWN | 
+                    WS_VSCROLL | WS_TABSTOP
+    PUSHBUTTON      "维护模式设置",IDC_MAINT_MODE_SET,20,91,60,14
+END
+
+IDD_DATA_SAMPLE DIALOG DISCARDABLE  0, 0, 153, 207
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "数据采样"
+FONT 9, "System"
+BEGIN
+    DEFPUSHBUTTON   "退 出",IDOKe,99,158,38,13
+    PUSHBUTTON      "计数刷新",IDC_COUNTER_REDRAW,43,129,37,14
+    GROUPBOX        "模式选择",IDC_STATIC,8,5,59,96
+    CONTROL         "散点模式",IDC_RADIO_SDOT,"Button",BS_AUTORADIOBUTTON,13,
+                    16,43,11
+    CONTROL         "能方模式",IDC_RADIO_EDOT,"Button",BS_AUTORADIOBUTTON,13,
+                    27,45,13
+    CONTROL         "时方模式",IDC_RADIO_TDOT,"Button",BS_AUTORADIOBUTTON,13,
+                    41,43,10
+    CONTROL         "0＃方式",IDC_RADIO_FUHE0,"Button",BS_AUTORADIOBUTTON,21,
+                    68,38,10
+    CONTROL         "1＃方式",IDC_RADIO_FUHE1,"Button",BS_AUTORADIOBUTTON,21,
+                    78,38,10
+    LTEXT           "Bucket",IDC_STATIC,71,14,23,8
+    COMBOBOX        IDC_BUCKET_SEL,96,12,50,183,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Channel",IDC_STATIC,70,32,28,8
+    GROUPBOX        "单片机计数/计时",IDC_STATIC,70,54,75,47
+    LTEXT           "定时(min)",IDC_STATIC,76,80,18,17
+    EDITTEXT        IDC_SETCOUNT,95,65,42,12,ES_AUTOHSCROLL | WS_DISABLED
+    LTEXT           "计数",IDC_STATIC,76,66,17,8
+    EDITTEXT        IDC_SETTIME,95,83,42,12,ES_AUTOHSCROLL
+    LTEXT           "接收计数",IDC_STATIC,10,114,33,8
+    EDITTEXT        IDC_REC_COUNT,47,113,40,12,ES_RIGHT
+    PUSHBUTTON      "停 止",IDC_STOP_SAMPLE,98,124,39,13
+    PUSHBUTTON      "开始采样",IDC_START_SAMPLE,98,107,39,13
+    CONTROL         "",IDC_MSCOMM,"{648A5600-2C6E-101B-82B6-000000000014}",
+                    WS_TABSTOP,13,127,19,19
+    GROUPBOX        "符合模式",IDC_STATIC,13,56,51,36
+    LTEXT           "Static",IDC_STATIC_RECSTATUS,8,148,86,25,NOT WS_GROUP
+    PUSHBUTTON      "上传数据",IDC_UPLOAD_DATA,98,140,39,13
+    COMBOBOX        IDC_BLOCK_SEL,99,30,46,90,CBS_DROPDOWN | WS_DISABLED | 
+                    WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_ENVIRMENTPARAM DIALOG DISCARDABLE  0, 0, 324, 337
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "环境参数"
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "退出",IDOKe,284,7,26,13
+    COMBOBOX        IDC_BUCKET_SEL,41,8,48,101,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "平均温度:",IDC_STATIC,221,324,34,8
+    LTEXT           "Static",IDC_THEM_STATIC,260,324,31,8,NOT WS_GROUP
+    CONTROL         "",IDC_MSCOMM1,"{648A5600-2C6E-101B-82B6-000000000014}",
+                    WS_TABSTOP,17,114,19,19
+    DEFPUSHBUTTON   "查询",IDC_BUTT_START_QUERY,242,3,29,17
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,2,0,1,337
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDVERT,314,0,1,337
+    LTEXT           "Bucket:",IDC_STATIC,13,9,25,8
+    CONTROL         "查询所有Bucket",IDC_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,96,9,66,10
+    EDITTEXT        IDC_ENPARA_SHOW,11,116,296,203,ES_MULTILINE | WS_VSCROLL
+    PUSHBUTTON      "清空",IDC_CLEARSHOW,167,7,27,13
+    PUSHBUTTON      "停止",IDC_STOP_QUERY,199,7,25,13
+    GROUPBOX        "平均温度曲线",IDC_STATIC,11,23,298,88
+    LTEXT           "平均正电压:",IDC_STATIC,19,324,43,8
+    LTEXT           "Static",IDC_VOLTAGE_STATIC,64,324,25,9
+    LTEXT           "平均负电压:",IDC_STATIC,102,324,43,8
+    LTEXT           "Static",IDC_NEGVOLTAGE_STATIC,147,324,25,9
+END
+
+IDD_FPGA_BOARDLOCAL DIALOG DISCARDABLE  0, 0, 166, 276
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "位置边界"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOKe,17,255,38,14
+    PUSHBUTTON      "退出",IDCANCEL,108,255,38,14
+    GROUPBOX        "选择",IDC_STATIC,9,2,149,31
+    COMBOBOX        IDC_BUCKET_SEL,33,14,49,207,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    GROUPBOX        "芯片选择",IDC_STATIC,7,228,78,24
+    GROUPBOX        "读写",IDC_STATIC,92,228,67,24
+    CONTROL         "EEPROM",IDC_EEPROM_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,8,238,41,10
+    CONTROL         "FPGA",IDC_FPGA_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,53,239,30,10
+    CONTROL         "导入",IDC_INPUT_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,96,237,27,10
+    CONTROL         "导出",IDC_OUTPUT_RADIO,"Button",BS_AUTORADIOBUTTON,128,
+                    237,29,10
+    LTEXT           "Bucket",IDC_STATIC,10,15,23,8
+    LTEXT           "Channel",IDC_STATIC,85,15,28,8
+    LTEXT           "位置边界",IDC_STATIC,12,39,33,8
+    CONTROL         "",IDC_MSFLEXGRID1,
+                    "{6262D3A0-531B-11CF-91F6-C2863C385E30}",WS_TABSTOP,7,50,
+                    151,175
+    EDITTEXT        IDC_BOARDLOCAL_EDIT,86,54,39,14,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    CONTROL         "",IDC_MSCOMM1,"{648A5600-2C6E-101B-82B6-000000000014}",
+                    WS_TABSTOP,74,250,19,19
+    PUSHBUTTON      "调入数据",IDC_BLOCAL_LOADDATA,113,35,44,13
+    COMBOBOX        IDC_BLOCK_SEL,113,14,46,90,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "通道转换",IDC_CHANNEL_CHANGE_SEL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,56,37,45,9
+END
+
+IDD_FPGA_BOARDENER DIALOG DISCARDABLE  0, 0, 166, 282
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "能量边界"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOKe,17,261,38,14
+    PUSHBUTTON      "退出",IDCANCEL,121,261,38,14
+    GROUPBOX        "选择",IDC_STATIC,7,2,151,31
+    COMBOBOX        IDC_BUCKET_SEL,32,14,49,199,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    GROUPBOX        "芯片选择",IDC_STATIC,7,221,78,24
+    GROUPBOX        "读写",IDC_STATIC,92,221,67,24
+    CONTROL         "EEPROM",IDC_EEPROM_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,8,231,41,10
+    CONTROL         "FPGA",IDC_FPGA_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,53,232,30,10
+    CONTROL         "导入",IDC_INPUT_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,96,230,27,10
+    CONTROL         "导出",IDC_OUTPUT_RADIO,"Button",BS_AUTORADIOBUTTON,128,
+                    230,29,10
+    LTEXT           "Bucket",IDC_STATIC,8,15,23,8
+    LTEXT           "Channel",IDC_STATIC,84,15,28,8
+    LTEXT           "能量边界",IDC_STATIC,12,39,33,8
+    CONTROL         "",IDC_MSFLEXGRID1,
+                    "{6262D3A0-531B-11CF-91F6-C2863C385E30}",WS_TABSTOP,7,50,
+                    151,169
+    EDITTEXT        IDC_BOARDENERG_EDIT,90,54,39,14,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    CONTROL         "",IDC_MSCOMM1,"{648A5600-2C6E-101B-82B6-000000000014}",
+                    WS_TABSTOP,26,221,19,19
+    EDITTEXT        IDC_ENER_E2_VALUE,117,37,19,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "初值",IDC_SET_ENER_INIT,81,36,26,11
+    EDITTEXT        IDC_ENER_E1_VALUE,55,37,19,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "调入数据",IDC_LOADFILE,68,262,36,13
+    COMBOBOX        IDC_BLOCK_SEL,112,13,46,90,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "通道转换",IDC_CHANNEL_CHANGE_SEL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,67,248,47,10
+END
+
+IDD_FPGA_TIMEMODFY DIALOG DISCARDABLE  0, 0, 153, 274
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "时间修正"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOKe,17,255,38,14
+    PUSHBUTTON      "退出",IDC_OUT,99,255,38,13
+    GROUPBOX        "选择",IDC_STATIC,7,0,142,34
+    COMBOBOX        IDC_BUCKET_SEL,16,19,47,193,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    GROUPBOX        "芯片选择",IDC_STATIC,7,225,78,24
+    GROUPBOX        "读写",IDC_STATIC,87,225,59,24
+    CONTROL         "EEPROM",IDC_EEPROM_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,8,235,41,10
+    CONTROL         "FPGA",IDC_FPGA_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,50,235,30,10
+    CONTROL         "导入",IDC_INPUT_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,90,234,27,10
+    CONTROL         "导出",IDC_OUTPUT_RADIO,"Button",BS_AUTORADIOBUTTON,118,
+                    234,27,10
+    LTEXT           "Bucket",IDC_STATIC,17,9,23,8
+    LTEXT           "Channel",IDC_STATIC,93,10,28,8
+    LTEXT           "时间修正",IDC_STATIC,12,39,33,8
+    CONTROL         "",IDC_MSFLEXGRID1,
+                    "{6262D3A0-531B-11CF-91F6-C2863C385E30}",WS_TABSTOP,7,50,
+                    136,164
+    EDITTEXT        IDC_TIMEMODFY_EDIT,88,57,39,14,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    CONTROL         "",IDC_MSCOMM1,"{648A5600-2C6E-101B-82B6-000000000014}",
+                    WS_TABSTOP,64,251,19,19
+    EDITTEXT        IDC_TMOD_INIT_VALUE,59,37,18,11,ES_AUTOHSCROLL
+    PUSHBUTTON      "初值",IDC_SET_TMOD_INIT,84,37,22,11
+    COMBOBOX        IDC_BLOCK_SEL,93,18,46,90,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+END
+
+IDD_FPGA_CYSNUM DIALOG DISCARDABLE  0, 0, 150, 271
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "晶体编号"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOKe,17,250,38,14
+    PUSHBUTTON      "退出",IDCANCEL,95,250,38,14
+    GROUPBOX        "选择",IDC_STATIC,9,0,133,36
+    COMBOBOX        IDC_BUCKET_SEL,19,19,49,190,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    GROUPBOX        "芯片选择",IDC_STATIC,7,220,72,24
+    GROUPBOX        "读写",IDC_STATIC,81,220,61,24
+    CONTROL         "EEPROM",IDC_EEPROM_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,8,230,41,10
+    CONTROL         "FPGA",IDC_FPGA_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,48,230,28,10
+    CONTROL         "导入",IDC_INPUT_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,85,229,26,10
+    CONTROL         "导出",IDC_OUTPUT_RADIO,"Button",BS_AUTORADIOBUTTON,113,
+                    229,27,10
+    LTEXT           "Bucket",IDC_STATIC,19,10,23,8
+    LTEXT           "Channel",IDC_STATIC,92,10,28,8
+    LTEXT           "晶体条号",IDC_STATIC,12,39,33,8
+    CONTROL         "",IDC_MSFLEXGRID1,
+                    "{6262D3A0-531B-11CF-91F6-C2863C385E30}",WS_TABSTOP,7,50,
+                    136,165
+    EDITTEXT        IDC_CYSNUM_EDIT,88,54,39,14,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    CONTROL         "",IDC_MSCOMM1,"{648A5600-2C6E-101B-82B6-000000000014}",
+                    WS_TABSTOP,74,244,19,19
+    COMBOBOX        IDC_BLOCK_SEL,91,19,46,90,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+END
+
+IDD_FPGA_TSERIES DIALOG DISCARDABLE  0, 0, 149, 265
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "时序"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOKe,20,242,33,14
+    COMBOBOX        IDC_BUCKET_SEL,16,14,47,194,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    GROUPBOX        "读写",IDC_STATIC,83,215,60,22
+    CONTROL         "导入",IDC_INPUT_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,87,224,27,10
+    CONTROL         "导出",IDC_OUTPUT_RADIO,"Button",BS_AUTORADIOBUTTON,115,
+                    224,26,10
+    LTEXT           "Bucket",IDC_STATIC,17,4,23,8
+    LTEXT           "时序",IDC_STATIC,12,32,17,8
+    EDITTEXT        IDC_TSERIES_EDIT,47,46,39,14,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    CONTROL         "",IDC_MSCOMM1,"{648A5600-2C6E-101B-82B6-000000000014}",
+                    WS_TABSTOP,66,237,19,19
+    CONTROL         "",IDC_MSFLEXGRID1,
+                    "{6262D3A0-531B-11CF-91F6-C2863C385E30}",WS_TABSTOP,4,44,
+                    137,166
+    LTEXT           "Channel",IDC_STATIC,82,4,28,8
+    GROUPBOX        "芯片选择",IDC_STATIC,5,215,74,22
+    CONTROL         "EEPROM",IDC_EEPROM_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,7,223,41,10
+    CONTROL         "FPGA",IDC_FPGA_RADIO,"Button",BS_AUTORADIOBUTTON | 
+                    WS_TABSTOP,48,223,28,10
+    PUSHBUTTON      "退出",IDC_OUT,93,242,35,14
+    COMBOBOX        IDC_BLOCK_SEL,83,14,46,90,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+END
+
+IDD_ANLOG DIALOG DISCARDABLE  0, 0, 132, 193
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "前端模拟"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,19,174,29,12
+    PUSHBUTTON      "退出",IDCANCEL,81,174,30,12
+    COMBOBOX        IDC_BUCKET_SEL,13,13,48,167,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    EDITTEXT        IDC_PLUS_A,31,42,21,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_PLUS_B,31,55,21,12,ES_RIGHT
+    EDITTEXT        IDC_PLUS_C,31,68,21,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_OFFSET_Y,31,120,20,12,ES_RIGHT
+    EDITTEXT        IDC_PLUS_D,31,81,21,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_OFFSET_E,31,134,20,12,ES_RIGHT
+    EDITTEXT        IDC_OFFSET_X,31,108,20,12,ES_RIGHT | ES_AUTOHSCROLL
+    EDITTEXT        IDC_ETH_VALUE,100,33,19,12,ES_RIGHT
+    EDITTEXT        IDC_TD_VALUE,100,48,19,12,ES_RIGHT | WS_DISABLED
+    LTEXT           "A",IDC_STATIC,17,44,8,8
+    LTEXT           "B",IDC_STATIC,17,57,8,8
+    LTEXT           "C",IDC_STATIC,17,69,8,8
+    LTEXT           "D",IDC_STATIC,17,82,8,8
+    LTEXT           "X",IDC_STATIC,18,109,8,8
+    LTEXT           "Y",IDC_STATIC,18,122,8,8
+    LTEXT           "E",IDC_STATIC,19,135,8,8
+    LTEXT           "Bucket",IDC_STATIC,13,4,23,8
+    LTEXT           "能阈 Eth",IDC_STATIC,70,35,30,8
+    LTEXT           "延迟 Td ",IDC_STATIC,70,49,29,8
+    CONTROL         "EEPROM",IDC_CHIP_EEPROM,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,77,68,41,10
+    CONTROL         "模拟板",IDC_CHIP_ANOL,"Button",BS_AUTORADIOBUTTON,77,77,
+                    40,10
+    CONTROL         "全体",IDC_CHIP_ALL,"Button",BS_AUTORADIOBUTTON,77,86,32,
+                    10
+    CONTROL         "导入",IDC_IOSEL_IN,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,77,108,32,10
+    CONTROL         "导出",IDC_IOSEL_OUT,"Button",BS_AUTORADIOBUTTON,77,117,
+                    32,10
+    GROUPBOX        "片选",IDC_STATIC,73,60,49,37
+    GROUPBOX        "输入输出",IDC_STATIC,74,99,47,29
+    GROUPBOX        "增益 ",IDC_STATIC,13,29,50,67
+    GROUPBOX        "偏置",IDC_STATIC,11,98,52,56
+    LTEXT           "Channel",IDC_STATIC,72,4,28,8
+    COMBOBOX        IDC_BLOCK_SEL,72,13,46,90,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    PUSHBUTTON      "调入数据",IDC_LOADFILE,75,145,39,12
+    PUSHBUTTON      "数据保存",IDC_SAVE_PARA,75,131,39,12
+    CONTROL         "通道转换",IDC_CHANNEL_CHANGE_SEL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,14,156,45,10
+END
+
+IDD_LOGIN DIALOGEX 0, 0, 163, 76
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "User Message Login"
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,31,59,37,12
+    PUSHBUTTON      "Cancel",IDCANCEL,96,58,40,13
+    LTEXT           "User Name",IDC_STATIC,11,10,38,8
+    LTEXT           "Company",IDC_STATIC,11,41,32,8
+    EDITTEXT        IDC_USER,50,8,58,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_COMPANY,50,41,102,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    NOT WS_BORDER,WS_EX_STATICEDGE
+    EDITTEXT        IDC_PASSWORD,50,24,58,12,ES_PASSWORD | ES_AUTOHSCROLL
+    LTEXT           "PassWord",IDC_STATIC,11,25,36,10
+    ICON            IDI_ZHIZI,IDC_STATIC,131,6,20,20
+END
+
+IDD_SFLASH DIALOG DISCARDABLE  0, 0, 187, 105
+STYLE WS_POPUP | WS_VISIBLE | WS_THICKFRAME
+FONT 10, "System"
+BEGIN
+    CONTROL         "(Null)",IDC_USER,"Static",SS_SIMPLE | SS_CENTERIMAGE,60,
+                    61,49,10
+    CONTROL         "北京质子科技开发有限公司",IDC_COMPANY,"Static",
+                    SS_SIMPLE | SS_CENTERIMAGE | WS_GROUP,60,76,98,11
+END
+
+IDD_FPGA_COUNTER DIALOG DISCARDABLE  0, 0, 187, 173
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "FPGA 计数统计"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "获取计数",IDOK,26,151,41,14
+    PUSHBUTTON      "退出",IDCANCEL,126,151,40,14
+    COMBOBOX        IDC_BUCKET_SEL,43,10,49,207,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    LTEXT           "Bucket",IDC_STATIC,18,11,23,8
+    LTEXT           "Channel 0",IDC_STATIC,20,37,34,8
+    EDITTEXT        IDC_CHANNEL0_ALL,59,36,45,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CHANNEL0_G2S,108,36,50,12,ES_AUTOHSCROLL
+    GROUPBOX        "",IDC_STATIC,14,0,154,148
+    LTEXT           "所有事件数",IDC_STATIC,60,26,41,8
+    LTEXT           "光电事件数",IDC_STATIC_G2S,110,26,49,8
+    LTEXT           "Channel 1",IDC_STATIC,20,50,34,8
+    EDITTEXT        IDC_CHANNEL1_ALL,59,49,45,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CHANNEL1_G2S,108,49,50,12,ES_AUTOHSCROLL
+    LTEXT           "Channel 2",IDC_STATIC,20,64,34,8
+    EDITTEXT        IDC_CHANNEL2_ALL,59,62,45,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CHANNEL2_G2S,108,62,50,12,ES_AUTOHSCROLL
+    LTEXT           "Channel 3",IDC_STATIC,20,77,34,8
+    EDITTEXT        IDC_CHANNEL3_ALL,59,75,45,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CHANNEL3_G2S,108,75,50,12,ES_AUTOHSCROLL
+    LTEXT           "Channel 4",IDC_STATIC,20,89,34,8
+    EDITTEXT        IDC_CHANNEL4_ALL,59,88,45,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CHANNEL4_G2S,108,88,50,12,ES_AUTOHSCROLL
+    LTEXT           "Channel 5",IDC_STATIC,20,102,34,8
+    EDITTEXT        IDC_CHANNEL5_ALL,59,101,45,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CHANNEL5_G2S,108,101,50,12,ES_AUTOHSCROLL
+    LTEXT           "Channel 6",IDC_STATIC,20,116,34,8
+    EDITTEXT        IDC_CHANNEL6_ALL,59,114,45,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CHANNEL6_G2S,108,114,50,12,ES_AUTOHSCROLL
+    LTEXT           "Channel 7",IDC_STATIC,20,129,34,8
+    EDITTEXT        IDC_CHANNEL7_ALL,59,127,45,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CHANNEL7_G2S,108,127,50,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "图象显示",IDC_SHOWMAP,120,9,40,13
+END
+
+IDD_FILESAVE DIALOG DISCARDABLE  0, 0, 119, 66
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "文件"
+FONT 10, "System"
+BEGIN
+    GROUPBOX        "文件选项",IDC_STATIC,21,4,74,39
+    CONTROL         "新建文件包",IDC_NEW_FILEPACK,"Button",
+                    BS_AUTORADIOBUTTON,27,17,55,9
+    CONTROL         "修改文件包",IDC_EDIT_FILEPACK,"Button",
+                    BS_AUTORADIOBUTTON,27,27,58,12
+    PUSHBUTTON      "确定",IDOK,17,50,34,12
+    PUSHBUTTON      "取消",IDCANCEL,63,50,34,12
+END
+
+IDD_MODELESS DIALOGEX 0, 0, 180, 78
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+CAPTION "上传 32 Bucket 数据"
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      "开始",IDOK,132,2,39,14
+    PUSHBUTTON      "退出",IDCANCEL,132,20,40,14
+    LTEXT           "改文件名:",IDC_STATIC,8,5,35,8
+    LTEXT           "当前工作路径。。。。。",IDC_MOD_STATUS,5,17,114,33,NOT 
+                    WS_GROUP
+    DEFPUSHBUTTON   "...",IDC_RENAME,46,5,16,9
+    LTEXT           "",IDC_SHOW_COUNTER,91,5,37,8
+    EDITTEXT        IDC_START_POINT,158,36,14,12,ES_AUTOHSCROLL,WS_EX_RIGHT
+    LTEXT           "起",IDC_STATIC,148,38,9,9
+    LTEXT           "终",IDC_STATIC,148,51,9,9
+    LTEXT           "Bucket",IDC_BUCKETNO,65,5,24,9
+    EDITTEXT        IDC_END_POINT,158,49,14,12,ES_AUTOHSCROLL,WS_EX_RIGHT
+    CONTROL         "位置",IDC_CHECK_LOCAL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,4,66,25,8
+    CONTROL         "模拟",IDC_CHECK_ANOL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,31,66,26,9
+    CONTROL         "能量",IDC_CHECK_ENERGE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,60,65,25,11
+    CONTROL         "时序",IDC_CHECK_TSERIES,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,144,66,26,9
+    CONTROL         "读出",IDC_LOAD,"Button",BS_AUTORADIOBUTTON,42,54,26,8
+    CONTROL         "写入",IDC_DOWN,"Button",BS_AUTORADIOBUTTON,70,54,27,8
+    CONTROL         "条号",IDC_CHECK_CYSNUM,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,116,66,25,8
+    CONTROL         "时修",IDC_CHECK_TIMEMODFY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,89,66,26,8
+    PUSHBUTTON      ">>>",IDC_DATA_PARA,21,53,17,11
+    LTEXT           "类型",IDC_SEL_TYPE,3,54,17,8
+    GROUPBOX        "",IDC_STATIC_FRAME,40,47,59,18
+    CONTROL         "自动采集",IDC_CHECK_AUTOSAMPLE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,102,52,43,11
+    PUSHBUTTON      "开始S",IDC_BUTTON_AUTO_SAMPLE,132,2,39,14
+END
+
+IDD_EFFECT_STAT DIALOG DISCARDABLE  0, 0, 267, 115
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "32 Buckets 文件操作路径选择"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,175,94,37,14
+    PUSHBUTTON      "Cancel",IDCANCEL,217,94,34,14
+    LTEXT           "Source File",IDC_STATIC_SOURCE,59,2,201,25
+    PUSHBUTTON      "源文件名",IDC_EFFECT_RESOURCE_FILE,7,5,45,12
+    PUSHBUTTON      "目标文件名",IDC_EFFECT_DESTINATION_FILE,7,29,45,12
+    LTEXT           "Destination  File",IDC_STATIC_DESTINATION,59,28,201,22
+    PUSHBUTTON      "输出文档名",IDC_EFFECT_OUTTEXT_FILE,7,54,45,12
+    LTEXT           "OutPut Text  File",IDC_STATIC_OUTTEXT,60,53,200,27
+    LTEXT           "开始",IDC_STATIC,16,96,16,9
+    EDITTEXT        IDC_EDIT_START_FILE,33,95,14,12,ES_AUTOHSCROLL
+    LTEXT           "终止",IDC_STATIC,56,96,16,9
+    EDITTEXT        IDC_EDIT_END_FILE,73,95,14,12,ES_AUTOHSCROLL
+    CONTROL         "输出相对偏差",IDC_CHECK_OUTRELATIVE_VALUE,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,101,95,60,12
+    CONTROL         "峰位统计/参数调整",IDC_CHECK_PEAK_ANOLPARA_SEL,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,9,82,94,12
+    LTEXT           "参考峰位",IDC_STATIC_PEAK,109,84,32,8
+    EDITTEXT        IDC_EDIT_PEAK,143,83,14,12,ES_AUTOHSCROLL
+END
+
+IDD_ANOL_PARA_MANUL_MODIFY DIALOG DISCARDABLE  0, 0, 277, 287
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "手动调整模拟参数"
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "退出",IDOK,213,1,36,14
+    LTEXT           "Static",IDC_STATIC_PATH,7,17,165,26
+    PUSHBUTTON      "文件名",IDC_LOAD_FILENAME,9,2,38,13
+    LTEXT           "开始",IDC_STATIC,55,5,16,8
+    EDITTEXT        IDC_EDIT_START_FILE,73,3,14,12,ES_AUTOHSCROLL
+    LTEXT           "终止",IDC_STATIC,103,5,16,8
+    EDITTEXT        IDC_EDIT_END_FILE,121,3,14,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "读出",IDC_READ_DATA,143,2,24,13
+    PUSHBUTTON      "保存",IDC_SAVE_DATA,177,2,24,13
+    CONTROL         "",IDC_STATIC,"Static",SS_ETCHEDHORZ,0,16,273,1
+    CONTROL         "",IDC_MSFLEXGRID1,
+                    "{6262D3A0-531B-11CF-91F6-C2863C385E30}",WS_TABSTOP,6,45,
+                    263,217
+    EDITTEXT        IDC_MANULMODITY_EDIT,112,45,36,28,ES_AUTOHSCROLL | NOT 
+                    WS_VISIBLE
+    PUSHBUTTON      "ABCD调整",IDC_ABCD_MODIFY,232,34,38,11
+    LTEXT           "峰位",IDC_STATIC,234,25,17,8
+    EDITTEXT        IDC_EDIT_ABCD_MODIFY,252,23,14,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "XYE偏置调整",IDC_OFFSET_MODIFY,173,25,50,13
+    PUSHBUTTON      "手动调整预制",IDC_MANUAL_MOD_PRE,93,266,52,14
+    PUSHBUTTON      "手动调整",IDC_MANUAL_MOD,175,267,49,13
+END
+
+IDD_AUTOSAMPLE_OPTION DIALOGEX 0, 0, 238, 80
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "自动采集数据选项"
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "确定",IDOK,17,56,32,14
+    PUSHBUTTON      "取消",IDCANCEL,68,56,33,14
+    LTEXT           "采样时间(min)",IDC_STATIC,14,15,49,8
+    EDITTEXT        IDC_EDIT_SAMPL_TIME,66,12,27,12,ES_AUTOHSCROLL,
+                    WS_EX_RIGHT
+    LTEXT           "循环次数",IDC_STATIC,14,33,33,8
+    EDITTEXT        IDC_EDIT_REPEAT_NUM,66,30,27,12,ES_AUTOHSCROLL,
+                    WS_EX_RIGHT
+    CONTROL         "散点模式",IDC_CHECK_SDOT,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,116,12,48,10
+    CONTROL         "能谱模式",IDC_CHECK_ENERGE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,116,22,45,11
+    CONTROL         "时间模式",IDC_CHECK_TIME,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,116,34,48,10
+    CONTROL         "符合模式",IDC_CHECK_FUHE1,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,116,45,47,10
+    GROUPBOX        "模式选项",IDC_STATIC,110,2,58,69
+    CONTROL         "符合1模式",IDC_CHECK_FUHE2,"Button",BS_AUTOCHECKBOX | 
+                    NOT WS_VISIBLE | WS_DISABLED | WS_TABSTOP,116,55,45,13
+    GROUPBOX        "参数选项",IDC_STATIC,177,2,54,69
+    CONTROL         "位置边界",IDC_PARA_POSITION_LIMIT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,183,11,44,9
+    CONTROL         "能量边界",IDC_PARA_ENERGE_LIMIT,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,183,21,46,9
+    CONTROL         "模拟参数",IDC_PARA_ANOL_PARA,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,183,31,44,9
+    CONTROL         "时序器",IDC_PARA_TIMESERIER,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,183,59,44,9
+    CONTROL         "晶体条",IDC_PARA_CYSNUM,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,183,50,44,9
+    CONTROL         "时间修正",IDC_PARA_TIMEMODFY,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,183,41,42,8
+END
+
+IDD_FPGA_COUNT_MAP DIALOG DISCARDABLE  0, 0, 265, 182
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "FPGA计数统计"
+FONT 10, "System"
+BEGIN
+    GROUPBOX        "",IDC_STATIC,2,0,260,162
+    LTEXT           "Static",IDC_STATUS,2,170,261,9
+END
+
+IDD_ABOUT DIALOG DISCARDABLE  0, 0, 175, 134
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "about"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,69,120,35,11
+    ICON            IDI_ZHIZI,IDC_STATIC,9,4,20,20
+    CONTROL         "Revision：Maint 3.7_2004.01.09",IDC_STATIC,"Static",
+                    SS_SIMPLE,39,48,113,10
+    LTEXT           "版权所有(C) 2003 - 2004  ",IDC_STATIC,39,14,93,10
+    LTEXT           "北京质子科技前端电子学项目组",IDC_STATIC,39,26,120,8
+    LTEXT           "Author: Xiaoping liu, akang",IDC_STATIC,39,38,107,9
+    LTEXT           "前端电子学维护软件",IDC_STATIC,39,3,82,11
+    EDITTEXT        IDC_COMMENT,7,60,161,57,ES_MULTILINE | ES_AUTOHSCROLL | 
+                    ES_READONLY | WS_VSCROLL
+END
+
+IDD_SET64ENERGELIMIT_PARA DIALOG DISCARDABLE  0, 0, 157, 130
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "设置64能谱边界参数"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,30,113,28,13
+    PUSHBUTTON      "Cancel",IDCANCEL,91,113,30,13
+    GROUPBOX        "阈值参数",IDC_STATIC,19,6,118,104
+    LTEXT           "内一环:",IDC_STATIC,24,26,27,8
+    LTEXT           "内二环:",IDC_STATIC,24,40,27,8
+    LTEXT           "内三环:",IDC_STATIC,24,54,27,8
+    LTEXT           "最外环:",IDC_STATIC,24,67,27,8
+    EDITTEXT        IDC_RING_1_BEF,57,25,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RING_1_BACK,82,25,18,12,ES_AUTOHSCROLL
+    LTEXT           "下限",IDC_STATIC,57,14,17,8
+    LTEXT           "上限",IDC_STATIC,81,14,17,8
+    EDITTEXT        IDC_RING_4_BEF,57,66,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RING_4_BACK,82,66,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RING_3_BEF,57,53,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RING_3_BACK,82,53,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RING_2_BEF,57,40,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RING_2_BACK,82,40,18,12,ES_AUTOHSCROLL
+    CONTROL         "定值",IDC_RING_1_CHECK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,107,25,25,11
+    CONTROL         "定值",IDC_RING_2_CHECK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,107,39,25,11
+    CONTROL         "定值",IDC_RING_4_CHECK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,107,67,25,11
+    CONTROL         "定值",IDC_RING_3_CHECK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,107,53,25,11
+    LTEXT           "属性",IDC_STATIC,110,14,17,8
+    LTEXT           "四边角:",IDC_STATIC,24,81,27,8
+    EDITTEXT        IDC_CORNER_BEF,57,80,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CORNER_BACK,82,80,18,12,ES_AUTOHSCROLL
+    CONTROL         "定值",IDC_CORNER_CHECK,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,107,81,25,11
+    CONTROL         "按百分比计算",IDC_PERSEND_SEL,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,72,95,61,12
+END
+
+IDD_ENVIRMENT_LIMIT DIALOGEX 0, 0, 199, 172
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Bucket程序下载 / 环境参数边界"
+FONT 10, "System", 0, 0, 0x1
+BEGIN
+    DEFPUSHBUTTON   "操作",IDC_OPERATE,118,54,29,14
+    PUSHBUTTON      "退出",IDCANCEL,152,54,28,14
+    LTEXT           "正电压",IDC_STATIC,18,24,25,8
+    EDITTEXT        IDC_POS_VOLT_UPLIMIT,47,21,18,12,ES_AUTOHSCROLL,
+                    WS_EX_RIGHT
+    EDITTEXT        IDC_POS_VOLT_DOWNLIMIT,75,21,19,12,ES_AUTOHSCROLL,
+                    WS_EX_RIGHT
+    LTEXT           "负电压",IDC_STATIC,18,38,25,8
+    EDITTEXT        IDC_NEG_VOLT_UPLIMIT,47,35,18,12,ES_AUTOHSCROLL,
+                    WS_EX_RIGHT
+    EDITTEXT        IDC_NEG_VOLT_DOWNLIMIT,75,35,19,12,ES_AUTOHSCROLL,
+                    WS_EX_RIGHT
+    LTEXT           "温   度",IDC_STATIC,19,52,23,8
+    EDITTEXT        IDC_TEMPER_UPLIMIT,47,49,18,12,ES_AUTOHSCROLL,
+                    WS_EX_RIGHT
+    EDITTEXT        IDC_TEMPER_DOWNLIMIT,75,49,19,12,ES_AUTOHSCROLL,
+                    WS_EX_RIGHT
+    GROUPBOX        "环境参数",IDC_STATIC,9,0,179,83
+    LTEXT           "下阈",IDC_STATIC,78,12,16,8
+    LTEXT           "上阈",IDC_STATIC,49,12,16,8
+    PUSHBUTTON      "版本查询",IDC_BKT_VER_POLL,12,67,39,14
+    LTEXT           "BKT Ver:  ×××",IDC_BKT_VER_SHOW,53,71,86,8
+    LTEXT           "BKT",IDC_STATIC,110,10,15,8
+    COMBOBOX        IDC_BUCKET_SEL,129,8,48,101,CBS_DROPDOWN | WS_VSCROLL | 
+                    WS_TABSTOP
+    CONTROL         "写入",IDC_WR_PARA,"Button",BS_AUTORADIOBUTTON,127,30,32,
+                    10
+    CONTROL         "读出",IDC_RD_PARA,"Button",BS_AUTORADIOBUTTON,127,41,32,
+                    10
+    GROUPBOX        "RD/WR",IDC_STATIC,118,21,62,31
+    GROUPBOX        "Bucket程序下载",IDC_STATIC,9,89,179,72
+    PUSHBUTTON      ">>文件",IDC_LOAD_FILE,12,99,32,14
+    LTEXT           "选择下载文件名",IDC_STATIC_FILENAME,48,101,134,27
+    CONTROL         "Progress1",IDC_PROGRESS_DOWNLOAD,"msctls_progress32",
+                    PBS_SMOOTH,13,149,171,9
+    PUSHBUTTON      "下载",IDC_DOWNLOAD_FILE,12,116,32,14
+    PUSHBUTTON      "手工启动",IDC_HAND_STARTUP,12,132,37,14
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "Maint Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "Maint\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2002\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "Maint.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "Maint 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 6
+        RIGHTMARGIN, 203
+        BOTTOMMARGIN, 131
+    END
+
+    IDD_SHOWBAR, DIALOG
+    BEGIN
+        RIGHTMARGIN, 75
+        BOTTOMMARGIN, 437
+    END
+
+    IDD_COMMSET, DIALOG
+    BEGIN
+        RIGHTMARGIN, 93
+        BOTTOMMARGIN, 190
+    END
+
+    IDD_DATA_SAMPLE, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 148
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 200
+    END
+
+    IDD_ENVIRMENTPARAM, DIALOG
+    BEGIN
+        LEFTMARGIN, 1
+        RIGHTMARGIN, 316
+    END
+
+    IDD_FPGA_BOARDLOCAL, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 159
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 269
+    END
+
+    IDD_FPGA_BOARDENER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 159
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 275
+    END
+
+    IDD_FPGA_TIMEMODFY, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 149
+        BOTTOMMARGIN, 273
+    END
+
+    IDD_FPGA_CYSNUM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 143
+        BOTTOMMARGIN, 264
+    END
+
+    IDD_FPGA_TSERIES, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 143
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 258
+    END
+
+    IDD_ANLOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 128
+        BOTTOMMARGIN, 186
+    END
+
+    IDD_LOGIN, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 156
+        TOPMARGIN, 4
+        BOTTOMMARGIN, 72
+    END
+
+    IDD_SFLASH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 98
+    END
+
+    IDD_FPGA_COUNTER, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 180
+        BOTTOMMARGIN, 166
+    END
+
+    IDD_FILESAVE, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 112
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 62
+    END
+
+    IDD_MODELESS, DIALOG
+    BEGIN
+        RIGHTMARGIN, 175
+    END
+
+    IDD_EFFECT_STAT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 260
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 108
+    END
+
+    IDD_ANOL_PARA_MANUL_MODIFY, DIALOG
+    BEGIN
+        RIGHTMARGIN, 273
+        TOPMARGIN, 1
+        BOTTOMMARGIN, 280
+    END
+
+    IDD_AUTOSAMPLE_OPTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 231
+        BOTTOMMARGIN, 73
+    END
+
+    IDD_FPGA_COUNT_MAP, DIALOG
+    BEGIN
+        LEFTMARGIN, 2
+        RIGHTMARGIN, 263
+        BOTTOMMARGIN, 179
+    END
+
+    IDD_ABOUT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 168
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 131
+    END
+
+    IDD_SET64ENERGELIMIT_PARA, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 150
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 126
+    END
+
+    IDD_ENVIRMENT_LIMIT, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 192
+        BOTTOMMARGIN, 170
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_COMMSET DLGINIT
+BEGIN
+    IDC_COMBO_BAUDSEL, 0x403, 6, 0
+0x3420, 0x3038, 0x0030, 
+    IDC_COMBO_BAUDSEL, 0x403, 6, 0
+0x3920, 0x3036, 0x0030, 
+    IDC_COMBO_BAUDSEL, 0x403, 7, 0
+0x3120, 0x3239, 0x3030, "\000" 
+    IDC_COMBO_BAUDSEL, 0x403, 7, 0
+0x3320, 0x3438, 0x3030, "\000" 
+    IDC_COMBO_BAUDSEL, 0x403, 7, 0
+0x3520, 0x3637, 0x3030, "\000" 
+    IDC_COMBO_DATABIT, 0x403, 7, 0
+0x3720, 0x2020, 0xbbce, "\000" 
+    IDC_COMBO_DATABIT, 0x403, 7, 0
+0x3820, 0x2020, 0xbbce, "\000" 
+    IDC_COMBO_STOPBIT, 0x403, 7, 0
+0x3120, 0x2020, 0xbbce, "\000" 
+    IDC_COMBO_STOPBIT, 0x403, 8, 0
+0x3120, 0x352e, 0xce20, 0x00bb, 
+    IDC_COMBO_STOPBIT, 0x403, 7, 0
+0x3220, 0x2020, 0xbbce, "\000" 
+    IDC_COMBO_PORTSET, 0x403, 7, 0
+0x4320, 0x6d6f, 0x3120, "\000" 
+    IDC_COMBO_PORTSET, 0x403, 7, 0
+0x4320, 0x6d6f, 0x3220, "\000" 
+    IDC_COMBO_PORTSET, 0x403, 7, 0
+0x4320, 0x6d6f, 0x3320, "\000" 
+    IDC_MSCOMM, 0x376, 102, 0
+0x0013, 0x0000, 0x0043, 0x006f, 0x0070, 0x0079, 0x0072, 0x0069, 0x0067, 
+0x0068, 0x0074, 0x0020, 0x0028, 0x0063, 0x0029, 0x0020, 0x0031, 0x0039, 
+0x0039, 0x0034, 0x0020, 0x4321, 0x1234, 0x0008, 0x0000, 0x03ed, 0x0000, 
+0x03ed, 0x0000, 0x5601, 0x648a, 0x0000, 0x0006, 0x0000, 0x0001, 0x0400, 
+0x0000, 0x0200, 0x0000, 0x2580, 0x0000, 0x0000, 0x0008, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x003f, 0x0000, 0x0001, 0x0000, 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x2030, "\000" 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0031, 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0032, 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0033, 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x2034, "\000" 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0035, 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0036, 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0037, 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x2038, "\000" 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0039, 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3031, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3131, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3231, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3331, "\000" 
+    IDC_BUCKET_SEL, 0x403, 12, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3431, 0x0020, 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3531, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3631, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3731, "\000" 
+    IDC_BUCKET_SEL, 0x403, 12, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3831, 0x0020, 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3931, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3032, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3132, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3232, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3332, "\000" 
+    IDC_BUCKET_SEL, 0x403, 12, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3432, 0x0020, 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3532, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3632, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3732, "\000" 
+    IDC_BUCKET_SEL, 0x403, 12, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3832, 0x0020, 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3932, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3033, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3133, "\000" 
+    IDC_COMBO_SELOBJECT, 0x403, 8, 0
+0x4350, 0xf7d6, 0xfabb, 0x0020, 
+    IDC_COMBO_SELOBJECT, 0x403, 7, 0
+0xa5b5, 0xacc6, 0xfabb, "\000" 
+    0
+END
+
+IDD_DATA_SAMPLE DLGINIT
+BEGIN
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x2030, "\000" 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0031, 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0032, 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0033, 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x2034, "\000" 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0035, 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0036, 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0037, 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x2038, "\000" 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0039, 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3031, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3131, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3231, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3331, "\000" 
+    IDC_BUCKET_SEL, 0x403, 12, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3431, 0x0020, 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3531, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3631, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3731, "\000" 
+    IDC_BUCKET_SEL, 0x403, 12, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3831, 0x0020, 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3931, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3032, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3132, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3232, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3332, "\000" 
+    IDC_BUCKET_SEL, 0x403, 12, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3432, 0x0020, 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3532, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3632, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3732, "\000" 
+    IDC_BUCKET_SEL, 0x403, 12, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3832, 0x0020, 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3932, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3033, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3133, "\000" 
+    IDC_MSCOMM, 0x376, 102, 0
+0x0013, 0x0000, 0x0043, 0x006f, 0x0070, 0x0079, 0x0072, 0x0069, 0x0067, 
+0x0068, 0x0074, 0x0020, 0x0028, 0x0063, 0x0029, 0x0020, 0x0031, 0x0039, 
+0x0039, 0x0034, 0x0020, 0x4321, 0x1234, 0x0008, 0x0000, 0x03ed, 0x0000, 
+0x03ed, 0x0000, 0x5601, 0x648a, 0x0000, 0x0006, 0x0000, 0x0001, 0x0400, 
+0x0000, 0x0200, 0x0000, 0x2580, 0x0000, 0x0000, 0x0008, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x003f, 0x0000, 0x0001, 0x0000, 
+    IDC_BLOCK_SEL, 0x403, 10, 0
+0x6843, 0x6e61, 0x656e, 0x206c, 0x0030, 
+    IDC_BLOCK_SEL, 0x403, 10, 0
+0x6843, 0x6e61, 0x656e, 0x206c, 0x0031, 
+    IDC_BLOCK_SEL, 0x403, 10, 0
+0x6843, 0x6e61, 0x656e, 0x206c, 0x0032, 
+    IDC_BLOCK_SEL, 0x403, 10, 0
+0x6843, 0x6e61, 0x656e, 0x206c, 0x0033, 
+    IDC_BLOCK_SEL, 0x403, 10, 0
+0x6843, 0x6e61, 0x656e, 0x206c, 0x0034, 
+    IDC_BLOCK_SEL, 0x403, 10, 0
+0x6843, 0x6e61, 0x656e, 0x206c, 0x0035, 
+    IDC_BLOCK_SEL, 0x403, 10, 0
+0x6843, 0x6e61, 0x656e, 0x206c, 0x0036, 
+    IDC_BLOCK_SEL, 0x403, 10, 0
+0x6843, 0x6e61, 0x656e, 0x206c, 0x0037, 
+    0
+END
+
+IDD_ENVIRMENTPARAM DLGINIT
+BEGIN
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0030, 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0031, 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0032, 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0033, 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0034, 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0035, 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0036, 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0037, 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0038, 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0039, 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3031, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3131, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3231, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3331, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3431, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3531, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3631, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3731, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3831, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3931, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3032, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3132, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3232, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3332, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3432, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3532, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3632, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3732, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3832, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3932, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3033, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3133, "\000" 
+    IDC_MSCOMM1, 0x376, 102, 0
+0x0013, 0x0000, 0x0043, 0x006f, 0x0070, 0x0079, 0x0072, 0x0069, 0x0067, 
+0x0068, 0x0074, 0x0020, 0x0028, 0x0063, 0x0029, 0x0020, 0x0031, 0x0039, 
+0x0039, 0x0034, 0x0020, 0x4321, 0x1234, 0x0008, 0x0000, 0x03ed, 0x0000, 
+0x03ed, 0x0000, 0x5601, 0x648a, 0x0000, 0x0006, 0x0000, 0x0001, 0x0400, 
+0x0000, 0x0200, 0x0000, 0x2580, 0x0000, 0x0000, 0x0008, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x003f, 0x0000, 0x0001, 0x0000, 
+    0
+END
+
+IDD_FPGA_BOARDLOCAL DLGINIT
+BEGIN
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x2030, "\000" 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0031, 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0032, 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0033, 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x2034, "\000" 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0035, 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0036, 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0037, 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x2038, "\000" 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0039, 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3031, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3131, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3231, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3331, "\000" 
+    IDC_BUCKET_SEL, 0x403, 12, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3431, 0x0020, 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3531, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3631, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3731, "\000" 
+    IDC_BUCKET_SEL, 0x403, 12, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3831, 0x0020, 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3931, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3032, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3132, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3232, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3332, "\000" 
+    IDC_BUCKET_SEL, 0x403, 12, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3432, 0x0020, 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3532, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3632, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3732, "\000" 
+    IDC_BUCKET_SEL, 0x403, 12, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3832, 0x0020, 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3932, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3033, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3133, "\000" 
+    IDC_MSFLEXGRID1, 0x37a, 299, 0
+0x0024, 0x0000, 0x0037, 0x0032, 0x0045, 0x0036, 0x0037, 0x0031, 0x0032, 
+0x0030, 0x002d, 0x0035, 0x0039, 0x0035, 0x0039, 0x002d, 0x0031, 0x0031, 
+0x0063, 0x0066, 0x002d, 0x0039, 0x0031, 0x0046, 0x0036, 0x002d, 0x0043, 
+0x0032, 0x0038, 0x0036, 0x0033, 0x0043, 0x0033, 0x0038, 0x0035, 0x0045, 
+0x0033, 0x0030, 0x0012, 0x0000, 0x0001, 0x0000, 0x000a, 0x0000, 0x004c, 
+0x0000, 0x0000, 0x4321, 0x1234, 0x0008, 0x0000, 0x1f36, 0x0000, 0x242c, 
+0x0000, 0x6f42, 0x506f, 0x0000, 0x0006, 0x0080, 0x0000, 0x0002, 0x0000, 
+0x0002, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0005, 
+0x8000, 0x0008, 0x8000, 0x000f, 0x8000, 0x0012, 0x8000, 0x000d, 0x8000, 
+0x000e, 0x8000, 0x8080, 0x0080, 0xc0c0, 0x00c0, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0001, 0x0000, 0x0001, 0x0002, 
+0x0003, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0001, 0x0000, 0x0001, 
+0x0004, 0x0000, 0x0000, 0x0000, 0x5203, 0x0be3, 0x8f91, 0x11ce, 0xe39d, 
+0xaa00, 0x4b00, 0x51b8, 0x8601, 0x0000, 0x02bc, 0xd4c0, 0x0001, 0x5306, 
+0x7379, 0x6574, 0x046d, 0xe352, 0x910b, 0xce8f, 0x9d11, 0x00e3, 0x00aa, 
+0xb84b, 0x6c51, 0x0074, 0x0000, 0x0000, "\000" 
+    IDC_MSCOMM1, 0x376, 102, 0
+0x0013, 0x0000, 0x0043, 0x006f, 0x0070, 0x0079, 0x0072, 0x0069, 0x0067, 
+0x0068, 0x0074, 0x0020, 0x0028, 0x0063, 0x0029, 0x0020, 0x0031, 0x0039, 
+0x0039, 0x0034, 0x0020, 0x4321, 0x1234, 0x0008, 0x0000, 0x03ed, 0x0000, 
+0x03ed, 0x0000, 0x5601, 0x648a, 0x0000, 0x0006, 0x0000, 0x0001, 0x0400, 
+0x0000, 0x0200, 0x0000, 0x2580, 0x0000, 0x0000, 0x0008, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x003f, 0x0000, 0x0001, 0x0000, 
+    IDC_BLOCK_SEL, 0x403, 10, 0
+0x6843, 0x6e61, 0x656e, 0x206c, 0x0030, 
+    IDC_BLOCK_SEL, 0x403, 10, 0
+0x6843, 0x6e61, 0x656e, 0x206c, 0x0031, 
+    IDC_BLOCK_SEL, 0x403, 10, 0
+0x6843, 0x6e61, 0x656e, 0x206c, 0x0032, 
+    IDC_BLOCK_SEL, 0x403, 10, 0
+0x6843, 0x6e61, 0x656e, 0x206c, 0x0033, 
+    IDC_BLOCK_SEL, 0x403, 10, 0
+0x6843, 0x6e61, 0x656e, 0x206c, 0x0034, 
+    IDC_BLOCK_SEL, 0x403, 10, 0
+0x6843, 0x6e61, 0x656e, 0x206c, 0x0035, 
+    IDC_BLOCK_SEL, 0x403, 10, 0
+0x6843, 0x6e61, 0x656e, 0x206c, 0x0036, 
+    IDC_BLOCK_SEL, 0x403, 10, 0
+0x6843, 0x6e61, 0x656e, 0x206c, 0x0037, 
+    IDC_BLOCK_SEL, 0x403, 5, 0
+0xabc8, 0xa1d1, "\000" 
+    0
+END
+
+IDD_FPGA_BOARDENER DLGINIT
+BEGIN
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x2030, "\000" 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0031, 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0032, 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0033, 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x2034, "\000" 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0035, 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0036, 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0037, 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x2038, "\000" 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0039, 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3031, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3131, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3231, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3331, "\000" 
+    IDC_BUCKET_SEL, 0x403, 12, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3431, 0x0020, 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3531, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3631, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3731, "\000" 
+    IDC_BUCKET_SEL, 0x403, 12, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3831, 0x0020, 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3931, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3032, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3132, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3232, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3332, "\000" 
+    IDC_BUCKET_SEL, 0x403, 12, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3432, 0x0020, 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3532, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3632, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3732, "\000" 
+    IDC_BUCKET_SEL, 0x403, 12, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3832, 0x0020, 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3932, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3033, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3133, "\000" 
+    IDC_MSFLEXGRID1, 0x37a, 299, 0
+0x0024, 0x0000, 0x0037, 0x0032, 0x0045, 0x0036, 0x0037, 0x0031, 0x0032, 
+0x0030, 0x002d, 0x0035, 0x0039, 0x0035, 0x0039, 0x002d, 0x0031, 0x0031, 
+0x0063, 0x0066, 0x002d, 0x0039, 0x0031, 0x0046, 0x0036, 0x002d, 0x0043, 
+0x0032, 0x0038, 0x0036, 0x0033, 0x0043, 0x0033, 0x0038, 0x0035, 0x0045, 
+0x0033, 0x0030, 0x0012, 0x0000, 0x0001, 0x0000, 0x000a, 0x0000, 0x004c, 
+0x0000, 0x0000, 0x4321, 0x1234, 0x0008, 0x0000, 0x1f36, 0x0000, 0x22ef, 
+0x0000, 0x6f42, 0x506f, 0x0000, 0x0006, 0x0080, 0x0000, 0x0002, 0x0000, 
+0x0002, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0005, 
+0x8000, 0x0008, 0x8000, 0x000f, 0x8000, 0x0012, 0x8000, 0x000d, 0x8000, 
+0x000e, 0x8000, 0x8080, 0x0080, 0xc0c0, 0x00c0, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0001, 0x0000, 0x0001, 0x0002, 
+0x0003, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0001, 0x0000, 0x0001, 
+0x0004, 0x0000, 0x0000, 0x0000, 0x5203, 0x0be3, 0x8f91, 0x11ce, 0xe39d, 
+0xaa00, 0x4b00, 0x51b8, 0x8601, 0x0000, 0x02bc, 0xd4c0, 0x0001, 0x5306, 
+0x7379, 0x6574, 0x046d, 0xe352, 0x910b, 0xce8f, 0x9d11, 0x00e3, 0x00aa, 
+0xb84b, 0x6c51, 0x0074, 0x0000, 0x0000, "\000" 
+    IDC_MSCOMM1, 0x376, 102, 0
+0x0013, 0x0000, 0x0043, 0x006f, 0x0070, 0x0079, 0x0072, 0x0069, 0x0067, 
+0x0068, 0x0074, 0x0020, 0x0028, 0x0063, 0x0029, 0x0020, 0x0031, 0x0039, 
+0x0039, 0x0034, 0x0020, 0x4321, 0x1234, 0x0008, 0x0000, 0x03ed, 0x0000, 
+0x03ed, 0x0000, 0x5601, 0x648a, 0x0000, 0x0006, 0x0000, 0x0001, 0x0400, 
+0x0000, 0x0200, 0x0000, 0x2580, 0x0000, 0x0000, 0x0008, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x003f, 0x0000, 0x0001, 0x0000, 
+    IDC_BLOCK_SEL, 0x403, 10, 0
+0x6843, 0x6e61, 0x656e, 0x206c, 0x0030, 
+    IDC_BLOCK_SEL, 0x403, 10, 0
+0x6843, 0x6e61, 0x656e, 0x206c, 0x0031, 
+    IDC_BLOCK_SEL, 0x403, 10, 0
+0x6843, 0x6e61, 0x656e, 0x206c, 0x0032, 
+    IDC_BLOCK_SEL, 0x403, 10, 0
+0x6843, 0x6e61, 0x656e, 0x206c, 0x0033, 
+    IDC_BLOCK_SEL, 0x403, 10, 0
+0x6843, 0x6e61, 0x656e, 0x206c, 0x0034, 
+    IDC_BLOCK_SEL, 0x403, 10, 0
+0x6843, 0x6e61, 0x656e, 0x206c, 0x0035, 
+    IDC_BLOCK_SEL, 0x403, 10, 0
+0x6843, 0x6e61, 0x656e, 0x206c, 0x0036, 
+    IDC_BLOCK_SEL, 0x403, 10, 0
+0x6843, 0x6e61, 0x656e, 0x206c, 0x0037, 
+    IDC_BLOCK_SEL, 0x403, 5, 0
+0xabc8, 0xbfb2, "\000" 
+    0
+END
+
+IDD_FPGA_TIMEMODFY DLGINIT
+BEGIN
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x2030, "\000" 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0031, 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0032, 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0033, 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x2034, "\000" 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0035, 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0036, 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0037, 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x2038, "\000" 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0039, 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3031, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3131, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3231, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3331, "\000" 
+    IDC_BUCKET_SEL, 0x403, 12, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3431, 0x0020, 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3531, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3631, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3731, "\000" 
+    IDC_BUCKET_SEL, 0x403, 12, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3831, 0x0020, 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3931, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3032, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3132, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3232, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3332, "\000" 
+    IDC_BUCKET_SEL, 0x403, 12, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3432, 0x0020, 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3532, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3632, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3732, "\000" 
+    IDC_BUCKET_SEL, 0x403, 12, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3832, 0x0020, 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3932, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3033, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3133, "\000" 
+    IDC_MSFLEXGRID1, 0x37a, 299, 0
+0x0024, 0x0000, 0x0037, 0x0032, 0x0045, 0x0036, 0x0037, 0x0031, 0x0032, 
+0x0030, 0x002d, 0x0035, 0x0039, 0x0035, 0x0039, 0x002d, 0x0031, 0x0031, 
+0x0063, 0x0066, 0x002d, 0x0039, 0x0031, 0x0046, 0x0036, 0x002d, 0x0043, 
+0x0032, 0x0038, 0x0036, 0x0033, 0x0043, 0x0033, 0x0038, 0x0035, 0x0045, 
+0x0033, 0x0030, 0x0012, 0x0000, 0x0001, 0x0000, 0x000a, 0x0000, 0x004c, 
+0x0000, 0x0000, 0x4321, 0x1234, 0x0008, 0x0000, 0x1c1d, 0x0000, 0x21e6, 
+0x0000, 0x6f42, 0x506f, 0x0000, 0x0006, 0x0080, 0x0000, 0x0002, 0x0000, 
+0x0002, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0005, 
+0x8000, 0x0008, 0x8000, 0x000f, 0x8000, 0x0012, 0x8000, 0x000d, 0x8000, 
+0x000e, 0x8000, 0x8080, 0x0080, 0xc0c0, 0x00c0, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0001, 0x0000, 0x0001, 0x0002, 
+0x0003, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0001, 0x0000, 0x0001, 
+0x0004, 0x0000, 0x0000, 0x0000, 0x5203, 0x0be3, 0x8f91, 0x11ce, 0xe39d, 
+0xaa00, 0x4b00, 0x51b8, 0x8601, 0x0000, 0x02bc, 0xd4c0, 0x0001, 0x5306, 
+0x7379, 0x6574, 0x046d, 0xe352, 0x910b, 0xce8f, 0x9d11, 0x00e3, 0x00aa, 
+0xb84b, 0x6c51, 0x0074, 0x0000, 0x0000, "\000" 
+    IDC_MSCOMM1, 0x376, 102, 0
+0x0013, 0x0000, 0x0043, 0x006f, 0x0070, 0x0079, 0x0072, 0x0069, 0x0067, 
+0x0068, 0x0074, 0x0020, 0x0028, 0x0063, 0x0029, 0x0020, 0x0031, 0x0039, 
+0x0039, 0x0034, 0x0020, 0x4321, 0x1234, 0x0008, 0x0000, 0x03ed, 0x0000, 
+0x03ed, 0x0000, 0x5601, 0x648a, 0x0000, 0x0006, 0x0000, 0x0001, 0x0400, 
+0x0000, 0x0200, 0x0000, 0x2580, 0x0000, 0x0000, 0x0008, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x003f, 0x0000, 0x0001, 0x0000, 
+    IDC_BLOCK_SEL, 0x403, 10, 0
+0x6843, 0x6e61, 0x656e, 0x206c, 0x0030, 
+    IDC_BLOCK_SEL, 0x403, 10, 0
+0x6843, 0x6e61, 0x656e, 0x206c, 0x0031, 
+    IDC_BLOCK_SEL, 0x403, 10, 0
+0x6843, 0x6e61, 0x656e, 0x206c, 0x0032, 
+    IDC_BLOCK_SEL, 0x403, 10, 0
+0x6843, 0x6e61, 0x656e, 0x206c, 0x0033, 
+    IDC_BLOCK_SEL, 0x403, 10, 0
+0x6843, 0x6e61, 0x656e, 0x206c, 0x0034, 
+    IDC_BLOCK_SEL, 0x403, 10, 0
+0x6843, 0x6e61, 0x656e, 0x206c, 0x0035, 
+    IDC_BLOCK_SEL, 0x403, 10, 0
+0x6843, 0x6e61, 0x656e, 0x206c, 0x0036, 
+    IDC_BLOCK_SEL, 0x403, 10, 0
+0x6843, 0x6e61, 0x656e, 0x206c, 0x0037, 
+    IDC_BLOCK_SEL, 0x403, 5, 0
+0xabc8, 0xbfb2, "\000" 
+    0
+END
+
+IDD_FPGA_CYSNUM DLGINIT
+BEGIN
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x2030, "\000" 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0031, 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0032, 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0033, 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x2034, "\000" 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0035, 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0036, 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0037, 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x2038, "\000" 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0039, 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3031, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3131, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3231, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3331, "\000" 
+    IDC_BUCKET_SEL, 0x403, 12, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3431, 0x0020, 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3531, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3631, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3731, "\000" 
+    IDC_BUCKET_SEL, 0x403, 12, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3831, 0x0020, 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3931, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3032, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3132, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3232, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3332, "\000" 
+    IDC_BUCKET_SEL, 0x403, 12, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3432, 0x0020, 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3532, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3632, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3732, "\000" 
+    IDC_BUCKET_SEL, 0x403, 12, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3832, 0x0020, 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3932, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3033, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3133, "\000" 
+    IDC_MSFLEXGRID1, 0x37a, 299, 0
+0x0024, 0x0000, 0x0037, 0x0032, 0x0045, 0x0036, 0x0037, 0x0031, 0x0032, 
+0x0030, 0x002d, 0x0035, 0x0039, 0x0035, 0x0039, 0x002d, 0x0031, 0x0031, 
+0x0063, 0x0066, 0x002d, 0x0039, 0x0031, 0x0046, 0x0036, 0x002d, 0x0043, 
+0x0032, 0x0038, 0x0036, 0x0033, 0x0043, 0x0033, 0x0038, 0x0035, 0x0045, 
+0x0033, 0x0030, 0x0012, 0x0000, 0x0001, 0x0000, 0x000a, 0x0000, 0x004c, 
+0x0000, 0x0000, 0x4321, 0x1234, 0x0008, 0x0000, 0x1c1d, 0x0000, 0x221b, 
+0x0000, 0x6f42, 0x506f, 0x0000, 0x0006, 0x0080, 0x0000, 0x0002, 0x0000, 
+0x0002, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0005, 
+0x8000, 0x0008, 0x8000, 0x000f, 0x8000, 0x0012, 0x8000, 0x000d, 0x8000, 
+0x000e, 0x8000, 0x8080, 0x0080, 0xc0c0, 0x00c0, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0001, 0x0000, 0x0001, 0x0002, 
+0x0003, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0001, 0x0000, 0x0001, 
+0x0004, 0x0000, 0x0000, 0x0000, 0x5203, 0x0be3, 0x8f91, 0x11ce, 0xe39d, 
+0xaa00, 0x4b00, 0x51b8, 0x8601, 0x0000, 0x02bc, 0xd4c0, 0x0001, 0x5306, 
+0x7379, 0x6574, 0x046d, 0xe352, 0x910b, 0xce8f, 0x9d11, 0x00e3, 0x00aa, 
+0xb84b, 0x6c51, 0x0074, 0x0000, 0x0000, "\000" 
+    IDC_MSCOMM1, 0x376, 102, 0
+0x0013, 0x0000, 0x0043, 0x006f, 0x0070, 0x0079, 0x0072, 0x0069, 0x0067, 
+0x0068, 0x0074, 0x0020, 0x0028, 0x0063, 0x0029, 0x0020, 0x0031, 0x0039, 
+0x0039, 0x0034, 0x0020, 0x4321, 0x1234, 0x0008, 0x0000, 0x03ed, 0x0000, 
+0x03ed, 0x0000, 0x5601, 0x648a, 0x0000, 0x0006, 0x0000, 0x0001, 0x0400, 
+0x0000, 0x0200, 0x0000, 0x2580, 0x0000, 0x0000, 0x0008, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x003f, 0x0000, 0x0001, 0x0000, 
+    IDC_BLOCK_SEL, 0x403, 10, 0
+0x6843, 0x6e61, 0x656e, 0x206c, 0x0030, 
+    IDC_BLOCK_SEL, 0x403, 10, 0
+0x6843, 0x6e61, 0x656e, 0x206c, 0x0031, 
+    IDC_BLOCK_SEL, 0x403, 10, 0
+0x6843, 0x6e61, 0x656e, 0x206c, 0x0032, 
+    IDC_BLOCK_SEL, 0x403, 10, 0
+0x6843, 0x6e61, 0x656e, 0x206c, 0x0033, 
+    IDC_BLOCK_SEL, 0x403, 10, 0
+0x6843, 0x6e61, 0x656e, 0x206c, 0x0034, 
+    IDC_BLOCK_SEL, 0x403, 10, 0
+0x6843, 0x6e61, 0x656e, 0x206c, 0x0035, 
+    IDC_BLOCK_SEL, 0x403, 10, 0
+0x6843, 0x6e61, 0x656e, 0x206c, 0x0036, 
+    IDC_BLOCK_SEL, 0x403, 10, 0
+0x6843, 0x6e61, 0x656e, 0x206c, 0x0037, 
+    0
+END
+
+IDD_FPGA_TSERIES DLGINIT
+BEGIN
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x2030, "\000" 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0031, 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0032, 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0033, 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x2034, "\000" 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0035, 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0036, 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0037, 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x2038, "\000" 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0039, 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3031, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3131, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3231, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3331, "\000" 
+    IDC_BUCKET_SEL, 0x403, 12, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3431, 0x0020, 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3531, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3631, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3731, "\000" 
+    IDC_BUCKET_SEL, 0x403, 12, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3831, 0x0020, 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3931, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3032, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3132, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3232, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3332, "\000" 
+    IDC_BUCKET_SEL, 0x403, 12, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3432, 0x0020, 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3532, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3632, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3732, "\000" 
+    IDC_BUCKET_SEL, 0x403, 12, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3832, 0x0020, 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3932, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3033, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3133, "\000" 
+    IDC_BUCKET_SEL, 0x403, 6, 0
+0xc820, 0xd1ab, 0x00a1, 
+    IDC_MSCOMM1, 0x376, 102, 0
+0x0013, 0x0000, 0x0043, 0x006f, 0x0070, 0x0079, 0x0072, 0x0069, 0x0067, 
+0x0068, 0x0074, 0x0020, 0x0028, 0x0063, 0x0029, 0x0020, 0x0031, 0x0039, 
+0x0039, 0x0034, 0x0020, 0x4321, 0x1234, 0x0008, 0x0000, 0x03ed, 0x0000, 
+0x03ed, 0x0000, 0x5601, 0x648a, 0x0000, 0x0006, 0x0000, 0x0001, 0x0400, 
+0x0000, 0x0200, 0x0000, 0x2580, 0x0000, 0x0000, 0x0008, 0x0000, 0x0000, 
+0x0000, 0x0000, 0x003f, 0x0000, 0x0001, 0x0000, 
+    IDC_MSFLEXGRID1, 0x37a, 299, 0
+0x0024, 0x0000, 0x0037, 0x0032, 0x0045, 0x0036, 0x0037, 0x0031, 0x0032, 
+0x0030, 0x002d, 0x0035, 0x0039, 0x0035, 0x0039, 0x002d, 0x0031, 0x0031, 
+0x0063, 0x0066, 0x002d, 0x0039, 0x0031, 0x0046, 0x0036, 0x002d, 0x0043, 
+0x0032, 0x0038, 0x0036, 0x0033, 0x0043, 0x0033, 0x0038, 0x0035, 0x0045, 
+0x0033, 0x0030, 0x0012, 0x0000, 0x0001, 0x0000, 0x000a, 0x0000, 0x004c, 
+0x0000, 0x0000, 0x4321, 0x1234, 0x0008, 0x0000, 0x1c52, 0x0000, 0x2250, 
+0x0000, 0x6f42, 0x506f, 0x0000, 0x0006, 0x0080, 0x0000, 0x0002, 0x0000, 
+0x0002, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0005, 
+0x8000, 0x0008, 0x8000, 0x000f, 0x8000, 0x0012, 0x8000, 0x000d, 0x8000, 
+0x000e, 0x8000, 0x8080, 0x0080, 0xc0c0, 0x00c0, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0001, 0x0000, 0x0001, 0x0002, 
+0x0003, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0001, 0x0000, 0x0001, 
+0x0004, 0x0000, 0x0000, 0x0000, 0x5203, 0x0be3, 0x8f91, 0x11ce, 0xe39d, 
+0xaa00, 0x4b00, 0x51b8, 0x8601, 0x0000, 0x02bc, 0xd4c0, 0x0001, 0x5306, 
+0x7379, 0x6574, 0x046d, 0xe352, 0x910b, 0xce8f, 0x9d11, 0x00e3, 0x00aa, 
+0xb84b, 0x6c51, 0x0074, 0x0000, 0x0000, "\000" 
+    IDC_BLOCK_SEL, 0x403, 10, 0
+0x6843, 0x6e61, 0x656e, 0x206c, 0x0030, 
+    IDC_BLOCK_SEL, 0x403, 10, 0
+0x6843, 0x6e61, 0x656e, 0x206c, 0x0031, 
+    IDC_BLOCK_SEL, 0x403, 10, 0
+0x6843, 0x6e61, 0x656e, 0x206c, 0x0032, 
+    IDC_BLOCK_SEL, 0x403, 10, 0
+0x6843, 0x6e61, 0x656e, 0x206c, 0x0033, 
+    IDC_BLOCK_SEL, 0x403, 10, 0
+0x6843, 0x6e61, 0x656e, 0x206c, 0x0034, 
+    IDC_BLOCK_SEL, 0x403, 10, 0
+0x6843, 0x6e61, 0x656e, 0x206c, 0x0035, 
+    IDC_BLOCK_SEL, 0x403, 10, 0
+0x6843, 0x6e61, 0x656e, 0x206c, 0x0036, 
+    IDC_BLOCK_SEL, 0x403, 10, 0
+0x6843, 0x6e61, 0x656e, 0x206c, 0x0037, 
+    0
+END
+
+IDD_ANLOG DLGINIT
+BEGIN
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x2030, "\000" 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0031, 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0032, 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0033, 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x2034, "\000" 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0035, 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0036, 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0037, 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x2038, "\000" 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0039, 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3031, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3131, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3231, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3331, "\000" 
+    IDC_BUCKET_SEL, 0x403, 12, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3431, 0x0020, 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3531, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3631, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3731, "\000" 
+    IDC_BUCKET_SEL, 0x403, 12, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3831, 0x0020, 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3931, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3032, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3132, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3232, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3332, "\000" 
+    IDC_BUCKET_SEL, 0x403, 12, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3432, 0x0020, 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3532, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3632, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3732, "\000" 
+    IDC_BUCKET_SEL, 0x403, 12, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3832, 0x0020, 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3932, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3033, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3133, "\000" 
+    IDC_BLOCK_SEL, 0x403, 10, 0
+0x6843, 0x6e61, 0x656e, 0x206c, 0x0030, 
+    IDC_BLOCK_SEL, 0x403, 10, 0
+0x6843, 0x6e61, 0x656e, 0x206c, 0x0031, 
+    IDC_BLOCK_SEL, 0x403, 10, 0
+0x6843, 0x6e61, 0x656e, 0x206c, 0x0032, 
+    IDC_BLOCK_SEL, 0x403, 10, 0
+0x6843, 0x6e61, 0x656e, 0x206c, 0x0033, 
+    IDC_BLOCK_SEL, 0x403, 10, 0
+0x6843, 0x6e61, 0x656e, 0x206c, 0x0034, 
+    IDC_BLOCK_SEL, 0x403, 10, 0
+0x6843, 0x6e61, 0x656e, 0x206c, 0x0035, 
+    IDC_BLOCK_SEL, 0x403, 10, 0
+0x6843, 0x6e61, 0x656e, 0x206c, 0x0036, 
+    IDC_BLOCK_SEL, 0x403, 10, 0
+0x6843, 0x6e61, 0x656e, 0x206c, 0x0037, 
+    IDC_BLOCK_SEL, 0x403, 5, 0
+0xabc8, 0xe5cc, "\000" 
+    0
+END
+
+IDD_SHOWBAR DLGINIT
+BEGIN
+    IDC_SHOW_BLOCK_SEL, 0x403, 9, 0
+0x4220, 0x6f6c, 0x6b63, 0x3020, "\000" 
+    IDC_SHOW_BLOCK_SEL, 0x403, 9, 0
+0x4220, 0x6f6c, 0x6b63, 0x3120, "\000" 
+    IDC_SHOW_BLOCK_SEL, 0x403, 9, 0
+0x4220, 0x6f6c, 0x6b63, 0x3220, "\000" 
+    IDC_SHOW_BLOCK_SEL, 0x403, 9, 0
+0x4220, 0x6f6c, 0x6b63, 0x3320, "\000" 
+    IDC_SHOW_BLOCK_SEL, 0x403, 9, 0
+0x4220, 0x6f6c, 0x6b63, 0x3420, "\000" 
+    IDC_SHOW_BLOCK_SEL, 0x403, 9, 0
+0x4220, 0x6f6c, 0x6b63, 0x3520, "\000" 
+    IDC_SHOW_BLOCK_SEL, 0x403, 9, 0
+0x4220, 0x6f6c, 0x6b63, 0x3620, "\000" 
+    IDC_SHOW_BLOCK_SEL, 0x403, 9, 0
+0x4220, 0x6f6c, 0x6b63, 0x3720, "\000" 
+    0
+END
+
+IDD_FPGA_COUNTER DLGINIT
+BEGIN
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x2030, "\000" 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0031, 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0032, 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0033, 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x2034, "\000" 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0035, 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0036, 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0037, 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x2038, "\000" 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0039, 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3031, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3131, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3231, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3331, "\000" 
+    IDC_BUCKET_SEL, 0x403, 12, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3431, 0x0020, 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3531, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3631, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3731, "\000" 
+    IDC_BUCKET_SEL, 0x403, 12, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3831, 0x0020, 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3931, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3032, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3132, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3232, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3332, "\000" 
+    IDC_BUCKET_SEL, 0x403, 12, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3432, 0x0020, 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3532, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3632, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3732, "\000" 
+    IDC_BUCKET_SEL, 0x403, 12, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3832, 0x0020, 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3932, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3033, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3133, "\000" 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0xc820, 0xb2ab, 0xcabf, 0xbefd, 0x00dd, 
+    0
+END
+
+IDD_ANOL_PARA_MANUL_MODIFY DLGINIT
+BEGIN
+    IDC_MSFLEXGRID1, 0x37a, 299, 0
+0x0024, 0x0000, 0x0037, 0x0032, 0x0045, 0x0036, 0x0037, 0x0031, 0x0032, 
+0x0030, 0x002d, 0x0035, 0x0039, 0x0035, 0x0039, 0x002d, 0x0031, 0x0031, 
+0x0063, 0x0066, 0x002d, 0x0039, 0x0031, 0x0046, 0x0036, 0x002d, 0x0043, 
+0x0032, 0x0038, 0x0036, 0x0033, 0x0043, 0x0033, 0x0038, 0x0035, 0x0045, 
+0x0033, 0x0030, 0x0012, 0x0000, 0x0001, 0x0000, 0x000a, 0x0000, 0x004c, 
+0x0000, 0x0000, 0x4321, 0x1234, 0x0008, 0x0000, 0x365d, 0x0000, 0x2cdb, 
+0x0000, 0x6f42, 0x506f, 0x0000, 0x0006, 0x0080, 0x0000, 0x0002, 0x0000, 
+0x0002, 0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0005, 
+0x8000, 0x0008, 0x8000, 0x000f, 0x8000, 0x0012, 0x8000, 0x000d, 0x8000, 
+0x000e, 0x8000, 0x8080, 0x0080, 0xc0c0, 0x00c0, 0x0000, 0x0000, 0x0000, 
+0x0000, 0x0001, 0x0000, 0x0001, 0x0000, 0x0000, 0x0000, 0x0001, 0x0000, 
+0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0001, 0x0000, 0x0001, 0x0002, 
+0x0003, 0x0000, 0x0000, 0x0000, 0x0000, 0x0001, 0x0001, 0x0000, 0x0001, 
+0x0004, 0x0000, 0x0000, 0x0000, 0x5203, 0x0be3, 0x8f91, 0x11ce, 0xe39d, 
+0xaa00, 0x4b00, 0x51b8, 0x8601, 0x0000, 0x02bc, 0xd4c0, 0x0001, 0x5306, 
+0x7379, 0x6574, 0x046d, 0xe352, 0x910b, 0xce8f, 0x9d11, 0x00e3, 0x00aa, 
+0xb84b, 0x6c51, 0x0074, 0x0000, 0x0000, "\000" 
+    0
+END
+
+IDD_ENVIRMENT_LIMIT DLGINIT
+BEGIN
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x2030, "\000" 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0031, 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0032, 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0033, 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x2034, "\000" 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0035, 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0036, 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0037, 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x2038, "\000" 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x0039, 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3031, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3131, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3231, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3331, "\000" 
+    IDC_BUCKET_SEL, 0x403, 12, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3431, 0x0020, 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3531, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3631, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3731, "\000" 
+    IDC_BUCKET_SEL, 0x403, 12, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3831, 0x0020, 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3931, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3032, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3132, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3232, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3332, "\000" 
+    IDC_BUCKET_SEL, 0x403, 12, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3432, 0x0020, 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3532, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3632, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3732, "\000" 
+    IDC_BUCKET_SEL, 0x403, 12, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3832, 0x0020, 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3932, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3033, "\000" 
+    IDC_BUCKET_SEL, 0x403, 11, 0
+0x4220, 0x6375, 0x656b, 0x2074, 0x3133, "\000" 
+    IDC_BUCKET_SEL, 0x403, 10, 0
+0xc820, 0xb2ab, 0xd1bf, 0xd4a1, 0x00f1, 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "maint"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "Maint"
+    AFX_IDS_IDLEMESSAGE     "就绪"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "扩展名"
+    ID_INDICATOR_CAPS       "大写"
+    ID_INDICATOR_NUM        "数字"
+    ID_INDICATOR_SCRL       "滚动"
+    ID_INDICATOR_OVR        "改写"
+    ID_INDICATOR_REC        "记录"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "建立新文档\n新建"
+    ID_FILE_OPEN            "打开一个现有文档\n打开"
+    ID_FILE_CLOSE           "关闭活动文档\n关闭"
+    ID_FILE_SAVE            "保存活动文档\n保存"
+    ID_FILE_SAVE_AS         "将活动文档以一个新文件名保存\n另存为"
+    ID_FILE_PAGE_SETUP      "改变打印选项\n页面设置"
+    ID_FILE_PRINT_SETUP     "改变打印机及打印选项\n打印设置"
+    ID_FILE_PRINT           "打印活动文档\n打印"
+    ID_FILE_PRINT_PREVIEW   "显示整页\n打印预览"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "显示程序信息，版本号和版权\n关于"
+    ID_APP_EXIT             "退出应用程序；提示保存文档\n退出"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "打开该文档"
+    ID_FILE_MRU_FILE2       "打开该文档"
+    ID_FILE_MRU_FILE3       "打开该文档"
+    ID_FILE_MRU_FILE4       "打开该文档"
+    ID_FILE_MRU_FILE5       "打开该文档"
+    ID_FILE_MRU_FILE6       "打开该文档"
+    ID_FILE_MRU_FILE7       "打开该文档"
+    ID_FILE_MRU_FILE8       "打开该文档"
+    ID_FILE_MRU_FILE9       "打开该文档"
+    ID_FILE_MRU_FILE10      "打开该文档"
+    ID_FILE_MRU_FILE11      "打开该文档"
+    ID_FILE_MRU_FILE12      "打开该文档"
+    ID_FILE_MRU_FILE13      "打开该文档"
+    ID_FILE_MRU_FILE14      "打开该文档"
+    ID_FILE_MRU_FILE15      "打开该文档"
+    ID_FILE_MRU_FILE16      "打开该文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_NEXT_PANE            "切换到下一个窗格\n下一窗格"
+    ID_PREV_PANE            "切换回前一个窗格\n前一窗格"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_WINDOW_SPLIT         "将活动的窗口分隔成窗格\n分隔"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_EDIT_CLEAR           "删除被选对象\n删除"
+    ID_EDIT_CLEAR_ALL       "全部删除\n全部删除"
+    ID_EDIT_COPY            "复制被选对象并将其置于剪贴板上\n复制"
+    ID_EDIT_CUT             "剪切被选对象并将其置于剪贴板上\n剪切"
+    ID_EDIT_FIND            "查找指定的正文\n查找"
+    ID_EDIT_PASTE           "插入剪贴板内容\n粘贴"
+    ID_EDIT_REPEAT          "重复上一步操作\n重复"
+    ID_EDIT_REPLACE         "用不同的正文替换指定的正文\n替换"
+    ID_EDIT_SELECT_ALL      "选择整个文档\n选择全部"
+    ID_EDIT_UNDO            "撤消最后一步操作\n撤消"
+    ID_EDIT_REDO            "重新执行先前已撤消的操作\n重新执行"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "显示或隐藏工具栏\n显隐工具栏"
+    ID_VIEW_STATUS_BAR      "显示或隐藏状态栏\n显隐状态栏"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "改变窗口大小"
+    AFX_IDS_SCMOVE          "改变窗口位置"
+    AFX_IDS_SCMINIMIZE      "将窗口缩小成图标"
+    AFX_IDS_SCMAXIMIZE      "把窗口放大到最大尺寸"
+    AFX_IDS_SCNEXTWINDOW    "切换到下一个文档窗口"
+    AFX_IDS_SCPREVWINDOW    "切换到先前的文档窗口"
+    AFX_IDS_SCCLOSE         "关闭活动的窗口并提示保存所有文档"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "把窗口恢复到正常大小"
+    AFX_IDS_SCTASKLIST      "激活任务表"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_PREVIEW_CLOSE   "关闭打印预览模式\n取消预阅"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_MENU_ANLOG           "前端模拟部分\n模拟"
+    ID_MENU_FASTOPEN        "快速打开文件LimitFile.dat  \n 快速打开文件LimitFile.dat"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_MENU_COMMSET         "通信端口设置\n端口设置"
+    ID_MENU_DATA_SAMPLE     "数据采样\n数据采样"
+    ID_MENU_ENVIRMENTPARAM  "环境参数\n环境参数"
+    ID_MENU_BOARDENERG      "能量边界\n能量边界"
+    ID_MENU_TIMEMODFY       "时间修正\n时间修正"
+    ID_MENU_CYSNUM          "晶体条\n晶体条"
+    ID_MENU_TSERIES         " 时序\n时序"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDC_CONTEXTHELP     "帮助\n帮助"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDC_FILE_SAVE           "将位置边界保存到当前文件"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\Maint.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#include "l.chs\afxprint.rc"        // printing/print preview resources
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

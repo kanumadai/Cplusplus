@@ -1,0 +1,810 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\robot.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\robot.ico"
+IDI_ICON_OFF            ICON    DISCARDABLE     "res\\OFF.ICO"
+IDI_ICON_RED            ICON    DISCARDABLE     "res\\RED.ICO"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 robot"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "PET/CT/MRI连接机器人控制系统 1.0 版",IDC_STATIC,40,10,
+                    119,8,SS_NOPREFIX
+    LTEXT           "版权所有 (C) 2008",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_ROBOT_DIALOG DIALOGEX 0, 0, 571, 339
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_MAXIMIZEBOX | WS_POPUP | 
+    WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "亿仁赛博医疗设备有限公司 —电动转移床主界面"
+MENU IDR_MENU1
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    ICON            IDI_ICON_OFF,IDC_STATIC_ICON1,0,287,20,20
+    ICON            IDI_ICON_OFF,IDC_STATIC_ICON2,24,287,20,20
+    ICON            IDI_ICON_OFF,IDC_STATIC_ICON3,46,287,20,20
+    ICON            IDI_ICON_OFF,IDC_STATIC_ICON4,70,287,20,20
+    ICON            IDI_ICON_OFF,IDC_STATIC_ICON5,92,287,20,20
+    ICON            IDI_ICON_OFF,IDC_STATIC_ICON6,116,287,20,20
+    ICON            IDI_ICON_OFF,IDC_STATIC_ICON7,138,287,20,20
+    ICON            IDI_ICON_OFF,IDC_STATIC_ICON8,162,287,20,20
+    PUSHBUTTON      "电机1停止",IDC_MOTION1STOP,503,52,50,14
+    PUSHBUTTON      "电机3停止",IDC_MOTION3STOP,503,68,50,14
+    PUSHBUTTON      "电机5停止",IDC_MOTION5STOP,503,84,50,14
+    PUSHBUTTON      "电机7停止",IDC_MOTION7STOP,503,100,50,14
+    LTEXT           "通讯状态",IDC_CLIENTNOMAL,201,300,57,10
+    PUSHBUTTON      "打开服务器",IDC_SOCKETOPEN,286,298,43,11
+    LTEXT           "IP",IDC_IPADDR,237,287,70,10
+    LTEXT           "本机IP：",IDC_STATIC,200,289,35,10
+    GROUPBOX        "网络信息",IDC_NETMES2,191,277,146,36
+    ICON            IDI_ICON_OFF,IDC_STATIC_ICON9,412,47,20,20
+    ICON            IDI_ICON_OFF,IDC_STATIC_ICON10,412,64,20,20
+    ICON            IDI_ICON_OFF,IDC_STATIC_ICON11,412,82,20,20
+    ICON            IDI_ICON_OFF,IDC_STATIC_ICON12,412,100,20,20
+    PUSHBUTTON      "57-90度",IDC_ResetZero,504,22,39,14
+    PUSHBUTTON      "1正转",IDC_MOTION1MOVEV,439,52,27,14
+    PUSHBUTTON      "3正转",IDC_MOTION3MOVEV,439,68,27,14
+    PUSHBUTTON      "5正转",IDC_MOTION5MOVEV,439,84,27,14
+    PUSHBUTTON      "7正转",IDC_MOTION7MOVEV,439,100,27,14
+    PUSHBUTTON      "相对零位",IDC_ReZeroPosition,513,270,44,14
+    EDITTEXT        IDC_HOLDPOSITION,532,140,24,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RevData,257,212,74,14,ES_AUTOHSCROLL
+    GROUPBOX        "单片机信息",IDC_NETMES4,190,205,150,53
+    ICON            IDI_ICON_OFF,IDC_STATIC_NO2,287,184,20,20,WS_TABSTOP
+    ICON            IDI_ICON_OFF,IDC_STATIC_NO3,276,101,20,20
+    ICON            IDI_ICON_OFF,IDC_STATIC_NO4,311,110,20,20
+    ICON            IDI_ICON_OFF,IDC_STATIC_NO1,282,36,20,20
+    ICON            IDI_ICON_OFF,IDC_STATIC_NO7,207,127,20,20
+    ICON            IDI_ICON_OFF,IDC_STATIC_NO6,230,116,20,20
+    ICON            IDI_ICON_OFF,IDC_STATIC_NO8,229,100,20,20
+    LTEXT           "NO.0",IDC_STATIC,288,174,17,8
+    LTEXT           "NO.2",IDC_STATIC,315,102,17,8
+    LTEXT           "NO.3",IDC_STATIC,276,91,17,8
+    LTEXT           "NO.1",IDC_STATIC,284,28,17,8
+    LTEXT           "NO.5",IDC_STATIC,253,127,17,8
+    LTEXT           "NO.7",IDC_STATIC,232,94,17,8
+    LTEXT           "NO.6",IDC_STATIC,206,117,17,14
+    EDITTEXT        IDC_intRevData,197,30,23,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_intRevData2,197,47,23,14,ES_AUTOHSCROLL
+    GROUPBOX        "红外信息",IDC_NETMES5,178,5,163,201
+    EDITTEXT        IDC_REVHOLDPOSITION,532,160,24,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT1,236,187,21,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_intRevData3,197,64,23,14,ES_AUTOHSCROLL
+    LTEXT           "1～4",IDC_STATIC,224,33,17,8
+    LTEXT           "5",IDC_STATIC,227,49,8,8
+    LTEXT           "6～8",IDC_STATIC,224,68,23,8
+    EDITTEXT        IDC_RevData2,257,228,74,14,ES_AUTOHSCROLL
+    LTEXT           "右侧CO11",IDC_STATIC,203,230,33,8
+    LTEXT           "左侧COM9",IDC_STATIC,203,245,33,8
+    LTEXT           "位置:",IDC_STATIC,509,162,21,8
+    EDITTEXT        IDC_RevData3,257,243,74,14,ES_AUTOHSCROLL
+    LTEXT           "升降架COM10",IDC_STATIC,203,214,45,8
+    PUSHBUTTON      "选择路线",IDC_Choroad,358,200,110,14
+    GROUPBOX        "第三步：路线选择",IDC_STATIC,346,185,217,71
+    EDITTEXT        IDC_EDIT3,521,215,32,14,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SENSOR,"Static",SS_BLACKFRAME,8,7,168,191
+    LTEXT           "Static",IDC_STATICwwd,23,319,249,13,SS_NOTIFY | 
+                    SS_SUNKEN
+    ICON            IDI_ICON_OFF,IDC_STATIC_NO9,303,36,20,20
+    ICON            IDI_ICON_OFF,IDC_STATIC_NO10,304,184,20,20
+    LTEXT           "NO.9",IDC_STATIC,305,174,17,8
+    LTEXT           "NO.8",IDC_STATIC,301,28,17,8
+    EDITTEXT        IDC_EDIT4,236,167,21,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "90度",IDC_Turn90,353,269,33,14
+    PUSHBUTTON      "前进",IDC_Front,433,269,33,14
+    PUSHBUTTON      "后退",IDC_Rear,473,269,33,14
+    PUSHBUTTON      "57度",IDC_Turn57,393,269,33,14
+    DEFPUSHBUTTON   "运动停止",IDC_StopAll,359,220,110,29
+    GROUPBOX        "90转向",IDC_STATIC,347,257,217,36
+    GROUPBOX        "第一步：转向复位",IDC_STATIC,346,7,217,117
+    PUSHBUTTON      "放下床板",IDC_HoldDownBroad,354,160,45,15
+    PUSHBUTTON      "拿起床板",IDC_HoldUpBroad,406,160,45,15
+    GROUPBOX        "第二步：床板高度确认",IDC_STATIC,346,126,217,57
+    LTEXT           "横向数据IR3467",IDC_STATIC,196,165,32,19
+    LTEXT           "纵向数据IR1291",IDC_STATIC,195,186,34,17
+    EDITTEXT        IDC_EDIT5,521,195,32,14,ES_AUTOHSCROLL
+    ICON            IDI_ICON_OFF,IDC_STATIC_NO13,205,94,20,20
+    LTEXT           "运行目标",IDC_STATIC,478,201,33,8
+    LTEXT           "运行步骤",IDC_STATIC,478,218,33,8
+    PUSHBUTTON      "停止",IDC_HoldStopBroad,458,160,45,15
+    LTEXT           "NO.10",IDC_STATIC,205,86,21,8
+    EDITTEXT        IDC_SETNUB,521,235,32,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LeftIR,138,217,26,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RightIR,138,243,26,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LimiteValue,316,318,26,14,ES_AUTOHSCROLL
+    LTEXT           "临时计数",IDC_STATIC,478,235,33,8
+    LTEXT           "左侧红外",IDC_STATIC,138,207,33,8
+    LTEXT           "右侧红外",IDC_STATIC,136,234,33,8
+    LTEXT           "床板限位",IDC_STATIC,281,322,33,8
+    LTEXT           "Com1(右后转)",IDC_STATIC,359,54,50,8
+    LTEXT           "Com5(左后转)",IDC_STATIC,359,70,50,8
+    LTEXT           "Com3(右前转)",IDC_STATIC,359,86,50,8
+    LTEXT           "Com7(左前转)",IDC_STATIC,359,102,50,8
+    PUSHBUTTON      "1反转",IDC_MOTION1MOVEV2,469,52,27,14
+    PUSHBUTTON      "3反转",IDC_MOTION3MOVEV2,469,68,27,14
+    PUSHBUTTON      "5反转",IDC_MOTION5MOVEV2,469,84,27,14
+    PUSHBUTTON      "7反转",IDC_MOTION7MOVEV2,469,100,27,14
+    GROUPBOX        "单独调整",IDC_STATIC,352,42,209,77
+    PUSHBUTTON      "0度",IDC_ResetZero2,457,22,39,14
+    LTEXT           "目标:",IDC_STATIC,509,143,21,8
+    PUSHBUTTON      "36-90度归零",IDC_ResetZero3,120,53,50,17
+    PUSHBUTTON      "PET高度",IDC_PETHoldHeight,355,137,45,15
+    PUSHBUTTON      "CT高度",IDC_CTHoldHeight,406,137,45,15
+    PUSHBUTTON      "TOP高度",IDC_MRIHoldHeight,457,137,45,15
+    GROUPBOX        "电机状态",IDC_NETMES7,0,269,182,44
+    LTEXT           "NO.1",IDC_STATIC,4,277,17,13
+    LTEXT           "NO.2",IDC_STATIC,28,277,17,13
+    LTEXT           "NO.3",IDC_STATIC,48,277,17,13
+    LTEXT           "NO.4",IDC_STATIC,72,277,17,13
+    LTEXT           "NO.5",IDC_STATIC,94,277,17,13
+    LTEXT           "NO.6",IDC_STATIC,118,277,17,13
+    LTEXT           "NO.7",IDC_STATIC,138,277,17,13
+    LTEXT           "NO.8",IDC_STATIC,162,277,17,13
+    LTEXT           "状态",IDC_STATIC,1,321,17,8
+    GROUPBOX        "超声信息",IDC_NETMES9,4,195,170,70
+    EDITTEXT        IDC_LeftTopSonar,15,216,19,12,ES_AUTOHSCROLL
+    LTEXT           "左上:",IDC_CLIENTNOMAL2,15,227,20,10
+    EDITTEXT        IDC_RightTopSonar,49,210,19,12,ES_AUTOHSCROLL
+    LTEXT           "top-r:",IDC_CLIENTNOMAL3,48,202,29,10
+    EDITTEXT        IDC_RightBottomSonar,76,211,19,12,ES_AUTOHSCROLL
+    LTEXT           "top-l:",IDC_DD,76,202,32,10
+    EDITTEXT        IDC_LeftBottomSonar,109,215,19,12,ES_AUTOHSCROLL
+    LTEXT           "右上:",IDC_CLIENTNOMAL5,108,228,22,10
+    GROUPBOX        "任意转向",IDC_NETMES8,348,297,217,40
+    PUSHBUTTON      "后退",IDC_NormalRear,476,311,33,14
+    PUSHBUTTON      "右转",IDC_NormalTurnRight,397,311,33,14
+    DEFPUSHBUTTON   "运动停止",IDC_StopAll2,430,180,43,19
+    PUSHBUTTON      "左转",IDC_NormalTurnLeft,354,312,33,14
+    PUSHBUTTON      "前进",IDC_NormalFront,437,312,33,14
+    LTEXT           "Static",IDC_MOTIONSTATIC,212,261,125,13,SS_NOTIFY | 
+                    SS_SUNKEN
+    LTEXT           "电机",IDC_STATIC,192,262,17,8
+    EDITTEXT        IDC_LeftTopSonar2,14,238,19,12,ES_AUTOHSCROLL
+    LTEXT           "左下:",IDC_CLIENTNOMAL4,12,251,20,10
+    EDITTEXT        IDC_RightTopSonar2,49,249,19,12,ES_AUTOHSCROLL
+    LTEXT           "bot-r:",IDC_CLIENTNOMAL6,49,238,24,10
+    EDITTEXT        IDC_RightBottomSonar2,76,249,19,12,ES_AUTOHSCROLL
+    LTEXT           "bot-l:",IDC_DD2,77,238,30,10
+    EDITTEXT        IDC_LeftBottomSonar2,108,237,19,12,ES_AUTOHSCROLL
+    LTEXT           "右下:",IDC_CLIENTNOMAL7,110,250,22,10
+    PUSHBUTTON      "左侧",IDC_ResetZeroLeft,363,22,39,14
+    PUSHBUTTON      "右侧",IDC_ResetZeroRight,410,22,39,14
+    EDITTEXT        IDC_BoardIO1,263,61,66,14,ES_AUTOHSCROLL
+    PUSHBUTTON      "90度",IDC_Turn91,517,311,33,14
+    EDITTEXT        IDC_BoardIO2,265,137,66,14,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "继续运动",IDC_RestartAll,481,179,43,19
+END
+
+IDD_SETTING DIALOG DISCARDABLE  0, 0, 413, 175
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,167,154,50,14
+    EDITTEXT        IDC_POSITION1,64,30,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_VELOCITY2,111,44,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_POSITION3,64,57,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_VELOCITY4,111,70,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_POSITION4,64,71,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_VELOCITY6,111,98,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_POSITION7,64,111,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_VELOCITY8,111,126,40,12,ES_AUTOHSCROLL
+    LTEXT           "电机1",IDC_STATIC,27,29,34,12
+    LTEXT           "电机2",IDC_STATIC,27,43,34,12
+    LTEXT           "电机3",IDC_STATIC,27,57,34,12
+    LTEXT           "电机4",IDC_STATIC,27,71,34,12
+    LTEXT           "电机5",IDC_STATIC,27,85,34,12
+    LTEXT           "电机6",IDC_STATIC,27,99,34,12
+    LTEXT           "电机7",IDC_STATIC,27,113,34,12
+    LTEXT           "电机8",IDC_STATIC,27,127,34,12
+    EDITTEXT        IDC_VELOCITY1,111,30,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_VELOCITY3,111,57,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_VELOCITY5,111,84,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_VELOCITY7,111,111,40,12,ES_AUTOHSCROLL
+    LTEXT           "位置",IDC_STATIC,72,15,17,8
+    LTEXT           "速度",IDC_STATIC,121,15,17,8
+    LTEXT           "PET床位置185",IDC_STATIC,186,16,50,8
+    EDITTEXT        IDC_PETHOLDPOSITION,186,31,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_POSITION2,64,43,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_POSITION6,64,98,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_POSITION5,64,85,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_POSITION8,64,124,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PetLimtedPosition,249,35,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PetCtLimtedPosition,250,59,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CtLimtedPosition,251,84,40,12,ES_AUTOHSCROLL
+    LTEXT           "PET纵向距离19000",IDC_STATIC,246,25,66,8
+    LTEXT           "PET-CT横向距离25000",IDC_STATIC,246,49,77,8
+    LTEXT           "CT纵向距离19000",IDC_STATIC,247,73,62,8
+    LTEXT           "CT床位置290",IDC_STATIC,185,46,46,8
+    EDITTEXT        IDC_CTHOLDPOSITION,185,56,40,12,ES_AUTOHSCROLL
+    LTEXT           "TOP床位置350",IDC_STATIC,184,71,51,8
+    EDITTEXT        IDC_TOPHOLDPOSITION,184,82,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CTFirstPosition,192,110,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CTSecondPosition,189,135,40,12,ES_AUTOHSCROLL
+    LTEXT           "CT第一横条25000",IDC_STATIC,184,98,62,8
+    LTEXT           "CT第二横条19000",IDC_STATIC,185,124,62,8
+    EDITTEXT        IDC_PetFirstPosition,272,110,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PETSecondPosition,273,134,40,12,ES_AUTOHSCROLL
+    LTEXT           "PET第一横条距离25000",IDC_STATIC,263,100,82,8
+    LTEXT           "PET第二横条距离19000",IDC_STATIC,266,123,82,8
+END
+
+IDD_ChoRoad DIALOG DISCARDABLE  0, 0, 384, 82
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "路线选择"
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "CT至PET",IDC_CT_PET,97,32,50,14
+    PUSHBUTTON      "PET至CT",IDC_PET_CT,97,46,50,14
+    GROUPBOX        "CT-PET",IDC_STATIC,90,20,63,45
+    PUSHBUTTON      "抓取PET床板",IDC_DirectHold,175,16,50,14
+    PUSHBUTTON      "离开PET",IDC_DirectMove,175,35,50,14
+    PUSHBUTTON      "放下PET床板",IDC_DirectMove2,175,54,50,14
+    GROUPBOX        "PET抓去床板",IDC_STATIC,169,7,63,66
+    PUSHBUTTON      "抓取CT床板",IDC_DirectHold3,22,14,50,14
+    PUSHBUTTON      "离开CT",IDC_DirectMove5,22,33,50,14
+    PUSHBUTTON      "放下CT床板",IDC_DirectMove6,22,52,50,14
+    GROUPBOX        "CT抓去床板",IDC_STATIC,16,5,63,66
+    PUSHBUTTON      "前进下限位",IDC_NextLimited,256,29,46,14
+    PUSHBUTTON      "后退下限位",IDC_ProLimited,256,43,46,14
+    GROUPBOX        "单个步骤运行",IDC_STATIC,249,18,115,44
+    PUSHBUTTON      "90前进限位",IDC_NextLimited2,313,28,46,14
+    PUSHBUTTON      "90后退限位",IDC_ProLimitedwwd,312,44,47,14
+END
+
+IDD_RunState DIALOG DISCARDABLE  0, 0, 409, 218
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "运行状态"
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_VELOCITY1,77,31,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RevPosition1,109,31,30,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RevPosition2,109,46,30,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_VELOCITY2,77,46,24,12,ES_AUTOHSCROLL
+    LTEXT           "速度",IDC_STATIC,76,16,29,8
+    LTEXT           "实际位置",IDC_STATIC,105,18,49,8
+    EDITTEXT        IDC_RevPosition3,109,61,30,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RevPosition4,109,76,30,12,ES_AUTOHSCROLL
+    LTEXT           "Com1(右后转)",IDC_STATIC,19,34,49,8
+    LTEXT           "Com2(右后行)",IDC_STATIC,19,49,49,8
+    EDITTEXT        IDC_VELOCITY3,77,61,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_VELOCITY4,77,76,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RevPosition5,109,91,30,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RevPosition6,109,106,30,12,ES_AUTOHSCROLL
+    GROUPBOX        "运动电机控制",IDC_STATIC,7,7,239,148
+    LTEXT           "Com5(左后转)",IDC_STATIC,19,64,49,8
+    EDITTEXT        IDC_RevPosition7,109,121,30,12,ES_AUTOHSCROLL
+    LTEXT           "Com6(左后行)",IDC_STATIC,19,79,49,8
+    EDITTEXT        IDC_VELOCITY5,77,91,24,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_RevPosition8,109,136,30,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_VELOCITY6,77,106,24,12,ES_AUTOHSCROLL
+    LTEXT           "Com3(右前转)",IDC_STATIC,19,94,49,8
+    LTEXT           "Com4(右前行)",IDC_STATIC,19,109,49,8
+    EDITTEXT        IDC_VELOCITY7,77,121,24,12,ES_AUTOHSCROLL
+    LTEXT           "Com7(左前转)",IDC_STATIC,19,124,49,8
+    EDITTEXT        IDC_VELOCITY8,77,136,24,12,ES_AUTOHSCROLL
+    LTEXT           "Com8(左前行)",IDC_STATIC,19,139,49,8
+    PUSHBUTTON      "电机2运动",IDC_MOTION2MOVE,194,35,38,11
+    PUSHBUTTON      "电机2停止",IDC_MOTION2STOP,148,34,38,11
+    PUSHBUTTON      "电机4运动",IDC_MOTION4MOVE,194,49,38,11
+    PUSHBUTTON      "电机4停止",IDC_MOTION4STOP,148,48,38,11
+    PUSHBUTTON      "电机6运动",IDC_MOTION6MOVE,194,62,38,11
+    PUSHBUTTON      "电机6停止",IDC_MOTION6STOP,148,61,38,11
+    PUSHBUTTON      "电机8运动",IDC_MOTION8MOVE,194,76,38,11
+    PUSHBUTTON      "电机8停止",IDC_MOTION8STOP,148,75,38,11
+    EDITTEXT        IDC_SSensor1,272,17,16,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SSensor2,272,29,16,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SSensor3,308,17,16,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SSensor4,308,29,16,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SSensor7,380,17,16,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SSensor8,380,29,16,12,ES_AUTOHSCROLL
+    GROUPBOX        "超声信息",IDC_NETMES6,253,8,148,36
+    LTEXT           "右1",IDC_STATIC,257,19,10,8
+    LTEXT           "右2",IDC_STATIC,257,31,10,8
+    LTEXT           "右3",IDC_STATIC,293,19,10,8
+    LTEXT           "右4",IDC_STATIC,293,31,10,8
+    LTEXT           "左1",IDC_STATIC,329,19,10,8
+    LTEXT           "左2",IDC_STATIC,329,31,10,8
+    LTEXT           "左3",IDC_STATIC,365,18,10,8
+    LTEXT           "左4",IDC_STATIC,365,30,10,8
+    EDITTEXT        IDC_SorSensor5,344,17,16,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SorSensor6,344,29,16,12,ES_AUTOHSCROLL
+    LTEXT           "AD1",IDC_STATIC,259,57,12,8
+    GROUPBOX        "网络信息",IDC_NETMES,252,48,149,63
+    EDITTEXT        IDC_AD1,257,69,19,12,ES_AUTOHSCROLL
+    LTEXT           "AD2",IDC_STATIC,283,57,12,8
+    EDITTEXT        IDC_AD2,281,69,19,12,ES_AUTOHSCROLL
+    LTEXT           "AD3",IDC_STATIC,310,57,12,8
+    EDITTEXT        IDC_AD3,305,69,19,12,ES_AUTOHSCROLL
+    LTEXT           "AD4",IDC_STATIC,334,57,12,8
+    EDITTEXT        IDC_AD4,329,69,19,12,ES_AUTOHSCROLL
+    LTEXT           "IO1",IDC_STATIC,257,83,12,8
+    EDITTEXT        IDC_IO1,256,95,19,12,ES_AUTOHSCROLL
+    LTEXT           "IO2",IDC_STATIC,281,83,12,8
+    EDITTEXT        IDC_IO2,280,95,19,12,ES_AUTOHSCROLL
+    LTEXT           "IO3",IDC_STATIC,307,83,12,8
+    EDITTEXT        IDC_IO3,304,95,19,12,ES_AUTOHSCROLL
+    LTEXT           "IO4",IDC_STATIC,331,83,12,8
+    EDITTEXT        IDC_IO4,328,95,19,12,ES_AUTOHSCROLL
+    LTEXT           "IO5",IDC_STATIC,355,83,12,8
+    EDITTEXT        IDC_IO5,352,95,19,12,ES_AUTOHSCROLL
+    LTEXT           "IO6",IDC_STATIC,379,83,12,8
+    EDITTEXT        IDC_IO6,376,95,19,12,ES_AUTOHSCROLL
+    LTEXT           "IO7",IDC_STATIC,358,57,12,8
+    EDITTEXT        IDC_IO7,353,69,19,12,ES_AUTOHSCROLL
+    LTEXT           "IO8",IDC_STATIC,382,57,12,8
+    EDITTEXT        IDC_IO8,377,69,19,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IR1,279,123,15,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IR2,300,123,15,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IR3,320,123,15,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IR4,340,123,15,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IR5,360,123,15,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IR6,381,123,15,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IR7,279,137,15,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IR8,299,137,15,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IR9,319,137,15,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IR10,340,137,15,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IR11,360,137,15,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IR12,380,137,15,12,ES_AUTOHSCROLL
+    GROUPBOX        "红外信息",IDC_NETMES7,252,111,149,43
+    LTEXT           "1-6：",IDC_STATIC,255,125,20,8
+    LTEXT           "7-12：",IDC_STATIC,255,138,20,8
+    EDITTEXT        IDC_IR13,54,158,15,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IR14,75,158,15,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IR15,96,158,15,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IR16,143,158,15,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IR17,164,158,15,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IR18,185,158,15,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IR19,206,158,15,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IR20,253,158,15,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IR21,274,158,15,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IR22,295,158,15,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IR23,316,158,15,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IR24,363,158,15,12,ES_AUTOHSCROLL
+    LTEXT           "1-4：",IDC_STATIC,117,158,20,8
+    LTEXT           "5-8：",IDC_STATIC,227,158,20,8
+    LTEXT           "1-2：",IDC_STATIC,337,158,20,8
+    EDITTEXT        IDC_IR25,384,158,15,12,ES_AUTOHSCROLL
+END
+
+IDD_RunVelocitySetting DIALOG DISCARDABLE  0, 0, 274, 153
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "运行速度设置"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,217,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,217,24,50,14
+    CONTROL         "Slider1",IDC_SLIDERFrontVel,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,43,19,100,15
+    CONTROL         "Slider2",IDC_SLIDERMiddelVel,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,42,40,100,15
+    CONTROL         "Slider3",IDC_SLIDERRearVel,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,42,59,100,15
+    EDITTEXT        IDC_EDIT1,180,15,27,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,180,38,27,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT3,180,58,27,14,ES_AUTOHSCROLL
+    LTEXT           "进入速度：",IDC_STATIC,7,20,41,8
+    LTEXT           "横向速度：",IDC_STATIC,7,40,41,8
+    LTEXT           "360旋转速度：",IDC_STATIC,7,56,31,24
+    LTEXT           "1200",IDC_STATIC,150,24,18,8
+    LTEXT           "1200",IDC_STATIC,150,41,17,8
+    LTEXT           "1200",IDC_STATIC,150,59,17,8
+    CONTROL         "Slider3",IDC_SLIDERTurnVel,"msctls_trackbar32",TBS_BOTH | 
+                    TBS_NOTICKS | WS_TABSTOP,42,79,100,15
+    EDITTEXT        IDC_EDIT4,181,78,27,14,ES_AUTOHSCROLL
+    LTEXT           "转向速度：",IDC_STATIC,7,82,41,12
+    LTEXT           "4000",IDC_STATIC,151,79,17,8
+    CONTROL         "Slider3",IDC_SLIDERSonerLimted,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,42,101,100,15
+    EDITTEXT        IDC_EDIT15,181,99,27,14,ES_AUTOHSCROLL
+    LTEXT           "超声范围：",IDC_STATIC,7,104,57,12
+    LTEXT           "500",IDC_STATIC,152,103,13,8
+    CONTROL         "Slider3",IDC_SLIDERIRLimted,"msctls_trackbar32",
+                    TBS_BOTH | TBS_NOTICKS | WS_TABSTOP,42,118,100,15
+    EDITTEXT        IDC_EDIT16,181,116,27,14,ES_AUTOHSCROLL
+    LTEXT           "红外范围：",IDC_STATIC,7,121,41,24
+    LTEXT           "50",IDC_STATIC,154,120,9,8
+END
+
+IDD_JoyStick DIALOG DISCARDABLE  0, 0, 264, 131
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "手柄控制"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,207,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,207,24,50,14
+    PUSHBUTTON      "连接手柄",IDC_ConnectJoy,146,17,50,14
+    PUSHBUTTON      "采集数据",IDC_RevData,147,41,50,14
+    PUSHBUTTON      "连续采集",IDC_RevData1,148,65,50,14
+    EDITTEXT        IDC_LX,38,14,40,14,ES_AUTOHSCROLL
+    LTEXT           "x轴",IDC_STATIC,20,15,13,8
+    EDITTEXT        IDC_LY1,38,32,40,14,ES_AUTOHSCROLL
+    LTEXT           "y轴",IDC_STATIC,20,33,13,8
+    EDITTEXT        IDC_LX2,38,50,40,14,ES_AUTOHSCROLL
+    LTEXT           "x2轴",IDC_STATIC,20,51,17,8
+    EDITTEXT        IDC_LY2,38,67,40,14,ES_AUTOHSCROLL
+    LTEXT           "y2轴",IDC_STATIC,20,68,17,8
+    EDITTEXT        IDC_EDIT2,21,102,16,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT6,42,102,16,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT7,62,102,16,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT8,80,102,16,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT9,101,102,16,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT10,121,102,16,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT11,140,102,16,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT12,161,102,16,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT13,181,102,16,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT14,201,101,16,14,ES_AUTOHSCROLL
+    LTEXT           "2",IDC_STATIC,45,89,8,8
+    LTEXT           "1",IDC_STATIC,27,89,8,8
+    LTEXT           "4",IDC_STATIC,85,89,8,8
+    LTEXT           "3",IDC_STATIC,67,89,8,8
+    LTEXT           "6",IDC_STATIC,124,90,8,8
+    LTEXT           "5",IDC_STATIC,106,90,8,8
+    LTEXT           "8",IDC_STATIC,164,90,8,8
+    LTEXT           "7",IDC_STATIC,146,90,8,8
+    LTEXT           "10",IDC_STATIC,203,88,8,8
+    LTEXT           "9",IDC_STATIC,185,88,8,8
+    LTEXT           "Static",IDC_X_AXIS,95,45,19,8
+END
+
+IDD_DIALOG1 DIALOG DISCARDABLE  0, 0, 304, 109
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "避障传感器设置"
+FONT 9, "宋体"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,62,88,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,167,87,50,14
+    LTEXT           "右侧1超声：",IDC_STATIC,113,14,45,8
+    LTEXT           "右侧2超声：",IDC_STATIC,113,31,45,8
+    LTEXT           "右侧3超声：",IDC_STATIC,113,48,45,8
+    LTEXT           "右侧4超声：",IDC_STATIC,113,65,45,8
+    EDITTEXT        IDC_SONORLIMTEDR1,163,9,31,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SONORLIMTEDR2,163,27,31,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SONORLIMTEDR3,163,45,31,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SONORLIMTEDR4,163,63,31,14,ES_AUTOHSCROLL
+    LTEXT           "左侧1超声：",IDC_STATIC,9,14,45,8
+    LTEXT           "左侧2超声：",IDC_STATIC,9,31,45,8
+    LTEXT           "左侧3超声：",IDC_STATIC,9,48,45,8
+    LTEXT           "左侧4超声：",IDC_STATIC,9,65,45,8
+    EDITTEXT        IDC_SONORLIMTEDL1,59,9,31,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SONORLIMTEDL2,59,27,31,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SONORLIMTEDL3,59,45,31,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_SONORLIMTEDL4,59,63,31,14,ES_AUTOHSCROLL
+    LTEXT           "右侧红外：",IDC_STATIC,213,51,41,8
+    LTEXT           "左侧红外：",IDC_STATIC,213,31,41,8
+    EDITTEXT        IDC_IRLIMTEDL,257,29,31,14,ES_AUTOHSCROLL
+    EDITTEXT        IDC_IRLIMTEDR,257,49,31,14,ES_AUTOHSCROLL
+    LTEXT           "单位：CM",IDC_STATIC,231,7,33,8
+END
+
+IDD_ChoRoad1 DIALOG DISCARDABLE  0, 0, 374, 96
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "选择路线2010.11"
+FONT 10, "System"
+BEGIN
+    PUSHBUTTON      "CT至PET",IDC_CT_PET,97,32,50,14
+    PUSHBUTTON      "PET至CT",IDC_PET_CT,97,46,50,14
+    GROUPBOX        "CT-PET",IDC_STATIC,90,20,63,45
+    PUSHBUTTON      "抓取PET床板",IDC_DireMovetoPET,175,16,50,14
+    PUSHBUTTON      "离开PET",IDC_DireLeavetoPET,175,35,50,14
+    PUSHBUTTON      "放下PET床板",IDC_DireHoldDownPET,175,54,50,14
+    GROUPBOX        "PET抓去床板",IDC_STATIC,169,7,63,66
+    PUSHBUTTON      "抓取CT床板",IDC_DireMovetoCT,22,14,50,14
+    PUSHBUTTON      "离开CT",IDC_DireLeavetoCT,22,33,50,14
+    PUSHBUTTON      "放下CT床板",IDC_DireHoldDownCT,22,52,50,14
+    GROUPBOX        "CT抓去床板",IDC_STATIC,16,5,63,66
+    PUSHBUTTON      "前进下限位",IDC_NextLimited,256,29,46,14
+    PUSHBUTTON      "后退下限位",IDC_ProLimited,256,43,46,14
+    GROUPBOX        "单个步骤运行",IDC_STATIC,249,18,115,44
+    PUSHBUTTON      "90前进限位",IDC_NextLimited90,313,28,46,14
+    PUSHBUTTON      "90后退限位",IDC_ProLimited90,312,44,47,14
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 1,0,0,1
+ PRODUCTVERSION 1,0,0,1
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404B0"
+        BEGIN
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "robot Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "1, 0, 0, 1\0"
+            VALUE "InternalName", "robot\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2008\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "robot.EXE\0"
+            VALUE "ProductName", "robot 应用程序\0"
+            VALUE "ProductVersion", "1, 0, 0, 1\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_ROBOT_DIALOG, DIALOG
+    BEGIN
+        RIGHTMARGIN, 565
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 338
+    END
+
+    IDD_SETTING, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 406
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 168
+    END
+
+    IDD_ChoRoad, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 73
+    END
+
+    IDD_RunState, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 402
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 211
+    END
+
+    IDD_RunVelocitySetting, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 267
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 145
+    END
+
+    IDD_JoyStick, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 257
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 124
+    END
+
+    IDD_DIALOG1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 297
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 102
+    END
+
+    IDD_ChoRoad1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 367
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 89
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MENU1 MENU DISCARDABLE 
+BEGIN
+    POPUP "电机初始化", GRAYED
+    BEGIN
+        MENUITEM "初始化",                      IDC_DOWNLOAD
+        MENUITEM "启动电机",                    IDC_MOTIONSTART
+        MENUITEM "停止电机",                    IDC_MOTIONSTOP
+    END
+    POPUP "电机控制"
+    BEGIN
+        MENUITEM "电机参数设置",                IDC_ResetMotionPara
+        MENUITEM "电机运行情况",                IDC_MotionMoveState
+    END
+    POPUP "升降架控制"
+    BEGIN
+        MENUITEM "高度设置",                    IDC_VPSetting
+        MENUITEM "升降架上升",                  IDC_HoldUpBroad
+        MENUITEM "升降架下降",                  IDC_HoldDownBroad
+        MENUITEM "放床板高度",                  IDC_ControlHold
+        MENUITEM "读取升降架",                  IDC_ReadHoldPos
+    END
+    POPUP "码盘清零"
+    BEGIN
+        MENUITEM "运行电机清零",                IDC_MoveZero
+        MENUITEM "所有电机清零",                IDC_RetSetEncoder
+        MENUITEM "读取运行码盘",                IDC_RaedEncoder
+    END
+    POPUP "一侧轮转向", GRAYED
+    BEGIN
+        MENUITEM "一侧轮转向",                  IDC_TurnZero
+        MENUITEM "前进",                        IDC_Front2
+        MENUITEM "后退",                        IDC_Rear2
+        MENUITEM "停止",                        IDC_OnesideStop
+    END
+    POPUP "指示灯控制"
+    BEGIN
+        MENUITEM "红灯",                        IDC_RedLight
+        MENUITEM "绿灯",                        IDC_GreenLight
+        MENUITEM "关闭",                        IDC_CloseLight
+    END
+    MENUITEM "运行速度设置",                ID_RVSetting1
+    POPUP "手柄控制"
+    BEGIN
+        MENUITEM "手柄测试",                    ID_JoyStickControl1
+        MENUITEM "连接手柄",                    ID_ConnectJoyStick
+        MENUITEM "启动手柄",                    ID_StartJoystick
+        MENUITEM "停止手柄",                    ID_StopJoystick
+    END
+    POPUP "超声避障"
+    BEGIN
+        MENUITEM "开启超声",                    ID_StartSonar
+        MENUITEM "关闭超声",                    ID_StopSonar
+    END
+    POPUP "通讯检测"
+    BEGIN
+        MENUITEM "关闭通讯检测",                ID_CloseCommMonitor
+        MENUITEM "打开通讯检测",                ID_OpenCommMonitor
+    END
+    POPUP "红外避障"
+    BEGIN
+        MENUITEM "开启红外",                    ID_StartIR
+        MENUITEM "关闭红外",                    ID_StopIR
+    END
+    MENUITEM "避障传感器标定",              IDC_SONORSETTINF
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 robot(&A)..."
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\robot.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

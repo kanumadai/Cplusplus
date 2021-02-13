@@ -1,0 +1,989 @@
+//Microsoft Developer Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// Chinese (P.R.C.) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+#endif //_WIN32
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\SimOWS.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON    DISCARDABLE     "res\\SimOWS.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  0, 0, 235, 55
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "关于 SimOWS"
+FONT 9, "宋体"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "版权所有 (C) 2003",IDC_STATIC,40,25,119,8
+    DEFPUSHBUTTON   "确定",IDOK,178,7,50,14,WS_GROUP
+END
+
+IDD_SIMOWS_DIALOG DIALOGEX 0, 0, 429, 292
+STYLE DS_MODALFRAME | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | 
+    WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "SimOWS Ver3.3.5"
+FONT 9, "宋体", 0, 0, 0x1
+BEGIN
+    PUSHBUTTON      " 采集数据\r\nExpertMode",IDC_START,240,20,50,30,
+                    BS_MULTILINE
+    PUSHBUTTON      "采集符合数据(pos)",IDC_ACQ_COINPOS,5,20,75,14
+    PUSHBUTTON      "采集BUCKET数据",IDC_ACQ_BUCKET,168,20,65,14
+    PUSHBUTTON      "连续采集符合时间谱",IDC_AUTOACQ_COINTIME,86,36,75,14
+    PUSHBUTTON      "连续采集BUCKET",IDC_AUTOACQ_BUCKET,168,36,65,14
+    PUSHBUTTON      "停止采集",IDC_STOP,333,20,50,30
+    PUSHBUTTON      "显示BUCKET数据",IDC_DISP_BUCK,151,3,55,14
+    PUSHBUTTON      "检查门控数据",IDC_DISP_GATE,215,3,50,14
+    PUSHBUTTON      "检查棒源数据",IDC_DISP_ROD,273,3,50,14
+    PUSHBUTTON      "检查LMD文件",IDC_DISP_LMD,333,3,50,14
+    DEFPUSHBUTTON   "EXIT",IDOK,389,3,36,14
+    EDITTEXT        IDC_DBGSHOW,5,55,420,175,ES_MULTILINE | WS_VSCROLL
+    CTEXT           "采集状态",IDC_TIPS_ACQ,7,234,420,11,SS_CENTERIMAGE
+    CTEXT           "机电电路状态",IDC_TIPS_MC,7,280,420,11,SS_CENTERIMAGE
+    PUSHBUTTON      "采集符合时间谱",IDC_ACQ_COINTIME,86,20,75,14
+    CTEXT           "PET_SYSINFO",IDC_TIPS_SYSINFO,7,269,420,11,
+                    SS_CENTERIMAGE
+    CTEXT           "PET_MONITOR",IDC_TIPS_MONITOR,7,249,420,21
+    PUSHBUTTON      "PET_INIT ACS",IDC_INITACS,5,3,75,14
+END
+
+IDD_FHPARAM DIALOG DISCARDABLE  0, 0, 236, 216
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "符合    采集参数"
+FONT 10, "System"
+BEGIN
+    CONTROL         "BUCKET数据",IDC_WORKMODE_DEBUG,"Button",
+                    BS_AUTORADIOBUTTON | WS_GROUP,15,11,54,10
+    CONTROL         "符合数据",IDC_WORKMODE_FH,"Button",BS_AUTORADIOBUTTON,
+                    100,10,45,11
+    CONTROL         "记数停止",IDC_STOPONCNT,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,10,37,50,10
+    CONTROL         "定时停止",IDC_STOPONTIME,"Button",BS_AUTORADIOBUTTON,10,
+                    50,45,10
+    CONTROL         "手动停止",IDC_STOPONUSER,"Button",BS_AUTORADIOBUTTON,10,
+                    63,45,10
+    CONTROL         "空扫",IDC_SCANMODE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,10,87,30,9
+    CONTROL         "T扫",IDC_SCANMODE1,"Button",BS_AUTORADIOBUTTON,48,87,23,
+                    9
+    CONTROL         "E扫",IDC_SCANMODE2,"Button",BS_AUTORADIOBUTTON,86,87,25,
+                    9
+    CONTROL         "G扫",IDC_SCANMODE3,"Button",BS_AUTORADIOBUTTON,124,86,
+                    25,10
+    CONTROL         "光电符合",IDC_ENERGYMODE,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,10,112,45,10
+    CONTROL         "散射符合",IDC_ENERGYMODE2,"Button",BS_AUTORADIOBUTTON,
+                    62,112,45,10
+    CONTROL         "光电与散射符合",IDC_ENERGYMODE3,"Button",
+                    BS_AUTORADIOBUTTON,115,112,70,10
+    CONTROL         "全选",IDC_ENERGYMODE4,"Button",BS_AUTORADIOBUTTON,190,
+                    112,30,10
+    EDITTEXT        IDC_RING,70,131,25,12,ES_AUTOHSCROLL | ES_NUMBER | 
+                    WS_GROUP
+    EDITTEXT        IDC_FOV,180,131,35,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_STOP_EVENTCNT,102,38,45,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_STOP_TIME,102,51,45,12,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,50,200,40,14
+    PUSHBUTTON      "Cancel",IDCANCEL,125,200,40,14
+    GROUPBOX        "符合方式",IDC_STATIC,5,101,225,25
+    LTEXT           "符合环差(0~31):",IDC_STATIC,5,131,55,10
+    LTEXT           "符合视野(0~15):",IDC_STATIC,115,131,55,10
+    GROUPBOX        "采集控制",IDC_STATIC,5,27,150,47
+    LTEXT           "事例记数:",IDC_STATIC,64,38,38,8
+    LTEXT           "时间(秒):",IDC_STATIC,64,51,38,8
+    GROUPBOX        "工作模式",IDC_STATIC,5,1,150,23
+    GROUPBOX        "扫描方式",IDC_STATIC,5,76,150,23
+    GROUPBOX        "门控扫描参数",IDC_STATIC,5,145,225,50
+    LTEXT           "心率上限：",IDC_STATIC,10,156,45,10
+    LTEXT           "心率下限：",IDC_STATIC,101,156,44,10
+    LTEXT           "R波前门数：",IDC_STATIC,10,169,45,10
+    LTEXT           "R波后门数：",IDC_STATIC,10,182,47,10
+    LTEXT           "百分比：",IDC_STATIC,101,169,34,10
+    LTEXT           "百分比：",IDC_STATIC,101,182,34,10
+    EDITTEXT        IDC_UPB,60,154,30,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_LBP,151,154,19,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FORWORD_RR_NUM,60,167,30,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BACKWORD_RR_NUM,60,180,30,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_FORWORD_RR_PER,135,167,30,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_BACKWORD_RR_PER,135,180,30,12,ES_AUTOHSCROLL
+    COMBOBOX        IDC_GATEMODE,178,154,45,45,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    COMBOBOX        IDC_RODSPEED,160,70,70,74,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_TABSTOP
+    GROUPBOX        "符合数据格式",IDC_STATIC,160,0,70,55
+    CONTROL         "棒源伸出",IDC_RODENABLE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,160,60,70,10
+    CONTROL         "SEPTA伸出",IDC_SEPTAENABLE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,160,90,70,10
+    CONTROL         "位置信息",IDC_COIN_POS,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,165,10,60,10
+    CONTROL         "时间信息",IDC_COIN_TIME,"Button",BS_AUTORADIOBUTTON,165,
+                    25,60,10
+    COMBOBOX        IDC_COIN_BUCKET,165,40,60,120,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+END
+
+IDD_TESTPARAM DIALOG DISCARDABLE  0, 0, 141, 86
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "BUCKET测试参数"
+FONT 10, "System"
+BEGIN
+    LTEXT           "Bucket编号：",IDC_STATIC,5,5,50,10,SS_CENTERIMAGE
+    COMBOBOX        IDC_BUCKET,55,5,40,75,CBS_DROPDOWNLIST | WS_VSCROLL | 
+                    WS_GROUP | WS_TABSTOP
+    CONTROL         "符合数据",IDC_DATFMT,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,10,30,80,10
+    CONTROL         "散点数据",IDC_RADIO2,"Button",BS_AUTORADIOBUTTON,10,41,
+                    80,10
+    CONTROL         "能量数据",IDC_RADIO3,"Button",BS_AUTORADIOBUTTON,10,53,
+                    80,10
+    CONTROL         "时间数据",IDC_RADIO4,"Button",BS_AUTORADIOBUTTON,10,64,
+                    80,10
+    DEFPUSHBUTTON   "OK",IDOK,101,5,34,11,WS_GROUP
+    PUSHBUTTON      "Cancel",IDCANCEL,101,24,34,11
+    GROUPBOX        "数据格式",IDC_STATIC,5,20,90,60
+END
+
+IDD_BEDCOORD DIALOG DISCARDABLE  0, 0, 188, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "床坐标方式"
+FONT 10, "System"
+BEGIN
+    CONTROL         "绝对坐标",IDC_RADIO1,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,26,27,58,12
+    CONTROL         "相对坐标",1007,"Button",BS_AUTORADIOBUTTON,28,40,62,16
+    DEFPUSHBUTTON   "OK",IDOK,131,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,131,24,50,14
+END
+
+IDD_BEDRELATE_PARAM DIALOG DISCARDABLE  0, 0, 188, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "床相对运动参数"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,131,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,131,24,50,14
+    CONTROL         "缩回(下降）",IDC_IN,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,10,15,75,15
+    CONTROL         "伸出(上升）",1007,"Button",BS_AUTORADIOBUTTON,10,35,75,
+                    15
+    LTEXT           "运动距离:",IDC_STATIC,5,60,40,10
+    EDITTEXT        IDC_LEN,50,60,60,10,ES_AUTOHSCROLL
+END
+
+IDD_INPUT1 DIALOG DISCARDABLE  0, 0, 188, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "Dialog"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,131,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,131,24,50,14
+    EDITTEXT        IDC_EDIT_WORD,8,16,74,12,ES_AUTOHSCROLL
+END
+
+IDD_INPUTTH DIALOG DISCARDABLE  0, 0, 188, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "阈值输入"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,131,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,131,24,50,14
+    LTEXT           "上阈：",IDC_STATIC,20,24,25,8
+    LTEXT           "下阈：",IDC_STATIC,20,49,27,10
+    EDITTEXT        IDC_EDIT_UTH,50,24,40,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT_LTH,51,49,40,11,ES_AUTOHSCROLL
+END
+
+IDD_INIT_ACS DIALOG DISCARDABLE  0, 0, 202, 186
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "采集计算机初始化参数"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,114,170,35,12
+    PUSHBUTTON      "Cancel",IDCANCEL,160,170,35,12
+    GROUPBOX        "符合时间窗（ns）",IDC_STATIC,4,3,100,45
+    LTEXT           "立即符合:",IDC_STATIC,9,17,40,8,SS_CENTERIMAGE
+    LTEXT           "最短延迟符合:",IDC_STATIC,9,27,55,8,SS_CENTERIMAGE
+    LTEXT           "最大延迟符合:",IDC_STATIC,9,37,55,8,SS_CENTERIMAGE
+    EDITTEXT        IDC_TIME_INSTANT,69,15,25,10,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_TIME_MIN,69,25,25,10,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_TIME_MAX,69,35,25,10,ES_AUTOHSCROLL | ES_NUMBER
+    GROUPBOX        "符合数据输出格式",IDC_STATIC,105,3,92,45
+    CONTROL         "输出位置信息",IDC_COIN_FMT_POS,"Button",
+                    BS_AUTORADIOBUTTON | BS_VCENTER | WS_GROUP,111,17,70,10
+    CONTROL         "输出时间信息",IDC_COIN_FMT_TIME,"Button",
+                    BS_AUTORADIOBUTTON | BS_VCENTER,111,32,70,10
+    GROUPBOX        "心电信号采集设置",IDC_STATIC,4,53,193,30
+    LTEXT           "放大倍数:",IDC_STATIC,10,68,35,10,SS_CENTERIMAGE
+    LTEXT           "采样频率:",IDC_STATIC,94,68,40,10,SS_CENTERIMAGE
+    COMBOBOX        IDC_ECG_SAMPLEFREQ,136,67,50,90,CBS_DROPDOWNLIST | 
+                    WS_VSCROLL | WS_TABSTOP
+    GROUPBOX        "采集协议选项",IDC_STATIC,4,87,91,48
+    CONTROL         "允许控制机械电路",IDC_EN_EMC,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,10,97,77,10
+    CONTROL         "允许调试BUCKET",IDC_EN_DBGBUCKET,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,10,122,70,10
+    PUSHBUTTON      "默认参数",IDC_DEFAULT,9,170,35,12
+    EDITTEXT        IDC_ECG_PREAMP,47,68,25,10,ES_AUTOHSCROLL | ES_NUMBER
+    GROUPBOX        "棒源转速",IDC_STATIC,100,87,95,48
+    LTEXT           "第一档：",IDC_STATIC,105,97,35,10,SS_CENTERIMAGE
+    LTEXT           "第二档：",IDC_STATIC,105,110,35,10,SS_CENTERIMAGE
+    LTEXT           "第三档：",IDC_STATIC,105,122,35,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_RODRATE1,151,95,30,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_RODRATE2,151,108,30,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_RODRATE3,151,121,30,12,ES_AUTOHSCROLL | ES_NUMBER
+    GROUPBOX        "BUCKET 参数",IDC_STATIC,4,137,191,25
+    LTEXT           "采集时间：",IDC_STATIC,8,147,40,10,SS_CENTERIMAGE
+    EDITTEXT        IDC_BUCKET_TIME,48,147,25,10,ES_AUTOHSCROLL
+    LTEXT           "采集方式：",IDC_STATIC,78,147,40,10,SS_CENTERIMAGE
+    COMBOBOX        IDC_BUCKET_MODE,120,147,70,75,CBS_DROPDOWNLIST | 
+                    CBS_SORT | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "允许控制BUCKET",IDC_EN_BUCKETSIO,"Button",
+                    BS_AUTOCHECKBOX | WS_TABSTOP,10,110,77,10
+END
+
+IDD_AUTOACQ_COINTIME DIALOG DISCARDABLE  0, 0, 162, 166
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "自动采集符合时间谱"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,15,146,50,14
+    PUSHBUTTON      "CANCEL",IDCANCEL,90,146,50,14
+    GROUPBOX        "BUCKET编号",IDC_STATIC,5,1,150,25
+    LTEXT           "开始：",IDC_STATIC,10,11,25,10
+    LTEXT           "结束：",IDC_STATIC,70,11,25,10
+    EDITTEXT        IDC_BUCKET_BEGIN,40,11,20,10,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_BUCKET_END,110,11,25,10,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "记数停止",IDC_STOPONCNT,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,10,39,50,10
+    CONTROL         "定时停止",IDC_STOPONTIME,"Button",BS_AUTORADIOBUTTON,10,
+                    52,45,10
+    EDITTEXT        IDC_STOP_EVENTCNT,102,40,45,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_STOP_TIME,102,53,45,12,ES_AUTOHSCROLL | ES_NUMBER
+    GROUPBOX        "采集控制",IDC_STATIC,5,29,150,37
+    LTEXT           "事例记数:",IDC_STATIC,64,40,38,8
+    LTEXT           "时间(秒):",IDC_STATIC,64,53,38,8
+    LTEXT           "保存路径：",IDC_STATIC,5,128,45,10
+    EDITTEXT        IDC_SAVEPATH,50,128,105,10,ES_AUTOHSCROLL
+    GROUPBOX        "棒源控制",IDC_STATIC,5,70,150,23
+    CONTROL         "缩回",IDC_ROD_IN,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,10,79,55,10
+    CONTROL         "伸出",IDC_ROD_OUT,"Button",BS_AUTORADIOBUTTON,85,79,50,
+                    10
+    GROUPBOX        "SEPTA控制",IDC_STATIC,5,97,150,23
+    CONTROL         "缩回",IDC_SEPTA_IN,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,10,105,55,10
+    CONTROL         "伸出",IDC_SEPTA_OUT,"Button",BS_AUTORADIOBUTTON,85,105,
+                    50,10
+END
+
+IDD_BUCKETPARAM DIALOG DISCARDABLE  0, 0, 162, 186
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "BUCKET    采集参数"
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_BUCKET,65,5,35,10,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "记数停止",IDC_STOPONCNT,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,10,29,50,10
+    EDITTEXT        IDC_STOP_EVENTCNT,102,30,45,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    CONTROL         "定时停止",IDC_STOPONTIME,"Button",BS_AUTORADIOBUTTON,10,
+                    42,45,10
+    EDITTEXT        IDC_STOP_TIME,102,43,45,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "手动停止",IDC_STOPONUSER,"Button",BS_AUTORADIOBUTTON,10,
+                    55,45,10
+    CONTROL         "缩回",IDC_ROD_IN,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,90,80,25,10
+    CONTROL         "伸出",IDC_ROD_OUT,"Button",BS_AUTORADIOBUTTON,125,80,25,
+                    10
+    CONTROL         "缩回",IDC_SEPTA_IN,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,90,115,25,10
+    CONTROL         "伸出",IDC_SEPTA_OUT,"Button",BS_AUTORADIOBUTTON,125,115,
+                    25,10
+    EDITTEXT        IDC_SAVEPATH,5,150,125,10,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,10,165,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,80,165,50,14
+    GROUPBOX        "采集控制",IDC_STATIC,5,20,150,46
+    LTEXT           "事例记数:",IDC_STATIC,64,30,38,8
+    LTEXT           "时间(秒):",IDC_STATIC,64,43,38,8
+    LTEXT           "保存文件：",IDC_STATIC,5,135,45,10
+    GROUPBOX        "棒源控制",IDC_STATIC,85,70,70,25
+    GROUPBOX        "SEPTA控制",IDC_STATIC,85,100,70,30
+    LTEXT           "BUCKET编号：",IDC_STATIC,5,5,55,10
+    CONTROL         "散点数据",IDC_DAT_SD,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,10,80,60,10
+    CONTROL         "能量数据",IDC_DAT_ENERGY,"Button",BS_AUTORADIOBUTTON,10,
+                    95,55,10
+    CONTROL         "时间数据",IDC_DAT_TIME,"Button",BS_AUTORADIOBUTTON,10,
+                    110,60,10
+    GROUPBOX        "数据格式",IDC_STATIC,5,70,70,60
+    PUSHBUTTON      "......",IDC_BROWN,55,135,20,10
+END
+
+IDD_AUTOACQ_BUCKET DIALOG DISCARDABLE  0, 0, 161, 176
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "BUCKET自动采集参数"
+FONT 10, "System"
+BEGIN
+    EDITTEXT        IDC_BUCKET_BEGIN,40,11,35,10,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_BUCKET_END,115,11,35,10,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "记数停止",IDC_STOPONCNT,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,10,38,50,10
+    CONTROL         "定时停止",IDC_STOPONTIME,"Button",BS_AUTORADIOBUTTON,10,
+                    51,45,10
+    EDITTEXT        IDC_STOP_EVENTCNT,102,39,45,12,ES_AUTOHSCROLL | 
+                    ES_NUMBER
+    EDITTEXT        IDC_STOP_TIME,102,52,45,12,ES_AUTOHSCROLL | ES_NUMBER
+    CONTROL         "散点数据",IDC_DAT_SD,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP,10,81,60,10
+    CONTROL         "能量数据",IDC_DAT_ENERGY,"Button",BS_AUTORADIOBUTTON,10,
+                    96,55,10
+    CONTROL         "时间数据",IDC_DAT_TIME,"Button",BS_AUTORADIOBUTTON,10,
+                    111,60,10
+    CONTROL         "缩回",IDC_ROD_IN,"Button",BS_AUTORADIOBUTTON | WS_GROUP | 
+                    WS_TABSTOP,90,81,25,10
+    CONTROL         "伸出",IDC_ROD_OUT,"Button",BS_AUTORADIOBUTTON,125,81,25,
+                    10
+    CONTROL         "缩回",IDC_SEPTA_IN,"Button",BS_AUTORADIOBUTTON | 
+                    WS_GROUP | WS_TABSTOP,90,116,25,10
+    CONTROL         "伸出",IDC_SEPTA_OUT,"Button",BS_AUTORADIOBUTTON,125,116,
+                    25,10
+    EDITTEXT        IDC_SAVEPATH,55,140,100,10,ES_AUTOHSCROLL
+    DEFPUSHBUTTON   "OK",IDOK,10,158,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,100,158,50,14
+    GROUPBOX        "采集控制",IDC_STATIC,5,29,150,40
+    LTEXT           "事例记数:",IDC_STATIC,64,39,38,8
+    LTEXT           "时间(秒):",IDC_STATIC,64,52,38,8
+    LTEXT           "保存路径：",IDC_STATIC,5,140,45,10
+    GROUPBOX        "棒源控制",IDC_STATIC,85,71,70,25
+    GROUPBOX        "SEPTA控制",IDC_STATIC,85,101,70,30
+    GROUPBOX        "数据格式",IDC_STATIC,5,71,70,60
+    GROUPBOX        "BUCKET编号",IDC_STATIC,5,1,150,25
+    LTEXT           "开始：",IDC_STATIC,10,11,25,10
+    LTEXT           "结束：",IDC_STATIC,90,11,25,10
+END
+
+IDD_FHPOSPARAM DIALOG DISCARDABLE  0, 0, 188, 98
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "符合数据   采集参数"
+FONT 10, "System"
+BEGIN
+    DEFPUSHBUTTON   "OK",IDOK,131,7,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,131,24,50,14
+END
+
+
+#ifndef _MAC
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 3,3,3,5
+ PRODUCTVERSION 3,3,3,5
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "080404b0"
+        BEGIN
+            VALUE "Comments", "\0"
+            VALUE "CompanyName", "\0"
+            VALUE "FileDescription", "SimOWS Microsoft 基础类应用程序\0"
+            VALUE "FileVersion", "3, 3, 3, 5\0"
+            VALUE "InternalName", "SimOWS\0"
+            VALUE "LegalCopyright", "版权所有 (C) 2003\0"
+            VALUE "LegalTrademarks", "\0"
+            VALUE "OriginalFilename", "SimOWS.EXE\0"
+            VALUE "PrivateBuild", "\0"
+            VALUE "ProductName", "SimOWS 应用程序\0"
+            VALUE "ProductVersion", "3, 3, 3, 5\0"
+            VALUE "SpecialBuild", "\0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x804, 1200
+    END
+END
+
+#endif    // !_MAC
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO DISCARDABLE 
+BEGIN
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+
+    IDD_SIMOWS_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 422
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 285
+    END
+
+    IDD_FHPARAM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 229
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 209
+    END
+
+    IDD_TESTPARAM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 134
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 79
+    END
+
+    IDD_BEDCOORD, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 181
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_BEDRELATE_PARAM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 181
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_INPUT1, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 181
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_INPUTTH, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 181
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+
+    IDD_INIT_ACS, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 195
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 179
+    END
+
+    IDD_AUTOACQ_COINTIME, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 155
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 159
+    END
+
+    IDD_BUCKETPARAM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 155
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 179
+    END
+
+    IDD_AUTOACQ_BUCKET, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 154
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 169
+    END
+
+    IDD_FHPOSPARAM, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 181
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 91
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_POPUP MENU DISCARDABLE 
+BEGIN
+    POPUP "_popup"
+    BEGIN
+        POPUP "调色板"
+        BEGIN
+            MENUITEM "256灰度",                     IDM_PAL_DEFAULT
+            MENUITEM "MAP",                         IDM_PAL_MAP
+            MENUITEM "HOT",                         IDM_PAL_HOT
+            MENUITEM "FLOW",                        IDM_PAL_FLOW
+            MENUITEM "NIH",                         IDM_PAL_NIH
+        END
+        MENUITEM "显示主窗口",                  IDM_MAINWND
+    END
+END
+
+IDR_MENU_MAIN MENU DISCARDABLE 
+BEGIN
+    POPUP "_popup"
+    BEGIN
+        POPUP "查询操作"
+        BEGIN
+            MENUITEM "查询BED温度",                 IDM_QUERY_TBED
+            MENUITEM "查询ROD温度",                 IDM_QUERY_TROD
+            MENUITEM SEPARATOR
+            MENUITEM "查询床运动状态",              IDM_QUERY_BED_MOVESTATUS
+            MENUITEM "查询床坐标",                  IDM_QUERY_BED_POS
+            MENUITEM "查询床步长",                  IDM_QUERY_BED_STEP
+            MENUITEM "查询床开关量设置",            IDM_QUERY_BED_SWITCHSET
+            MENUITEM SEPARATOR
+            MENUITEM "查询棒源状态",                IDM_QUERY_ROD_STATUS
+            MENUITEM "查询棒源转速",                IDM_QUERY_ROD_RATE
+            MENUITEM "查询棒源开关量设置",          IDM_QUERY_ROD_SWITCHSET
+            MENUITEM SEPARATOR
+        END
+        POPUP "设置操作"
+        BEGIN
+            MENUITEM "设置床定位方式",              IDM_SET_BEDCOORD
+            MENUITEM "设置床步长",                  IDM_SET_BEDSTEP
+            MENUITEM SEPARATOR
+            MENUITEM "设置棒源转速",                IDM_SET_RODRATE
+        END
+        POPUP "床控制"
+        BEGIN
+            MENUITEM "床X方向移动(绝对)",           IDM_CTRL_BEDMOVEX
+            MENUITEM "床X方向移动(相对)",           IDM_CTRL_BEDMOVEX_RELATE
+            MENUITEM "床X方向单步移动",             IDM_CTRL_BEDMOVESTEPX
+            MENUITEM "停止床X方向运动",             IDM_CTRL_BEDSTOPX
+            MENUITEM SEPARATOR
+            MENUITEM "床Y方向移动(绝对)",           IDM_CTRL_BEDMOVEY
+            MENUITEM "床Y方向移动(相对)",           IDM_CTRL_BEDMOVEY_RELATE
+            MENUITEM "床Y方向单步移动",             IDM_CTRL_BEDMOVESTEPY
+            MENUITEM "停止床Y方向运动",             IDM_CTRL_BEDSTOPY
+            MENUITEM SEPARATOR
+            MENUITEM "停止床所有方向运动",          IDM_CTRL_BEDSTOPALL
+        END
+        POPUP "棒源控制"
+        BEGIN
+            MENUITEM "棒源伸出",                    IDM_CTRL_RODOUT
+            MENUITEM "棒源停止",                    IDM_CTRL_RODSTOP
+            MENUITEM "棒源旋转",                    IDM_CTRL_RODROLL
+            MENUITEM "棒源缩回",                    IDM_CTRL_RODIN
+        END
+        POPUP "电源控制"
+        BEGIN
+            MENUITEM "开激光灯",                    IDM_CTRL_LASERON
+            MENUITEM "关激光灯",                    IDM_CTRL_LASEROFF
+            MENUITEM SEPARATOR
+        END
+        POPUP "调试选项"
+        BEGIN
+            MENUITEM "允许GC查询",                  IDM_DBG_POLLENABLE
+            MENUITEM "禁止GC查询",                  IDM_DBG_POLLDISABLE
+        END
+        POPUP "紧急停止"
+        BEGIN
+            MENUITEM "棒源急停",                    IDM_CTRL_RODESTOP
+        END
+        MENUITEM "进入测试模式",                IDM_TESTMODE
+    END
+END
+
+IDR_ENERGY MENU DISCARDABLE 
+BEGIN
+    POPUP "_popup"
+    BEGIN
+        POPUP "显示方式"
+        BEGIN
+            MENUITEM "2维显示",                     IDM_2D
+            MENUITEM "1维显示",                     IDM_1D
+        END
+        POPUP "调色板"
+        BEGIN
+            MENUITEM "默认",                        IDM_PAL2_DEFAULT
+            MENUITEM "256灰度",                     IDM_PAL2_256
+            MENUITEM "MAP",                         IDM_PAL2_MAP
+            MENUITEM "HOT",                         IDM_PAL2_HOT
+            MENUITEM "FLOW",                        IDM_PAL2_FLOW
+            MENUITEM "NIH",                         IDM_PAL2_NIH
+        END
+        MENUITEM "数据存盘",                    IDM_SAVE2
+        MENUITEM "显示主窗口",                  IDM_MAINWND
+    END
+END
+
+IDR_SD MENU DISCARDABLE 
+BEGIN
+    POPUP "_popup"
+    BEGIN
+        POPUP "调色板"
+        BEGIN
+            MENUITEM "默认",                        IDM_PAL1_DEFAULT
+            MENUITEM "256灰度",                     IDM_PAL1_256
+            MENUITEM "MAP",                         IDM_PAL1_MAP
+            MENUITEM "HOT",                         IDM_PAL1_HOT
+            MENUITEM "FLOW",                        IDM_PAL1_FLOW
+            MENUITEM "NIH",                         IDM_PAL1_NIH
+        END
+        MENUITEM "显示主窗口",                  IDM_MAINWND
+        MENUITEM "数据存盘",                    IDM_SAVE1
+    END
+END
+
+IDR_TIME MENU DISCARDABLE 
+BEGIN
+    POPUP "_popup"
+    BEGIN
+        MENUITEM "数据存盘",                    IDM_SAVE
+        MENUITEM "显示主窗口",                  IDM_MAINWND
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// PAL
+//
+
+IDR_PAL_FLOW            PAL     DISCARDABLE     "res\\pal2.bin"
+IDR_PAL_HOT             PAL     DISCARDABLE     "res\\pal1.bin"
+IDR_PAL_MAP             PAL     DISCARDABLE     "res\\map.pal"
+IDR_PAL_NIH             PAL     DISCARDABLE     "res\\bin00001.bin"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_TESTPARAM DLGINIT
+BEGIN
+    IDC_BUCKET, 0x403, 3, 0
+0x3042, "\000" 
+    IDC_BUCKET, 0x403, 3, 0
+0x3142, "\000" 
+    IDC_BUCKET, 0x403, 3, 0
+0x3242, "\000" 
+    IDC_BUCKET, 0x403, 3, 0
+0x3342, "\000" 
+    IDC_BUCKET, 0x403, 3, 0
+0x3442, "\000" 
+    IDC_BUCKET, 0x403, 3, 0
+0x3542, "\000" 
+    IDC_BUCKET, 0x403, 3, 0
+0x3642, "\000" 
+    IDC_BUCKET, 0x403, 3, 0
+0x3742, "\000" 
+    IDC_BUCKET, 0x403, 3, 0
+0x3842, "\000" 
+    IDC_BUCKET, 0x403, 3, 0
+0x3942, "\000" 
+    IDC_BUCKET, 0x403, 4, 0
+0x3142, 0x0030, 
+    IDC_BUCKET, 0x403, 4, 0
+0x3142, 0x0031, 
+    IDC_BUCKET, 0x403, 4, 0
+0x3142, 0x0032, 
+    IDC_BUCKET, 0x403, 4, 0
+0x3142, 0x0033, 
+    IDC_BUCKET, 0x403, 4, 0
+0x3142, 0x0034, 
+    IDC_BUCKET, 0x403, 4, 0
+0x3142, 0x0035, 
+    IDC_BUCKET, 0x403, 4, 0
+0x3142, 0x0036, 
+    IDC_BUCKET, 0x403, 4, 0
+0x3142, 0x0037, 
+    IDC_BUCKET, 0x403, 4, 0
+0x3142, 0x0038, 
+    IDC_BUCKET, 0x403, 4, 0
+0x3142, 0x0039, 
+    IDC_BUCKET, 0x403, 4, 0
+0x3242, 0x0030, 
+    IDC_BUCKET, 0x403, 4, 0
+0x3242, 0x0031, 
+    IDC_BUCKET, 0x403, 4, 0
+0x3242, 0x0032, 
+    IDC_BUCKET, 0x403, 4, 0
+0x3242, 0x0033, 
+    IDC_BUCKET, 0x403, 4, 0
+0x3242, 0x0034, 
+    IDC_BUCKET, 0x403, 4, 0
+0x3242, 0x0035, 
+    IDC_BUCKET, 0x403, 4, 0
+0x3242, 0x0036, 
+    IDC_BUCKET, 0x403, 4, 0
+0x3242, 0x0037, 
+    IDC_BUCKET, 0x403, 4, 0
+0x3242, 0x0038, 
+    IDC_BUCKET, 0x403, 4, 0
+0x3242, 0x0039, 
+    IDC_BUCKET, 0x403, 4, 0
+0x3342, 0x0030, 
+    IDC_BUCKET, 0x403, 4, 0
+0x3342, 0x0031, 
+    0
+END
+
+IDD_FHPARAM DLGINIT
+BEGIN
+    IDC_GATEMODE, 0x403, 11, 0
+0xc9b2, 0xafbc, 0xf3ba, 0xd6b7, 0xc5c3, "\000" 
+    IDC_GATEMODE, 0x403, 11, 0
+0xc9b2, 0xafbc, 0xb1ca, 0xd6b7, 0xc5c3, "\000" 
+    IDC_RODSPEED, 0x403, 19, 0
+0xf4b0, 0xb4d4, 0xaad7, 0xd9cb, 0x2d2d, 0xd738, 0x2faa, 0xd6b7, 0xd3d6, 
+"\000" 
+    IDC_RODSPEED, 0x403, 20, 0
+0xf4b0, 0xb4d4, 0xaad7, 0xd9cb, 0x2d2d, 0x3231, 0xaad7, 0xb72f, 0xd6d6, 
+0x00d3, 
+    IDC_RODSPEED, 0x403, 20, 0
+0xf4b0, 0xb4d4, 0xaad7, 0xd9cb, 0x2d2d, 0x3831, 0xaad7, 0xb72f, 0xd6d6, 
+0x00d3, 
+    IDC_COIN_BUCKET, 0x403, 9, 0
+0x5542, 0x4b43, 0x5445, 0x3030, "\000" 
+    IDC_COIN_BUCKET, 0x403, 9, 0
+0x5542, 0x4b43, 0x5445, 0x3130, "\000" 
+    IDC_COIN_BUCKET, 0x403, 9, 0
+0x5542, 0x4b43, 0x5445, 0x3230, "\000" 
+    IDC_COIN_BUCKET, 0x403, 9, 0
+0x5542, 0x4b43, 0x5445, 0x3330, "\000" 
+    IDC_COIN_BUCKET, 0x403, 9, 0
+0x5542, 0x4b43, 0x5445, 0x3430, "\000" 
+    IDC_COIN_BUCKET, 0x403, 9, 0
+0x5542, 0x4b43, 0x5445, 0x3530, "\000" 
+    IDC_COIN_BUCKET, 0x403, 9, 0
+0x5542, 0x4b43, 0x5445, 0x3630, "\000" 
+    IDC_COIN_BUCKET, 0x403, 9, 0
+0x5542, 0x4b43, 0x5445, 0x3730, "\000" 
+    IDC_COIN_BUCKET, 0x403, 9, 0
+0x5542, 0x4b43, 0x5445, 0x3830, "\000" 
+    IDC_COIN_BUCKET, 0x403, 9, 0
+0x5542, 0x4b43, 0x5445, 0x3930, "\000" 
+    IDC_COIN_BUCKET, 0x403, 9, 0
+0x5542, 0x4b43, 0x5445, 0x3031, "\000" 
+    IDC_COIN_BUCKET, 0x403, 9, 0
+0x5542, 0x4b43, 0x5445, 0x3131, "\000" 
+    IDC_COIN_BUCKET, 0x403, 9, 0
+0x5542, 0x4b43, 0x5445, 0x3231, "\000" 
+    IDC_COIN_BUCKET, 0x403, 9, 0
+0x5542, 0x4b43, 0x5445, 0x3331, "\000" 
+    IDC_COIN_BUCKET, 0x403, 9, 0
+0x5542, 0x4b43, 0x5445, 0x3431, "\000" 
+    IDC_COIN_BUCKET, 0x403, 9, 0
+0x5542, 0x4b43, 0x5445, 0x3531, "\000" 
+    IDC_COIN_BUCKET, 0x403, 9, 0
+0x5542, 0x4b43, 0x5445, 0x3631, "\000" 
+    IDC_COIN_BUCKET, 0x403, 9, 0
+0x5542, 0x4b43, 0x5445, 0x3731, "\000" 
+    IDC_COIN_BUCKET, 0x403, 9, 0
+0x5542, 0x4b43, 0x5445, 0x3831, "\000" 
+    IDC_COIN_BUCKET, 0x403, 9, 0
+0x5542, 0x4b43, 0x5445, 0x3931, "\000" 
+    IDC_COIN_BUCKET, 0x403, 9, 0
+0x5542, 0x4b43, 0x5445, 0x3032, "\000" 
+    IDC_COIN_BUCKET, 0x403, 9, 0
+0x5542, 0x4b43, 0x5445, 0x3132, "\000" 
+    IDC_COIN_BUCKET, 0x403, 9, 0
+0x5542, 0x4b43, 0x5445, 0x3232, "\000" 
+    IDC_COIN_BUCKET, 0x403, 9, 0
+0x5542, 0x4b43, 0x5445, 0x3332, "\000" 
+    IDC_COIN_BUCKET, 0x403, 9, 0
+0x5542, 0x4b43, 0x5445, 0x3432, "\000" 
+    IDC_COIN_BUCKET, 0x403, 9, 0
+0x5542, 0x4b43, 0x5445, 0x3532, "\000" 
+    IDC_COIN_BUCKET, 0x403, 9, 0
+0x5542, 0x4b43, 0x5445, 0x3632, "\000" 
+    IDC_COIN_BUCKET, 0x403, 9, 0
+0x5542, 0x4b43, 0x5445, 0x3732, "\000" 
+    IDC_COIN_BUCKET, 0x403, 9, 0
+0x5542, 0x4b43, 0x5445, 0x3832, "\000" 
+    IDC_COIN_BUCKET, 0x403, 9, 0
+0x5542, 0x4b43, 0x5445, 0x3932, "\000" 
+    IDC_COIN_BUCKET, 0x403, 9, 0
+0x5542, 0x4b43, 0x5445, 0x3033, "\000" 
+    IDC_COIN_BUCKET, 0x403, 9, 0
+0x5542, 0x4b43, 0x5445, 0x3133, "\000" 
+    0
+END
+
+IDD_INIT_ACS DLGINIT
+BEGIN
+    IDC_ECG_SAMPLEFREQ, 0x403, 5, 0
+0x3631, 0x3030, "\000" 
+    IDC_ECG_SAMPLEFREQ, 0x403, 4, 0
+0x3032, 0x0030, 
+    IDC_ECG_SAMPLEFREQ, 0x403, 4, 0
+0x3034, 0x0030, 
+    IDC_ECG_SAMPLEFREQ, 0x403, 4, 0
+0x3038, 0x0030, 
+    IDC_ECG_SAMPLEFREQ, 0x403, 5, 0
+0x3631, 0x3030, "\000" 
+    IDC_ECG_SAMPLEFREQ, 0x403, 5, 0
+0x3233, 0x3030, "\000" 
+    IDC_ECG_SAMPLEFREQ, 0x403, 5, 0
+0x3436, 0x3030, "\000" 
+    IDC_BUCKET_MODE, 0x403, 18, 0
+0xa330, 0xc4ba, 0xc6dc, 0xcad7, 0xbefd, 0x28dd, 0x7830, 0x3543, 0x0029, 
+
+    IDC_BUCKET_MODE, 0x403, 18, 0
+0xa331, 0xcaba, 0xb7b1, 0xcabd, 0xbefd, 0x28dd, 0x7830, 0x3643, 0x0029, 
+
+    IDC_BUCKET_MODE, 0x403, 18, 0
+0xa332, 0xc9ba, 0xb5a2, 0xcae3, 0xbefd, 0x28dd, 0x7830, 0x3743, 0x0029, 
+
+    IDC_BUCKET_MODE, 0x403, 19, 0
+0xa333, 0xb7ba, 0xbafb, 0xc4cf, 0xcaa3, 0x30bd, 0x3028, 0x4378, 0x2938, 
+"\000" 
+    IDC_BUCKET_MODE, 0x403, 19, 0
+0xa334, 0xb7ba, 0xbafb, 0xc4cf, 0xcaa3, 0x31bd, 0x3028, 0x4378, 0x2939, 
+"\000" 
+    0
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_ABOUTBOX            "关于 SimOWS(&A)..."
+    IDP_SOCKETS_INIT_FAILED "Windows 通信端口初始化失败。"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_BUCKETALL           "IDM_QUERY_BED_STEP"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDM_QUERY_BED_MOVESTATUS "IDM_QUERY_BED_STEP"
+END
+
+#endif    // Chinese (P.R.C.) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\SimOWS.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

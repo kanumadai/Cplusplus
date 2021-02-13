@@ -1,0 +1,8 @@
+//SUPPRESSIONPROJ:Maint
+//VERSION:5.00
+//ENABLE:Yes
+!include Mfc.sup
+!include Rtl.sup
+ignore param 1 KERNEL32.DLL:GlobalGetAtomNameA in function EXE:"_AfxCbtFilterHook"	; //this is akang test
+ignore param 1 USER32.DLL:MonitorFromWindow in function EXE:"xMonitorFromWindow"	; //this is akang test 2
+

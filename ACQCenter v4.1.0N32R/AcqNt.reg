@@ -1,0 +1,15 @@
+REGEDIT4
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\AcqCenter]
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\AcqCenter\FH]
+"AdcSampleFreq"=dword:00000004
+"AdcAmpFactor"=dword:00000001
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\AcqCenter\OWS]
+"HostIP"="192.168.0.42"
+"HostPort"=dword:00001f90
+
+[HKEY_LOCAL_MACHINE\SOFTWARE\AcqCenter\SIO]
+"Port"="COM1"
+"RodRate"=dword:00000012

@@ -1,0 +1,8 @@
+---- 80 + m_Position_Y Matches (10 in 1 files) ----
+DynShowDlg.cpp:			if((point.y <= 80 + m_Position_Y0[i][2]*8 +3)&&(point.y >= 80 + m_Position_Y0[i][2]*8 -3)) {
+DynShowDlg.cpp:			if((point.y <= 80 + m_Position_Y0[i][0]*8 +3)&&(point.y >= 80 + m_Position_Y0[i][0]*8 -3)) {						
+DynShowDlg.cpp:			if((point.y <= 80 + m_Position_Y0[i][7]*8 +3)&&(point.y >= 80 + m_Position_Y0[i][7]*8 -3)) {
+DynShowDlg.cpp:				if((point.y < 80+m_Position_Y1[i][2]*8)&&(point.y > 80 + m_Position_Y0[i][2]*8)) {
+DynShowDlg.cpp:				if((point.y < 80 + m_Position_Y0[7][i]*8)&&(point.y > 80 +m_Position_Y0[1][i]*8)) { //点击范围有效
+DynShowDlg.cpp:				if((point.y < 80 + m_Position_Y1[0][i]*8)&&(point.y > 80 +m_Position_Y0[0][i]*8)) { //垂直前一短线
+DynShowDlg.cpp:				if((point.y < 80 + m_Position_Y1[7][i]*8)&&(point.y > 80 +m_Position_Y0[7][i]*8)) { //垂直后一短线

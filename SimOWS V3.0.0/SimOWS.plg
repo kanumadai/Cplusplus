@@ -1,0 +1,49 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: SimOWS - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating command line "rc.exe /l 0x804 /fo"..\Bin\SimOWS\Debug/SimOWS.res" /d "_DEBUG" "E:\WorkStation\SoftWare\SimOWS V3.0.0\SimOWS.rc"" 
+Creating temporary file "C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPBB.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"..\Bin\SimOWS\Debug/SimOWS.pdb" /debug /machine:I386 /out:"..\Bin\SimOWS\Debug/SimOWS.exe" /pdbtype:sept /libpath:"..\Bin\SimOWS\Debug" 
+"\WorkStation\SoftWare\Bin\SimOWS\Debug\AutoAcqBucketDlg.obj"
+"\WorkStation\SoftWare\Bin\SimOWS\Debug\AutoAcqCoinTimeDlg.obj"
+"\WorkStation\SoftWare\Bin\SimOWS\Debug\BedCoordDlg.obj"
+"\WorkStation\SoftWare\Bin\SimOWS\Debug\BucketParamDlg.obj"
+"\WorkStation\SoftWare\Bin\SimOWS\Debug\BuckFile.obj"
+"\WorkStation\SoftWare\Bin\SimOWS\Debug\DbgPrt.obj"
+"\WorkStation\SoftWare\Bin\SimOWS\Debug\FHParamDlg.obj"
+"\WorkStation\SoftWare\Bin\SimOWS\Debug\GetThDlg.obj"
+"\WorkStation\SoftWare\Bin\SimOWS\Debug\InitACSDlg.obj"
+"\WorkStation\SoftWare\Bin\SimOWS\Debug\Input1.obj"
+"\WorkStation\SoftWare\Bin\SimOWS\Debug\ListenSocket.obj"
+"\WorkStation\SoftWare\Bin\SimOWS\Debug\OWSSIO.obj"
+"\WorkStation\SoftWare\Bin\SimOWS\Debug\OWSSock.obj"
+"\WorkStation\SoftWare\Bin\SimOWS\Debug\RelateMoveDlg.obj"
+"\WorkStation\SoftWare\Bin\SimOWS\Debug\SimOWS.obj"
+"\WorkStation\SoftWare\Bin\SimOWS\Debug\SimOWSDlg.obj"
+"\WorkStation\SoftWare\Bin\SimOWS\Debug\StdAfx.obj"
+"\WorkStation\SoftWare\Bin\SimOWS\Debug\TestParamDlg.obj"
+"\WorkStation\SoftWare\Bin\SimOWS\Debug\WndDisp.obj"
+"\WorkStation\SoftWare\Bin\SimOWS\Debug\WndDispCointime.obj"
+"\WorkStation\SoftWare\Bin\SimOWS\Debug\WndDispEnergy.obj"
+"\WorkStation\SoftWare\Bin\SimOWS\Debug\WndDispSD.obj"
+"\WorkStation\SoftWare\Bin\SimOWS\Debug\WndDispTime.obj"
+"\WorkStation\SoftWare\Bin\SimOWS\Debug\SimOWS.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\ADMINI~1\LOCALS~1\Temp\RSPBB.tmp"
+<h3>Output Window</h3>
+Compiling resources...
+Linking...
+
+
+
+<h3>Results</h3>
+SimOWS.exe - 0 error(s), 0 warning(s)
+</pre>
+</body>
+</html>

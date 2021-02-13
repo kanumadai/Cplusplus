@@ -1,0 +1,299 @@
+<html>
+<body>
+<pre>
+<h1>Build Log</h1>
+<h3>
+--------------------Configuration: MCB - Win32 Debug--------------------
+</h3>
+<h3>Command Lines</h3>
+Creating temporary file "C:\DOCUME~1\ljt\LOCALS~1\Temp\RSP20.tmp" with contents
+[
+/nologo /MTd /W3 /Gm /GX /ZI /Od /D "WIN32" /D "_DEBUG" /D "_WINDOWS" /D "_MBCS" /FR"Debug/" /Fp"Debug/MCB.pch" /Yu"stdafx.h" /Fo"Debug/" /Fd"Debug/" /FD /GZ /c 
+"C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp"
+]
+Creating command line "cl.exe @C:\DOCUME~1\ljt\LOCALS~1\Temp\RSP20.tmp" 
+Creating temporary file "C:\DOCUME~1\ljt\LOCALS~1\Temp\RSP21.tmp" with contents
+[
+/nologo /subsystem:windows /incremental:yes /pdb:"Debug/MCB.pdb" /debug /machine:I386 /out:"Debug/MCB.exe" /pdbtype:sept 
+".\Debug\ColorSet.obj"
+".\Debug\CommApi.obj"
+".\Debug\ComSel.obj"
+".\Debug\debug.obj"
+".\Debug\DLGPRINT1.obj"
+".\Debug\EnergeKedu.obj"
+".\Debug\EView.obj"
+".\Debug\EzusbApi.obj"
+".\Debug\ini.obj"
+".\Debug\MainFrm.obj"
+".\Debug\MCB.obj"
+".\Debug\MCBDoc.obj"
+".\Debug\Mcbio.obj"
+".\Debug\MCBView.obj"
+".\Debug\ProgCtrl.obj"
+".\Debug\ReadFlashSel.obj"
+".\Debug\SetHardWarePara.obj"
+".\Debug\StdAfx.obj"
+".\Debug\UsbParaSet.obj"
+".\Debug\WidthStat.obj"
+".\Debug\MCB.res"
+]
+Creating command line "link.exe @C:\DOCUME~1\ljt\LOCALS~1\Temp\RSP21.tmp"
+<h3>Output Window</h3>
+Compiling...
+MCBView.cpp
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(601) : warning C4101: 'intbuff' : unreferenced local variable
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(1070) : warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(1076) : warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(1083) : warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(1101) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(1102) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(1114) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(1114) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(1115) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(1116) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(1116) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(1117) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(1127) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(1128) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(1131) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(1132) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(1155) : warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(1162) : warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(1179) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(1184) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(1194) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(1199) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(1214) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(1212) : warning C4101: 'intertdotbuff' : unreferenced local variable
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(1325) : warning C4018: '<=' : signed/unsigned mismatch
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(1410) : warning C4018: '<=' : signed/unsigned mismatch
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(1580) : warning C4244: '=' : conversion from 'float' to 'unsigned int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(1652) : warning C4305: 'initializing' : truncation from 'const double' to 'float'
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(1675) : warning C4244: '=' : conversion from 'unsigned int' to 'float', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(1687) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(1694) : warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(1720) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(1727) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(1727) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(1727) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(1759) : warning C4244: '=' : conversion from 'float' to 'unsigned int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(1832) : warning C4305: 'initializing' : truncation from 'const double' to 'float'
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(1841) : warning C4018: '<' : signed/unsigned mismatch
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(1855) : warning C4244: '=' : conversion from 'unsigned int' to 'float', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(1864) : warning C4018: '<' : signed/unsigned mismatch
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(1866) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(1872) : warning C4018: '<' : signed/unsigned mismatch
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(1874) : warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(1900) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(1901) : warning C4018: '<' : signed/unsigned mismatch
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(1907) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(1907) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(1907) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(1716) : warning C4101: 'intertdotbuff' : unreferenced local variable
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(1896) : warning C4101: 'intertdotbuff' : unreferenced local variable
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(1983) : warning C4018: '==' : signed/unsigned mismatch
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(1984) : warning C4018: '<' : signed/unsigned mismatch
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(2093) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(2132) : warning C4018: '==' : signed/unsigned mismatch
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(2133) : warning C4018: '<' : signed/unsigned mismatch
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(2240) : warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(2248) : warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(2257) : warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(2275) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(2276) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(2292) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(2292) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(2293) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(2296) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(2296) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(2297) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(2298) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(2298) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(2299) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(2311) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(2312) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(2315) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(2316) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(2343) : warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(2351) : warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(2360) : warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(2378) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(2379) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(2392) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(2392) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(2393) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(2396) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(2396) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(2397) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(2398) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(2398) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(2399) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(2411) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(2412) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(2415) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(2416) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(2456) : warning C4244: '=' : conversion from 'float' to 'unsigned int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(2457) : warning C4244: '=' : conversion from 'float' to 'unsigned int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(2550) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(2557) : warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(2583) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(2590) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(2590) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(2590) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(2717) : warning C4018: '<' : signed/unsigned mismatch
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(2719) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(2726) : warning C4018: '<' : signed/unsigned mismatch
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(2728) : warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(2754) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(2755) : warning C4018: '<' : signed/unsigned mismatch
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(2761) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(2761) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(2761) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(2579) : warning C4101: 'intertdotbuff' : unreferenced local variable
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(2750) : warning C4101: 'intertdotbuff' : unreferenced local variable
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(2927) : warning C4018: '>' : signed/unsigned mismatch
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(3513) : warning C4244: '=' : conversion from 'unsigned int' to 'float', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(3517) : warning C4244: '=' : conversion from 'unsigned int' to 'float', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(3667) : warning C4018: '<=' : signed/unsigned mismatch
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(3695) : warning C4244: '=' : conversion from 'float' to 'unsigned int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(3696) : warning C4244: '=' : conversion from 'float' to 'unsigned int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(3836) : warning C4018: '<' : signed/unsigned mismatch
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(3863) : warning C4018: '<' : signed/unsigned mismatch
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(3879) : warning C4018: '>=' : signed/unsigned mismatch
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(3881) : warning C4018: '<' : signed/unsigned mismatch
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(3895) : warning C4018: '<=' : signed/unsigned mismatch
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(3903) : warning C4018: '<' : signed/unsigned mismatch
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(3911) : warning C4018: '<' : signed/unsigned mismatch
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(3915) : warning C4018: '<' : signed/unsigned mismatch
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(3943) : warning C4018: '>=' : signed/unsigned mismatch
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(3944) : warning C4018: '<' : signed/unsigned mismatch
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(4061) : warning C4018: '>=' : signed/unsigned mismatch
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(4125) : warning C4018: '>=' : signed/unsigned mismatch
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(4137) : warning C4018: '>=' : signed/unsigned mismatch
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(4181) : warning C4018: '>=' : signed/unsigned mismatch
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(4785) : warning C4018: '<' : signed/unsigned mismatch
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(4915) : warning C4018: '>' : signed/unsigned mismatch
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(5595) : warning C4244: 'argument' : conversion from 'const double' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(5828) : warning C4018: '>' : signed/unsigned mismatch
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(5847) : warning C4018: '<' : signed/unsigned mismatch
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(5850) : warning C4018: '>=' : signed/unsigned mismatch
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(5860) : warning C4018: '<' : signed/unsigned mismatch
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(5892) : warning C4018: '<' : signed/unsigned mismatch
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(6774) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(6866) : warning C4244: '=' : conversion from 'unsigned int' to 'float', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(6871) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(6880) : warning C4244: '=' : conversion from 'unsigned int' to 'float', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(6884) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(7073) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(7080) : warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(7123) : warning C4018: '>=' : signed/unsigned mismatch
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(7168) : warning C4018: '<' : signed/unsigned mismatch
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(7170) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(7176) : warning C4018: '<' : signed/unsigned mismatch
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(7177) : warning C4244: '=' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(7215) : warning C4018: '<' : signed/unsigned mismatch
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(7223) : warning C4018: '>=' : signed/unsigned mismatch
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(7429) : warning C4244: '=' : conversion from 'int' to 'float', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(7435) : warning C4244: '=' : conversion from 'unsigned int' to 'float', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(7465) : warning C4244: '=' : conversion from 'unsigned int' to 'float', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(7466) : warning C4244: '=' : conversion from 'unsigned int' to 'float', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(7484) : warning C4305: 'initializing' : truncation from 'const double' to 'float'
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(7492) : warning C4018: '<' : signed/unsigned mismatch
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(7500) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(7513) : warning C4305: '=' : truncation from 'const double' to 'float'
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(7514) : warning C4018: '<' : signed/unsigned mismatch
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(7576) : warning C4018: '<' : signed/unsigned mismatch
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(7584) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(7591) : warning C4305: '=' : truncation from 'const double' to 'float'
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(7592) : warning C4018: '<' : signed/unsigned mismatch
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(7651) : warning C4305: 'initializing' : truncation from 'const double' to 'float'
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(7664) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(7676) : warning C4305: '=' : truncation from 'const double' to 'float'
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(7716) : warning C4018: '<' : signed/unsigned mismatch
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(7741) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(7748) : warning C4305: '=' : truncation from 'const double' to 'float'
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(7810) : warning C4018: '<' : signed/unsigned mismatch
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(7816) : warning C4244: '=' : conversion from 'float' to 'unsigned int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(7820) : warning C4244: '=' : conversion from 'float' to 'unsigned int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(7835) : warning C4244: '=' : conversion from 'float' to 'unsigned int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(7839) : warning C4244: '=' : conversion from 'float' to 'unsigned int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(7845) : warning C4018: '>=' : signed/unsigned mismatch
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(7846) : warning C4018: '<' : signed/unsigned mismatch
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(7851) : warning C4244: '=' : conversion from 'float' to 'unsigned int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(7855) : warning C4244: '=' : conversion from 'float' to 'unsigned int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(7969) : warning C4305: '=' : truncation from 'const int' to 'char'
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(7969) : warning C4309: '=' : truncation of constant value
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(7975) : warning C4305: '=' : truncation from 'const int' to 'char'
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(7975) : warning C4309: '=' : truncation of constant value
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(8013) : warning C4305: '=' : truncation from 'const int' to 'char'
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(8013) : warning C4309: '=' : truncation of constant value
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(8022) : warning C4305: '=' : truncation from 'const int' to 'char'
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(8022) : warning C4309: '=' : truncation of constant value
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(8031) : warning C4305: '=' : truncation from 'const int' to 'char'
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(8031) : warning C4309: '=' : truncation of constant value
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(8040) : warning C4305: '=' : truncation from 'const int' to 'char'
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(8040) : warning C4309: '=' : truncation of constant value
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(8049) : warning C4305: '=' : truncation from 'const int' to 'char'
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(8049) : warning C4309: '=' : truncation of constant value
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(8058) : warning C4305: '=' : truncation from 'const int' to 'char'
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(8058) : warning C4309: '=' : truncation of constant value
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(8067) : warning C4305: '=' : truncation from 'const int' to 'char'
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(8067) : warning C4309: '=' : truncation of constant value
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(8075) : warning C4305: '=' : truncation from 'const int' to 'char'
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(8075) : warning C4309: '=' : truncation of constant value
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(8113) : warning C4305: '=' : truncation from 'const int' to 'char'
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(8113) : warning C4309: '=' : truncation of constant value
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(8299) : warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(8300) : warning C4244: 'argument' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(8329) : warning C4244: 'initializing' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(8330) : warning C4244: 'initializing' : conversion from 'int' to 'float', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(8333) : warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(8339) : warning C4244: 'initializing' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(8350) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(8351) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(8353) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(8384) : warning C4244: 'initializing' : conversion from 'double' to 'float', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(8388) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(8389) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(8398) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(8414) : warning C4244: '=' : conversion from 'double' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(8422) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(8422) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(8423) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(8423) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(8427) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(8427) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(8430) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(8430) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(8434) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(8434) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(8435) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(8435) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(8438) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(8438) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(8441) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(8441) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(8442) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(8442) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(8444) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(8444) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(8446) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(8446) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(8447) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(8447) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(8457) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(8457) : warning C4244: 'argument' : conversion from 'float' to 'int', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(8473) : warning C4244: '=' : conversion from 'double' to 'float', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(8877) : warning C4244: '=' : conversion from 'unsigned int' to 'float', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(8881) : warning C4244: '=' : conversion from 'unsigned int' to 'float', possible loss of data
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(8994) : warning C4018: '>' : signed/unsigned mismatch
+C:\Documents and Settings\ljt\桌面\mcb\recent\recent MCBnew_changing\MCBView.cpp(9120) : warning C4018: '>' : signed/unsigned mismatch
+Linking...
+
+
+
+<h3>Results</h3>
+MCB.exe - 0 error(s), 247 warning(s)
+</pre>
+</body>
+</html>

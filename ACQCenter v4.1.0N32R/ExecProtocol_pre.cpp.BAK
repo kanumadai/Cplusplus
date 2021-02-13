@@ -1,0 +1,552 @@
+#include "StdAfx.h"
+#include "math.h"
+#include "Resource.h"
+#include "OWS.h"
+#include "FH.h"
+#include "SIO.h"
+#include "BuckSIO.h"
+#include "ExecProtocol.h"
+
+#include "DbgPrt.h"
+
+#ifdef _DEBUG
+#define new DEBUG_NEW
+#undef THIS_FILE
+static char THIS_FILE[] = __FILE__;
+#endif
+
+extern HANDLE g_hEvtSysError;
+extern COWS g_OWS;
+extern CFH  g_FH;
+extern CSIO g_SIO;
+extern CBuckSIO g_BuckSIO;
+extern MCTL_INFO g_MCtlInfo;
+
+extern int g_nRodRate[3];
+
+extern HWND g_hWndOWS;
+
+
+/////////////////////////////////////////////////////////////////////////
+//     visible in this file only
+DWORD WINAPI ThreadExecProtocolMonitor(LPVOID pData);
+BOOL ExecEMControl(BOOL bRodOut, int rodrate, BOOL bSeptaOut, float fBedPos, float fBedOffset);
+//     visible in this file only
+//////////////////////////////////////////////////////////////////////////
+
+
+DWORD WINAPI ThreadExecProtocol(LPVOID pData)
+{
+	EXEC_THREAD_PARAM* pParam;
+	const ACQ_PROTOCOL* pProtocol;
+
+	HANDLE hMonitorThread;
+	DWORD dwMonitorThreadID;
+	HANDLE hEvtExitMonitor;
+
+	HANDLE hEvtWait[10];
+	HANDLE hTimer;
+	LARGE_INTEGER time;
+	DWORD dwRet;
+	BOOL bExit, bErrExit=FALSE;
+	int i;
+
+	//coin paramter
+	DWORD dwIntCnt;  FH_INT_TYPE intType;
+	FH_SCANMODE scanmode = scan_static;
+	DWORD dwFHRing;  DWORD dwFHFov;
+	DWORD dwFHTimeNs, dwFHTimeMax, dwFHTimeMin;
+	int nOutFmt; 	int nEnergyMode;
+
+	#if DBG_LEVEL != 0
+		char szTemp[512];
+	#endif
+
+	DbgPrt("Begin To Exec Protocol!\r\n", g_hWndOWS);
+
+	pParam = (EXEC_THREAD_PARAM*)(pData);
+	
+	pProtocol = g_OWS.ProtocolGet();
+
+	hTimer = CreateWaitableTimer(NULL, FALSE, NULL);
+
+	//create monitor thread
+	hEvtExitMonitor = CreateEvent(NULL, FALSE, FALSE, NULL);
+	hMonitorThread = CreateThread(NULL,0,ThreadExecProtocolMonitor, 
+								  hEvtExitMonitor, 0, 
+								  &dwMonitorThreadID);
+
+	BOOL bEMControlEn;
+	bEMControlEn = ((CButton*)AfxGetMainWnd()->GetDlgItem(IDC_EN_DBGEMC))->GetCheck();
+
+	if( bEMControlEn ){
+
+		///////////////////////////////////////////////////////////////////////////
+		//                     Control Septa
+		if( pProtocol->acq_head.SeptaStatus == TRUE)
+		{	//伸出
+			//if( g_MCtlInfo.septa_stat != out || g_MCtlInfo.septa_stat != outing )
+			if( !(g_MCtlInfo.septa_stat == out || g_MCtlInfo.septa_stat == outing) )
+			{
+				if( !g_SIO.Control_SeptaOut() ){
+					g_OWS.SendAlarm(ERROR_SIO_SEPTA_CTRL_OUT);
+					g_OWS.SendNACK();
+					bErrExit = TRUE;
+					goto exit2;
+				}
+			}
+		}
+		else
+		{	//缩回
+			if( !(g_MCtlInfo.septa_stat == in || g_MCtlInfo.septa_stat == ining) )
+			{
+				if( !g_SIO.Control_SeptaIn() ){
+					g_OWS.SendAlarm(ERROR_SIO_SEPTA_CTRL_IN);
+					g_OWS.SendNACK();
+					bErrExit = TRUE;
+					goto exit2;
+				}
+			}
+		}
+		//						 Control SEPTA
+		/////////////////////////////////////////////////////////////////////////////
+
+
+		////////////////////////////////////////////////////////////////////////////
+		//                     Bed  Control
+		if( !g_SIO.QueryBedMoveStatus() )
+		{
+			g_OWS.SendAlarm(ERROR_SIO_BED_QUERY_MOVESTATUS);
+			g_OWS.SendNACK();
+			bErrExit = TRUE;
+			goto exit2;
+		}
+		if( !g_SIO.QueryBedPos() )
+		{
+			g_OWS.SendAlarm(ERROR_SIO_BED_QUERY_POS);
+			g_OWS.SendNACK();
+			bErrExit = TRUE;
+			goto exit2;
+		}
+		if( g_MCtlInfo.wBed_posy < 3100){
+			if( !g_SIO.SetBedCoord(FALSE) ){
+				g_OWS.SendAlarm(ERROR_SIO_BED_SETCOORD);
+				g_OWS.SendNACK();
+				bErrExit = TRUE;
+				goto exit2;
+			}
+			if( !g_SIO.Control_BedMoveY(3100) ){
+				g_OWS.SendAlarm(ERROR_SIO_BED_MOVEY);
+				g_OWS.SendNACK();
+				bErrExit = TRUE;
+				goto exit2;
+			}
+		}
+		//床绝对定位
+		WORD pos;
+		if( pProtocol->acq_head.BedPosition >= 0.0){
+			if( !g_SIO.SetBedCoord( FALSE ) ){
+				g_OWS.SendAlarm(ERROR_SIO_BED_SETCOORD);
+				g_OWS.SendNACK();
+				bErrExit = TRUE;
+				goto exit2;
+			}
+			pos = WORD(pProtocol->acq_head.BedPosition*100.);
+			if( !g_SIO.Control_BedMoveX( pos ) ){
+				g_OWS.SendAlarm(ERROR_SIO_BED_MOVEX);
+				g_OWS.SendNACK();
+				bErrExit = TRUE;
+				goto exit2;
+			}
+		}
+		//床相对定位
+		BOOL bOut;
+		if( pProtocol->acq_head.BedOffset != 0.0){
+			if( !g_SIO.SetBedCoord( TRUE ) ){
+				g_OWS.SendAlarm(ERROR_SIO_BED_SETCOORD);
+				g_OWS.SendNACK();
+				bErrExit = TRUE;
+				goto exit2;
+			}
+			if( pProtocol->acq_head.BedOffset > 0.0 ) bOut = TRUE;
+			else bOut = FALSE;
+			pos = WORD(fabs(pProtocol->acq_head.BedOffset)*100.);
+			if( !g_SIO.Control_BedMoveXRelate( pos, bOut ) ){
+				g_OWS.SendAlarm(ERROR_SIO_BED_MOVEX);
+				g_OWS.SendNACK();
+				bErrExit = TRUE;
+				goto exit2;
+			}
+		}
+		//					   Bed Control
+		///////////////////////////////////////////////////////////////////////////
+
+		/////////////////////////////////////////////////////////////////////////////
+		//                     Control ROD
+		if( pProtocol->acq_head.RodStatus == TRUE )
+		{    //伸出
+			if( g_MCtlInfo.Rod_stat == rolling){
+				if( !g_SIO.Control_RodStop() ){
+					g_OWS.SendAlarm(ERROR_SIO_ROD_CTRL_STOP); 
+					g_OWS.SendNACK();
+					bErrExit = TRUE;
+					goto exit2;
+				}
+			}
+			if( !(g_MCtlInfo.Rod_stat == out || g_MCtlInfo.Rod_stat == outing) )
+			{
+				int RodRate;
+				switch(pProtocol->acq_head.RodSpeed){
+				case 1: RodRate = g_nRodRate[0];  break;
+				case 2: RodRate = g_nRodRate[1]; break;
+				default:
+				case 3: RodRate = g_nRodRate[2]; break;
+				}
+				if( !g_SIO.SetRodRate(RodRate) ){
+					g_OWS.SendAlarm(ERROR_SIO_ROD_SETRATE); 
+					g_OWS.SendNACK();
+					bErrExit = TRUE;
+					goto exit2;
+				}
+
+				if( !g_SIO.Control_RodOut() ){
+					g_OWS.SendAlarm(ERROR_SIO_ROD_CTRL_OUT); 
+					g_OWS.SendNACK();
+					bErrExit = TRUE;
+					goto exit2;
+				}
+			}
+		}
+		else
+		{
+			if( g_MCtlInfo.Rod_stat == rolling )
+			{
+				if( !g_SIO.Control_RodStop() ){
+					g_OWS.SendAlarm(ERROR_SIO_ROD_CTRL_STOP); 
+					g_OWS.SendNACK();
+					bErrExit = TRUE;
+					goto exit2;
+				}
+			}
+			if( g_MCtlInfo.Rod_stat == stop )
+			{
+				if( !g_SIO.Control_RodIn() ){
+					g_OWS.SendAlarm(ERROR_SIO_ROD_CTRL_IN); 
+					g_OWS.SendNACK();
+					bErrExit = TRUE;
+					goto exit2;
+				}
+			}
+		}
+		//              Control ROD
+		///////////////////////////////////////////////////////////////////////////////
+	
+	} //if( g_bEMControlEn)
+	
+	//Init Gate Param
+	if( pProtocol->acq_head.ScanClass == 3){
+		//gate scan
+		if( !g_FH.GateParamSet(pProtocol) ){
+			g_OWS.SendAlarm(ERROR_FH_GATEPARAM);
+			bErrExit = TRUE;
+			goto exit2;
+		}
+	}
+
+	//Init FH Param
+
+	intType = int_ontime;
+	dwIntCnt = 50*1000*1000;  //50m clock count
+
+	switch(pProtocol->acq_head.ScanClass)
+	{
+	case 0: scanmode = scan_t;      break;  //blank scan
+	case 1: scanmode = scan_t;      break;  //t scan
+	case 2: scanmode = scan_static; break;  //e scan
+	case 3: scanmode = scan_g;      break;  //g scan
+	default:scanmode = scan_static;
+	}
+
+	dwFHRing = pProtocol->acq_head.Span;
+	dwFHFov  = (DWORD)pProtocol->acq_head.AxialFov;
+
+	dwFHTimeNs  = AfxGetMainWnd()->GetDlgItemInt(IDC_TIME_LJ);   //立即符合时间
+	dwFHTimeMin = AfxGetMainWnd()->GetDlgItemInt(IDC_TIME_MIN);  //最小延迟符合时间
+	dwFHTimeMax = AfxGetMainWnd()->GetDlgItemInt(IDC_TIME_MAX);  //最大延迟符合时间
+	
+	//coin data fmt:  0->out position; 1->out time dif
+	//nOutFmt = ((CComboBox*)AfxGetMainWnd()->GetDlgItem(IDC_OUTFMT))->GetCurSel();
+	if( (pProtocol->acq_head.nTotalTime&0x40000000) == 0)
+		nOutFmt = 0;
+	else 
+	    nOutFmt = 1;
+
+	//0->光电符合 1->散射符合 2->光电与散射 3->全选
+	nEnergyMode = pProtocol->acq_head.ScatterEnery;
+
+	g_FH.FHParamSet( dwIntCnt, intType, scanmode,
+		             dwFHRing, dwFHFov,
+					 dwFHTimeNs, dwFHTimeMin, dwFHTimeMax,
+					 nOutFmt, nEnergyMode
+				   );
+
+	///////////////////////////////////////////////////////////////////////////////
+	//                    Exec data acquire
+
+	BOOL bEnBuckDbg;
+	bEnBuckDbg = ((CButton*)AfxGetMainWnd()->GetDlgItem(IDC_EN_DBGBUCK))->GetCheck();
+
+	bExit = FALSE;
+	int nFrame;
+	nFrame = pProtocol->acq_head.FrameNumber;
+	for(i=0; i<nFrame; i++){
+
+
+		#if DBG_LEVEL !=0
+			sprintf(szTemp, "----- Begin %d Frame\r\n", i+1);
+			DbgPrt(szTemp, g_hWndOWS);
+		#endif
+
+		g_OWS.SetCurrFrame(i);
+		g_OWS.SetFrameStart(TRUE);
+		g_OWS.SendFrameStart(i);
+
+		if(bEnBuckDbg){
+			if( (pProtocol->acq_head.nTotalTime & 0x80000000) == 0 )
+			{	//exec coin acq
+				if( scanmode == scan_t ) g_FH.Rs485Start();
+				if( scanmode == scan_g ) g_FH.GateStart();
+				g_FH.FHStart(FALSE, pProtocol->acq_head.nTotalTime&0x01f );
+				DbgPrt("ACQ Coin Data\r\n", g_hWndOWS);
+			}
+			else
+			{	//exec bucket acq
+				if( scanmode == scan_t) g_FH.Rs485Start();
+
+				g_FH.FHStart(TRUE, pProtocol->acq_head.nTotalTime&0x01f );
+				sprintf(szTemp, "ACQ BUCKET%d Data\r\n", pProtocol->acq_head.nTotalTime&0x01f);
+				DbgPrt(szTemp, g_hWndOWS);
+			}
+		}else{
+			//disable bucket debug
+			if( scanmode == scan_t ) g_FH.Rs485Start();
+			if( scanmode == scan_g ) g_FH.GateStart();
+			g_FH.FHStart();
+			DbgPrt("ACQ Coin Data\r\n", g_hWndOWS);
+		}
+		
+		switch(pProtocol->pFrame[i].FrameClass)
+		{
+		case 0:   //记数终止帧
+			 DbgPrt("Stop By Event Cnt\r\n", g_hWndOWS);
+			 hEvtWait[0] = pParam->hEvtFrameOK;
+			 break;
+		case 1:   //时间终止帧
+			 DbgPrt("Stop By Time\r\n", g_hWndOWS);
+			 hEvtWait[0] = hTimer;
+			 time.QuadPart = -1*LONGLONG(pProtocol->pFrame[i].FrameTime)*1000*1000*10;
+			 dwRet = SetWaitableTimer(hTimer, &time, 0, NULL, NULL, FALSE);
+			 break;
+		case 2:   //用户终止帧
+			 DbgPrt("Stop By User\r\n", g_hWndOWS);
+			 hEvtWait[0] = pParam->hEvtFrameSkip;
+			 break;
+		default:
+			 ASSERT(FALSE);
+			 break;
+		}						  
+	    hEvtWait[1] = pParam->hEvtFrameSkip;       //OWS SKIP THIS FRAME
+		hEvtWait[2] = pParam->hEvtProtocolStop;    //OWS STOP THIS PROTOCOL
+		hEvtWait[3] = g_hEvtSysError;              //SYSTEM ERROR UP
+
+		bExit = FALSE;
+		dwRet = WaitForMultipleObjects(4, hEvtWait, FALSE, INFINITE);
+		g_OWS.SetFrameStart(FALSE);
+		g_FH.FHStop();
+		switch(dwRet)
+		{
+		case WAIT_OBJECT_0:   //FRAME OK
+			 ResetEvent(hEvtWait[0]);
+			 #if DBG_LEVEL != 0
+				sprintf(szTemp, "---- End %d Frame\r\n", i+1);
+				DbgPrt(szTemp, g_hWndOWS);
+			 #endif
+			 break;
+		case WAIT_OBJECT_0+1:   //ows skip this frame
+			 ResetEvent(hEvtWait[1]);
+			 #if DBG_LEVEL != 0
+				sprintf(szTemp, "---- Skip %d Frame By OWS\r\n", i+1);
+				DbgPrt(szTemp, g_hWndOWS);
+			 #endif
+			 break;
+		case WAIT_OBJECT_0+2:  //用户终止协议
+			 ResetEvent(hEvtWait[2]);
+			 bExit = TRUE;
+			 #if DBG_LEVEL != 0
+				sprintf(szTemp, "---- Stop Protocol By OWS\r\n");
+				DbgPrt(szTemp, g_hWndOWS);
+			 #endif
+			 break;
+		case WAIT_OBJECT_0+3:  //SYSTEM ERROR UP
+			 ResetEvent(hEvtWait[3]);
+			 bExit = TRUE;
+			 bErrExit = TRUE;
+			 #if DBG_LEVEL != 0
+				sprintf(szTemp, "---- Stop Protocol By System Error\r\n");
+				DbgPrt(szTemp, g_hWndOWS);
+			 #endif
+			 break;
+		default:
+			 bExit = TRUE;
+			 ASSERT(FALSE);
+			 break;
+		}
+
+		if(bExit) break;  //exit thread
+
+		//stop at least 1 seconds
+ 		if(pProtocol->pFrame[i].IntervalTime < 1)
+			 time.QuadPart = -1*1*1000*1000*10;
+		else
+			 time.QuadPart = -1*LONGLONG(pProtocol->pFrame[i].FrameTime)*1000*1000*10;
+		SetWaitableTimer(hTimer, &time, 0, NULL, NULL, FALSE);
+
+		hEvtWait[0] = hTimer;
+		hEvtWait[1] = pParam->hEvtFrameSkip;
+		hEvtWait[2] = pParam->hEvtProtocolStop;
+		hEvtWait[3] = g_hEvtSysError;
+		bExit = FALSE;
+		dwRet = WaitForMultipleObjects(4, hEvtWait, FALSE, INFINITE);
+		switch(dwRet)
+		{
+		case WAIT_OBJECT_0:  //timer up
+			 ResetEvent( hEvtWait[0] );
+			 g_OWS.SendFrameOK();
+			 break;
+		case WAIT_OBJECT_0+1: //frame skip
+			 ResetEvent( hEvtWait[1] );
+		     g_OWS.SendFrameOK();
+			 break;
+		case WAIT_OBJECT_0+2: //ows stop acq
+			 ResetEvent( hEvtWait[2] );
+			 bExit = TRUE;
+			 break;
+		case WAIT_OBJECT_0+3: //SYSTEM ERROR
+			 ResetEvent( hEvtWait[3] );
+			 bErrExit = TRUE;
+			 bExit = TRUE;
+			 break;
+		default:
+			 bExit = TRUE;
+			 break;
+		}
+
+		if(bExit) break;
+	}
+	//					   Exec data acquire
+	///////////////////////////////////////////////////////////////////////////////////////
+
+exit2:
+	CloseHandle(hTimer);
+	if( scanmode == scan_t ) g_FH.RS485Stop();
+	if( scanmode == scan_g ) g_FH.GateStop();
+	g_FH.FHStop();
+
+	SetEvent(hEvtExitMonitor);
+	WaitForSingleObject(hMonitorThread, 1000/*ms*/);
+	CloseHandle(hEvtExitMonitor);
+
+/*
+	if( bEMControlEn ){
+		/////////////////////////////////////////////////////////////////////////////
+		//                     Control ROD
+		if( pProtocol->acq_head.RodStatus == TRUE )
+		{    //伸出
+			if( g_MCtlInfo.Rod_stat == rolling )
+			{
+				if( !g_SIO.Control_RodStop() ){
+					g_OWS.SendAlarm(ERROR_SIO_ROD_CTRL_STOP); 
+					g_OWS.SendNACK();
+				}
+			}
+			if( g_MCtlInfo.Rod_stat == stop )
+			{
+				if( !g_SIO.Control_RodIn() ){
+					g_OWS.SendAlarm(ERROR_SIO_ROD_CTRL_IN); 
+					g_OWS.SendNACK();
+				}
+			}
+		}
+		//
+		///////////////////////////////////////////////////////////////////////////////
+
+		///////////////////////////////////////////////////////////////////////////
+		//                     Control Septa
+		if( pProtocol->acq_head.SeptaStatus == TRUE)
+		{	//伸出
+			if( g_MCtlInfo.septa_stat == out )
+			{
+				if( !g_SIO.Control_SeptaIn() ){
+					g_OWS.SendAlarm(ERROR_SIO_SEPTA_CTRL_IN);
+				}
+			}
+		}
+		//
+		/////////////////////////////////////////////////////////////////////////////
+	}//if( g_bEMControlEn)
+*/
+
+	if(bErrExit)
+		g_OWS.SendNACK();
+	else
+		g_OWS.SendACK();
+
+	g_OWS.ProtocolRelease();
+
+	DbgPrt("End To Exec Protocol!\r\n", g_hWndOWS);
+
+	return 1;
+}
+
+DWORD WINAPI ThreadExecProtocolMonitor(LPVOID pData)
+{
+	DWORD dwRet;
+	HANDLE hWait[2];
+
+	hWait[0] = 	(HANDLE)pData;
+	hWait[1] =  (HANDLE)g_hEvtSysError;
+
+	///////////////////////////////////////////////////////////////////
+//	return 0;
+	///////////////////////////////////////////////////////////////////
+
+	do{
+		dwRet = WaitForMultipleObjects(2, hWait, FALSE, 1000/*ms*/);
+		switch(dwRet){
+		case WAIT_TIMEOUT:
+			 if( !g_OWS.SendMonitor() ){
+				 PulseEvent(g_hEvtSysError);
+				 return 1;
+			 }
+			 if( !g_OWS.SendSysInfo() ){
+				 PulseEvent(g_hEvtSysError);
+				 return 1;
+			 }
+			 break;
+
+		case WAIT_OBJECT_0:
+		case WAIT_OBJECT_0+1:
+			 return 1;
+
+		default:
+			 DbgPrt("Monitor FH EXEC Thread WaitForSingleObject Error\r\n", g_hWndOWS);
+			 break;
+		}
+	}while(TRUE);
+
+	return 1;
+}
+
+BOOL ExecEMControl(BOOL bRodOut, int rodrate, BOOL bSeptaOut, float fBedPos, float fBedOffset)
+{
+}

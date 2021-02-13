@@ -1,0 +1,23 @@
+<HEAD>
+	<SIZE>8<end_SIZE>
+<end_HEAD>
+<Communications>
+	<Communication_0>CAN ; COM: 1 ; 19200 ; 8 ; 0 ; 0 ; 0 ; CAN: 1 ; IXXAT ; USB-to-CANcompact ; 0 ; 6 ; 1 ; 0 ; 0.0.0.0 ; ; ; 0<end_Communication_0>
+	<Communication_1>CAN ; COM: 1 ; 19200 ; 8 ; 0 ; 0 ; 0 ; CAN: 2 ; IXXAT ; USB-to-CANcompact ; 0 ; 6 ; 1 ; 0 ; 0.0.0.0 ; ; ; 0<end_Communication_1>
+        <Communication_2>CAN ; COM: 1 ; 19200 ; 8 ; 0 ; 0 ; 0 ; CAN: 3 ; IXXAT ; USB-to-CANcompact ; 0 ; 6 ; 1 ; 0 ; 0.0.0.0 ; ; ; 0<end_Communication_2>
+	<Communication_3>CAN ; COM: 1 ; 19200 ; 8 ; 0 ; 0 ; 0 ; CAN: 4 ; IXXAT ; USB-to-CANcompact ; 0 ; 6 ; 1 ; 0 ; 0.0.0.0 ; ; ; 0<end_Communication_3>
+        <Communication_4>CAN ; COM: 1 ; 19200 ; 8 ; 0 ; 0 ; 0 ; CAN: 5 ; IXXAT ; USB-to-CANcompact ; 0 ; 6 ; 1 ; 0 ; 0.0.0.0 ; ; ; 0<end_Communication_4>
+	<Communication_5>CAN ; COM: 1 ; 19200 ; 8 ; 0 ; 0 ; 0 ; CAN: 6 ; IXXAT ; USB-to-CANcompact ; 0 ; 6 ; 1 ; 0 ; 0.0.0.0 ; ; ; 0<end_Communication_5>
+	<Communication_6>CAN ; COM: 1 ; 19200 ; 8 ; 0 ; 0 ; 0 ; CAN: 7 ; IXXAT ; USB-to-CANcompact ; 0 ; 6 ; 1 ; 0 ; 0.0.0.0 ; ; ; 0<end_Communication_6>
+        <Communication_7>CAN ; COM: 1 ; 19200 ; 8 ; 0 ; 0 ; 0 ; CAN: 8 ; IXXAT ; USB-to-CANcompact ; 0 ; 6 ; 1 ; 0 ; 0.0.0.0 ; ; ; 0<end_Communication_7>
+<end_Communications>
+<Application Names>
+	<Communication_0>Application1_CAN_ID1<end_Communication_0>
+	<Communication_1>Application1_CAN_ID2<end_Communication_1>
+	<Communication_2>Application1_CAN_ID3<end_Communication_2>
+	<Communication_3>Application1_CAN_ID4<end_Communication_3>
+        <Communication_4>Application1_CAN_ID5<end_Communication_4>
+	<Communication_5>Application1_CAN_ID6<end_Communication_5>
+	<Communication_6>Application1_CAN_ID4<end_Communication_6>
+        <Communication_7>Application1_CAN_ID5<end_Communication_7>
+<end_Application Names>

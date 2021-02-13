@@ -1,0 +1,267 @@
+// Microsoft Visual C++ generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+/////////////////////////////////////////////////////////////////////////////
+// 拞暥(?懱丆拞崙) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+LANGUAGE LANG_CHINESE, SUBLANG_CHINESE_SIMPLIFIED
+#pragma code_page(936)
+
+#ifdef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE 
+BEGIN
+    "#define _AFX_NO_SPLITTER_RESOURCES\r\n"
+    "#define _AFX_NO_OLE_RESOURCES\r\n"
+    "#define _AFX_NO_TRACKER_RESOURCES\r\n"
+    "#define _AFX_NO_PROPERTY_RESOURCES\r\n"
+    "\r\n"
+    "#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)\r\n"
+    "#ifdef _WIN32\r\n"
+    "LANGUAGE 4, 2\r\n"
+    "#pragma code_page(936)\r\n"
+    "#endif //_WIN32\r\n"
+    "#include ""res\\ACQCenter.rc2""  // non-Microsoft Visual C++ edited resources\r\n"
+    "#include ""l.chs\\afxres.rc""          // Standard components\r\n"
+    "#endif\r\n"
+    "\0"
+END
+
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+// Icon with lowest ID value placed first to ensure application icon
+// remains consistent on all systems.
+IDR_MAINFRAME           ICON                    "res\\ACQCenter.ico"
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Version
+//
+
+VS_VERSION_INFO VERSIONINFO
+ FILEVERSION 4,0,1,0
+ PRODUCTVERSION 4,0,1,0
+ FILEFLAGSMASK 0x3fL
+#ifdef _DEBUG
+ FILEFLAGS 0x1L
+#else
+ FILEFLAGS 0x0L
+#endif
+ FILEOS 0x4L
+ FILETYPE 0x1L
+ FILESUBTYPE 0x0L
+BEGIN
+    BLOCK "StringFileInfo"
+    BEGIN
+        BLOCK "040904b0"
+        BEGIN
+            VALUE "CompanyName", "BEIJING PROTON"
+            VALUE "FileDescription", "ACQCenter"
+            VALUE "FileVersion", "4, 0, 1, 0"
+            VALUE "InternalName", "ACQCenter"
+            VALUE "LegalCopyright", "Copyright ? 2003"
+            VALUE "OriginalFilename", "ACQCenter.exe"
+            VALUE "ProductName", "SeeReal ACQCenter"
+            VALUE "ProductVersion", "4, 0, 1, 0"
+        END
+    END
+    BLOCK "VarFileInfo"
+    BEGIN
+        VALUE "Translation", 0x409, 1200
+    END
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE
+BEGIN
+    IDS_ABOUTBOX            "About ACQCenter(&A)..."
+    IDP_SOCKETS_INIT_FAILED "Windows 通信端口初始化失败。"
+END
+
+#endif    // 拞暥(?懱丆拞崙) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+/////////////////////////////////////////////////////////////////////////////
+// 塸?(旤崙) resources
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_ENU)
+LANGUAGE LANG_ENGLISH, SUBLANG_ENGLISH_US
+#pragma code_page(1252)
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ACQCENTER_DIALOG DIALOGEX 0, 0, 505, 344
+STYLE DS_SETFONT | DS_MODALFRAME | DS_CENTER | WS_MINIMIZEBOX | WS_POPUP | WS_VISIBLE | WS_CAPTION | WS_SYSMENU
+EXSTYLE WS_EX_APPWINDOW
+CAPTION "ACQCenter Ver4.1.0--N32R"
+FONT 9, "MS Sans Serif", 0, 0, 0x1
+BEGIN
+    EDITTEXT        IDC_TIME_LJ,46,14,19,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_TIME_MIN,91,14,19,12,ES_AUTOHSCROLL | ES_NUMBER
+    EDITTEXT        IDC_TIME_MAX,138,14,19,12,ES_AUTOHSCROLL | ES_NUMBER
+    COMBOBOX        IDC_OUTFMT,170,10,65,34,CBS_DROPDOWNLIST | WS_DISABLED | WS_VSCROLL | WS_TABSTOP
+    CONTROL         "Protocol Dbg BUCKET",IDC_EN_DBGBUCK,"Button",BS_AUTOCHECKBOX | BS_VCENTER | WS_TABSTOP,250,10,93,10
+    CONTROL         "Control EMC SIO",IDC_EN_SIOEMC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,354,10,76,10
+    DEFPUSHBUTTON   "Exit",IDOK,470,10,33,14
+    EDITTEXT        IDC_EDIT_OWS,1,45,239,86,ES_MULTILINE | WS_VSCROLL
+    EDITTEXT        IDC_EDIT_PROTOCOL,249,45,254,86,ES_MULTILINE | WS_VSCROLL
+    EDITTEXT        IDC_EDIT_FH,1,149,334,69,ES_MULTILINE | WS_VSCROLL
+    EDITTEXT        IDC_EDIT_SIO,1,234,334,105,ES_MULTILINE | WS_VSCROLL
+    GROUPBOX        "EMC BUCKET Info",IDC_STATIC,1,224,334,116
+    GROUPBOX        "Coin Info",IDC_STATIC,1,137,334,82
+    GROUPBOX        "OWS Info",IDC_STATIC,1,32,241,100
+    GROUPBOX        "Coin Time Setting(ns)",IDC_STATIC,1,2,164,26
+    LTEXT           "Instant:",IDC_STATIC,7,15,39,10
+    LTEXT           "Min:",IDC_STATIC,70,15,21,10
+    LTEXT           "Max:",IDC_STATIC,114,15,24,10
+    GROUPBOX        "ACQ Protocol Info",IDC_STATIC,248,32,255,100
+    CONTROL         "Pause Update",IDC_PAUSE_DISP_COININFO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,90,136,60,10
+    CONTROL         "Pause Update",IDC_PAUSE_DISP_SIOINFO,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,90,223,60,10
+    LTEXT           "BED",IDC_TIPS_BED,340,143,160,15,SS_CENTERIMAGE
+    LTEXT           "ROD",IDC_TIPS_ROD,340,169,160,15,SS_CENTERIMAGE
+    LTEXT           "GANTRY T TH",IDC_TIPS_TH_GANTRY,339,191,160,15,SS_CENTERIMAGE
+END
+
+IDD_SYSINIT_OPTION DIALOG 0, 0, 188, 81
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP
+FONT 10, "System"
+BEGIN
+    CONTROL         "No Debug Info",IDC_RADIO_ENDBG,"Button",BS_AUTORADIOBUTTON | WS_GROUP,7,30,66,8
+    CONTROL         "Output Debug Info",IDC_RADIO_DISDBG,"Button",BS_AUTORADIOBUTTON,94,30,72,9
+    GROUPBOX        "Debug Output Option",IDC_STATIC,3,19,181,23
+    CTEXT           "time out tips",IDC_STATIC_TIMEOUT,3,69,181,10
+    CTEXT           "SeeReal  AcqCenter  Ver4.1.0--N32R",IDC_STATIC,31,6,153,10,SS_CENTERIMAGE
+    ICON            IDR_MAINFRAME,IDC_STATIC,10,0,20,20
+    CONTROL         "Enable EMC SIO",IDC_EN_SIOEMC,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,7,45,75,8
+    CONTROL         "Enable Debug Bucket",IDC_EN_DBGBUCKET,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,85,45,89,8
+END
+
+IDD_ABOUTBOX DIALOG 0, 0, 235, 55
+STYLE DS_SETFONT | DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About ACQCenter"
+FONT 9, "MS Sans Serif"
+BEGIN
+    ICON            IDR_MAINFRAME,IDC_STATIC,11,17,20,20
+    LTEXT           "Beijing Proton (C) 2003",IDC_STATIC,40,25,93,8
+    DEFPUSHBUTTON   "OK",IDOK,178,7,50,14,WS_GROUP
+END
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// DESIGNINFO
+//
+
+#ifdef APSTUDIO_INVOKED
+GUIDELINES DESIGNINFO
+BEGIN
+    IDD_ACQCENTER_DIALOG, DIALOG
+    BEGIN
+        LEFTMARGIN, 1
+        RIGHTMARGIN, 503
+        TOPMARGIN, 2
+        BOTTOMMARGIN, 340
+    END
+
+    IDD_SYSINIT_OPTION, DIALOG
+    BEGIN
+        LEFTMARGIN, 3
+        RIGHTMARGIN, 184
+        TOPMARGIN, 3
+        BOTTOMMARGIN, 77
+    END
+
+    IDD_ABOUTBOX, DIALOG
+    BEGIN
+        LEFTMARGIN, 7
+        RIGHTMARGIN, 228
+        TOPMARGIN, 7
+        BOTTOMMARGIN, 48
+    END
+END
+#endif    // APSTUDIO_INVOKED
+
+
+/////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_ACQCENTER_DIALOG DLGINIT
+BEGIN
+    IDC_OUTFMT, 0x403, 16, 0
+0x754f, 0x7074, 0x7475, 0x5020, 0x736f, 0x4920, 0x666e, 0x006f, 
+    IDC_OUTFMT, 0x403, 17, 0
+0x754f, 0x7074, 0x7475, 0x5420, 0x6d69, 0x2065, 0x6e49, 0x6f66, "\000" 
+    0
+END
+
+#endif    // 塸?(旤崙) resources
+/////////////////////////////////////////////////////////////////////////////
+
+
+
+#ifndef APSTUDIO_INVOKED
+/////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#define _AFX_NO_SPLITTER_RESOURCES
+#define _AFX_NO_OLE_RESOURCES
+#define _AFX_NO_TRACKER_RESOURCES
+#define _AFX_NO_PROPERTY_RESOURCES
+
+#if !defined(AFX_RESOURCE_DLL) || defined(AFX_TARG_CHS)
+#ifdef _WIN32
+LANGUAGE 4, 2
+#pragma code_page(936)
+#endif //_WIN32
+#include "res\ACQCenter.rc2"  // non-Microsoft Visual C++ edited resources
+#include "l.chs\afxres.rc"          // Standard components
+#endif
+
+/////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+
